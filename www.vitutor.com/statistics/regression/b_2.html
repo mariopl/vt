@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from www.vitutor.com/statistics/regression/b_2.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:39:28 GMT -->
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="keywords" content="Mathematics, maths, math word Problems, math problem solving, exercises, worksheets, activities, formulas, lessons, questions, homework, elementary, middle and high school, Arithmetic, Algebra, Calculus, Statistics, Geometry, Linear algebra, Analytic geometry." />
+<meta name="description" content="Solved problems of linear regression, equation of the regression line, linear correlation coefficient, types of correlations, interpretation of results, exercises with solutions and solved worksheets."/>
+<meta name="copyright" content="copyright (c) by vitutor" />
+<meta name="robots" content="all" />
+<meta name="author" content="vitutor" />
+<meta http-equiv="expires" content="0" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="icon" href="../../../www.vitutor.us/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.us/favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="../../../www.vitutor.us/js/domtab.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.us/css/k.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.us/css/x.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.co.uk/css/7.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.co.uk/css/6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.org/css/i.css" /><style type="text/css">
+ #tabs4 a:hover span,#tabs4 a span#actual_ts_4 {
+      color:#fff;
+      }
+</style>
+<title>Solution to Problem of Regression 2</title>
+
+
+ 
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="container" >
+	
+		<div id="header">
+			<a href="../../maths.html" title="Mathematics" style="text-decoration:none;"><img src="../../../www.vitutor.us/images/logo_v.png" alt="Mathematics. Home"  id="to" width="143" height="30" /></a>
+
+		<div class="menu" style="left:28.5%; width:70%;">
+			<ul style="font-size:0.95em;">
+				<li><a href="two_variables.html" title="Notes">Notes</a></li>
+                <li><a href="problems_regression.html" title="Problems 1">Problems 1</a></li>
+                <li><a href="problems_correlation.html" title="Problems 2">Problems 2</a></li>
+                <li><a href="../../statistics.html" title="Statistics">Statistics</a></li>
+                <li><a  href="../../maths.html" title="Math">Home</a></li>
+			</ul>
+			<a href="../../index-2.html" title="Math (Spanish)"><img src="../../../www.vitutor.us/images/es_125.png" id="int" alt="Math (Spanish)" width="125" height="30" /></a>
+	</div>			
+			 <!--  id=menu   -->
+		</div>			<!--fin header-->
+		
+		<div id="wrapper">
+		<div id="content">
+				
+			<div id="tabs4" style="position:relative; top:14px; left:-27px; margin-bottom:18px;">
+					<!--[if lte IE 6]>
+					<div id="tabs4" style="margin-bottom:-5px;">
+					<![endif]-->
+				<ul>
+					<li><a href="problems_correlation.html" title="Problems of Regression"><span>Problems</span></a></li>
+					<li><a href="b_1.html" title="1"><span>1</span></a></li>
+                    <li><a href="#" title="2" id="actual_t_4"><span id="actual_ts_4">2</span></a></li>
+                    <li><a href="b_3.html" title="3"><span>3</span></a></li>
+                    <li><a href="b_4.html" title="4"><span>4</span></a></li>
+					<li><a href="b_5.html" title="5"><span>5</span></a></li>
+                    <li><a href="b_6.html" title="6"><span>6</span></a></li>
+                    <li><a href="b_7.html" title="7"><span>7</span></a></li>
+                    <li><a href="b_8.html" title="8"><span>8</span></a></li>
+                    <li><a href="b_9.html" title="9"><span>9</span></a></li>
+				
+				</ul>
+ 				<!--[if lte IE 6]>
+					</div>
+				   <![endif]-->
+				</div>
+				
+				<div id="cont">
+<div class="out head_1">
+						<div class="in ltin tpin">
+							<h1 class="r">2</h1>
+						</div>
+					</div>
+<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;"></div>
+</div>
+
+							<p class="actividades_r">The statistical information obtained from a sample of  12 farms on the relationship between the investment and yield in hundreds of thousands of dollars  is shown in the following table:</p>
+                        <table width="550" border="1" class="t_izq" cellspacing="2">
+                          <tr>
+                            <td>Investment (x)</td>
+                            <td>11</td>
+                            <td>14</td>
+                            <td>16</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>18</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>14</td>
+                            <td>20</td>
+                            <td>19</td>
+                            <td>11</td>
+                          </tr>
+                          <tr>
+                            <td>Yield (y)</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>6</td>
+                          </tr>
+</table>
+                        <p class="actividades_v">Calculate:</p>
+                        <p class="actividades_2_g"><span class="numero_r">1 </span> The regression line of the yield with regard to the investment.</p>
+                        <p class="actividades_2_v"><span class="numero_r">2 </span>The estimated investment needed to obtain a yield of $1,250,000.</p>
+<br />
+						  <table width="40%" border="1" class="t_izq" cellspacing="0" cellpadding="6" style="margin-left:15%;">
+                          <tr>
+                            <th>x<sub>i</sub></th>
+                            <th>y<sub>i</sub></th>
+                            <th>x<sub>i</sub> ·y<sub>i</sub></th>
+                            <th>x<sub>i</sub><sup>2</sup></th>
+                            <th>y<sub>i<sup>2</sup> </sub></th>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>2</td>
+                            <td>121</td>
+                            <td>4</td>
+                            <td>22</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td>3</td>
+                            <td>196</td>
+                            <td>9</td>
+                            <td>42</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>5</td>
+                            <td>256</td>
+                            <td>25</td>
+                            <td>80</td>
+                          </tr>
+                          <tr>
+                            <td>15</td>
+                            <td>6</td>
+                            <td>225</td>
+                            <td>36</td>
+                            <td>90</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>5</td>
+                            <td>256</td>
+                            <td>25</td>
+                            <td>80</td>
+                          </tr>
+                          <tr>
+                            <td>18</td>
+                            <td>3</td>
+                            <td>324</td>
+                            <td>9</td>
+                            <td>54</td>
+                          </tr>
+                          <tr>
+                            <td>20</td>
+                            <td>7</td>
+                            <td>400</td>
+                            <td>49</td>
+                            <td>140</td>
+                          </tr>
+                          <tr>
+                            <td>21</td>
+                            <td>10</td>
+                            <td>441</td>
+                            <td>100</td>
+                            <td>210</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td>6</td>
+                            <td>196</td>
+                            <td>36</td>
+                            <td>84</td>
+                          </tr>
+                          <tr>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>400</td>
+                            <td>100</td>
+                            <td>200</td>
+                          </tr>
+                          <tr>
+                            <td>19</td>
+                            <td>5</td>
+                            <td>361</td>
+                            <td>25</td>
+                            <td>95</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>6</td>
+                            <td>121</td>
+                            <td>36</td>
+                            <td>66</td>
+                          </tr>
+                          <tr>
+                            <td style="color:#900;">195</td>
+                            <td style="color:#900;">68</td>
+                            <td style="color:#900;">3,297</td>
+                            <td style="color:#900;">454</td>
+                            <td style="color:#900;">1,163</td>
+                          </tr>
+                        </table>
+                        <p class="actividades_2_r"><img src="../../../www.vitutor.us/statistics/regression/images/79.gif" alt="Correlation and Regression Operations" width="421" height="38" /></p>
+                        <p class="actividades_2_v"><img src="../../../www.vitutor.us/statistics/regression/images/80.gif" alt="Correlation and Regression Operations" width="284" height="38" /></p>
+                        <p class="actividades_2_r"><img src="../../../www.vitutor.us/statistics/regression/images/81.gif" alt="Correlation and Regression Operations" width="362" height="38" /></p>
+                        <p class="actividades_2_v"><img src="../../../www.vitutor.us/statistics/regression/images/82.gif" alt="Correlation and Regression Operations" width="420" height="38" /></p>
+                        <p class="actividades_2_r"><img src="../../../www.vitutor.us/statistics/regression/images/83.gif" alt="Correlation and Regression Solution" width="228" height="21" /></p>
+                        <p class="actividades_2_v"><img src="../../../www.vitutor.us/statistics/regression/images/84.gif" alt="Correlation and Regression Solution" width="217" height="21" /></p>
+							<br />
+						<div style="margin-left:1.5%;">
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div><br />
+
+</div>	 <!--id="cont"  -->
+			<div id="sub">
+					<ul>
+						<li class="ka" style="width:48px;">
+							<a href="b_1.html" title="1">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_i.gif" width="40" height="20" alt="1" /></a>
+						</li>
+						
+						<li class="ke" style="width:48px;">
+							<a href="#to" title="Top" style="text-decoration:underline;"><img src="../../../www.vitutor.us/images/flechas/f_v_a.gif" alt="Top" width="20" height="40" /></a>
+						</li>
+						
+						<li class="ki" style="margin-top:-75px; width:48px">
+							<a href="b_3.html" title="3">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_d.gif" width="40" height="20" alt="3" /></a>
+						</li>
+					</ul>
+			</div>
+					
+	</div> 		<!--id="content"  -->
+		
+</div>				<!--id="wrapper"  -->
+<div id="vin_s" style="margin-top:40px;">
+               <form action="http://www.google.es/" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="22" />
+                  <input type="submit" name="sa" value="Buscar" />
+                </div>
+              </form>
+              
+              <script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+              
+              
+<div style="margin-left:-1px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+                <ul class="loso">
+             <li><span class="sitio">Site</span></li><li><a href="../../maths.html" title="Math">Math</a> </li>
+            <li><a href="../../formulas.html" title="Formulas">Formulas</a></li>
+            <li><a href="../../problems.html" title="Word Problems">Word Problems</a></li>
+            <li><a   href="../../worksheets.html" title="Worksheets">Worksheets</a> </li>
+            <li><a href="../../algeb.html" title="Algebra">Algebra</a></li>
+            <li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+            <li><a href="../descriptive/descriptive_statistics.html" title="Descriptive Statistics">Descriptive Statistics</a></li>
+            <li><a href="../combinatorics/permutations_combinations.html" title="Combinatorics">Combinatorics</a></li>
+            <li><a href="../probability/probability.html" title="Probability">Probability</a></li>
+            <li><a href="../binomial/discrete_distribution.html" title="Binomial Distribution">Binomial Distribution</a></li>
+            <li><a href="../normal/the_normal.html" title="Normal Distribution">Normal Distribution</a></li>
+            <li><a href="../inference/statistical_inference.html" title="Statistical Inference">Statistical Inference</a></li>
+            <li>&nbsp;</li>
+            <li><span class="sitio">Subject</span></li>	
+            <li><a href="two_variables.html" title="Two Variable Statistics"><span>Two Variable</span></a></li>
+            <li><a href="covariance.html" title="Covariance"><span>Covariance</span></a></li>
+            <li><a href="correlation.html" title="Correlation"><span>Correlation</span></a></li>
+            <li><a href="correlation_coefficient.html" title="Linear Correlation Coefficient"><span>Correlation Coefficient</span></a></li>
+            <li><a href="linear_regression.html" title="Linear Regression"><span>Linear Regression</span></a></li>
+            <li><a href="problems_regression.html" title="Problems of Regression"><span>Problems 1</span></a></li>			
+            <li><a href="problems_correlation.html" title="Problems of Correlation and Regression"><span>Problems 2</span></a></li>				
+			</ul>
+
+			</div>  	<!--id="vin_s"  --> 
+           <div id="footer">
+			<img src="../../../www.vitutor.us/images/pie_c_2.gif" width="161" height="20" alt="Copyright" class="copy"/>
+           <a href="../../ad.html" title="Política de privacidad" style="margin-left:22.5%; position:relative; bottom:4px;"><span style="background-color:#fbf8f5;">Privacy Policy </span></a>
+           <a href="mailto:" class="correo" title="E-mail" style="background-color:#eee;">
+			<img src="../../../www.vitutor.us/images/pie_correo_4.gif" width="216" height="20" alt="E-mail" class="imagen" /></a>
+</div>  <!--id="footer"  -->
+
+</div>             <!--  id="container"   -->
+	
+</body>
+
+<!-- Mirrored from www.vitutor.com/statistics/regression/b_2.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:39:29 GMT -->
+</html>

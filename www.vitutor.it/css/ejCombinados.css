@@ -1,0 +1,536 @@
+.cContParrafos{
+	display:inline-block;
+	width:97%;
+	margin-left:20px;
+	margin-right:20px;
+}
+.cContParrafos p{
+	margin-left:0;}
+
+/*Los primero para sortable*/
+.cCuestionSortable{
+	display:block;
+	margin-left:20px;
+	margin-right:20px;
+	max-width:95%;
+	overflow:hidden;
+	margin-top:0;
+	margin-bottom:15px;
+	padding-bottom:5px;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	}
+.cCuestionSortable span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:middle;
+	}
+.cCuestionSortable p{
+	display:inline-block;
+	max-width:90%;
+	margin-left:0px;
+	/*clear:right;*/
+	}
+.cContenedorListasSortable{
+	display:block;
+	vertical-align:top;
+	max-width:90%;
+	margin-left:5px;
+	margin-top:10px;
+	}
+.cOrdenable{
+	display:inline-block;
+	list-style-type: none;
+	margin-right:5px;
+	cursor:move;
+	}
+.cOrdenable li{
+	display:inline-block;
+	margin-right:0;
+	margin-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px hsl(30,43%,97%);
+	}
+.cOrdenable li:not(.cSeparador){
+	border:1px solid #CDE4CD;
+	}
+.cSeparador{
+	font-weight:bold;
+	cursor:no-drop;
+	border:none !important;	
+	color:#666;
+	background-color:hsl(132,60%,95%);
+	}
+.cContRes{
+	margin-left:3%;
+	margin-right:3%;
+	min-height:35px;
+	display:none;
+	background-image:url(../images/solucion.gif);
+	background-repeat:no-repeat;
+	background-color:hsla(132,60%,95%,0.2);
+	/*
+	background-position: top -5px left -5px;
+	background-origin:border-box;
+	background-clip:padding-box;
+	*/
+	border: 1px solid #DDD;
+	border-radius:5px;	
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	margin-bottom:5px;
+	}
+.cContRes .sol{
+	background:none;
+	}
+.cContRes p{
+	padding-left:85px;
+	}
+
+.placeHolder {
+	border:2px solid #C03000;
+	background-color:#8F1010;
+	}
+.cImgBienMal{
+	position:static;
+	margin-left:8px;
+	display:none;
+	}
+
+
+/*Lo siguiente para radio buttons*/
+.cCuestionRadio{
+	display:block;
+	max-width:95%;
+	line-height:2.5em;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:0;
+	margin-bottom:10px;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	}
+.cCuestionRadio span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:middle;
+	}
+.cCuestionRadio p{
+	display:inline-block;
+	margin-left:0px;
+	/*clear:right;
+	margin-right:5px;*/
+	}
+.cCuestionRadio img{
+	position:relative;
+	top:7px;
+	margin-bottom:5px;
+	}
+.cContRadio{
+	display:block;
+	vertical-align:top;
+	margin-bottom:5px;
+	margin-left:30px;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	break-inside: avoid-column;
+	}
+.cContInputAndImgRadio{
+	display:inline-block;
+	width:24px;
+	height:16px;
+	
+	padding-top:3px;
+	margin-right:7px;
+	}
+.cContInputAndImg input{
+	position:absolute;
+	vertical-align:middle;
+	}
+
+
+
+/*Lo siguiente para input text*/
+.cCuestionMultipleInputText{
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:5px;
+	margin-bottom:10px;
+	display:block;
+	max-width:100%;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	}
+.cCuestionMultipleInputText table{
+	max-width:90%;
+	margin-left:0;
+	padding-left:0;
+	}
+.cCuestionMultipleInputText span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:middle;
+	}
+.cCuestionMultipleInputText p{
+	display:inline-block;
+	max-width:100%;
+	clear:right;
+	margin-top:0;
+	line-height:27px;
+	}
+	
+
+.cCuestionInputText{
+	margin-left:30px;
+	display:block;
+	max-width:95%;
+	line-height:2.5em;
+	margin-top:0;
+	margin-bottom:10px;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	}
+.cCuestionInputText span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:top;
+	margin-top:5px;
+	}
+.cCuestionInputText p{
+	display:inline-block;
+	max-width:90%;
+	margin-left:0;
+	column-break-after:avoid;
+	-webkit-column-break-after:avoid;
+	-moz-column-break-after:avoid;
+	}
+.tableCont .cCuestionInputText{
+	margin-left:0;
+	}
+input.cResultPropuestoInputText{
+	width:3em;
+	border:thin solid #CCC;
+	text-align:right;
+	margin-right:2px;
+	}
+.cOperandos{
+	text-align:justify;
+	min-width:8em;
+	max-width:100%;
+	display:inline-block;
+	}
+.cContOperacion{
+	display:inline-block;
+	margin-left:0.5em;
+	max-width:80%;
+	word-wrap:break-word;
+	}
+.cCuestionInputText sb{
+	display:inline-block;
+	}
+.cContOperacion input{
+	display:inline;
+	}
+.cSignoYResultProp{
+	display:inline-block;
+	margin-right:5px;
+	clear:left;
+	}
+.cCampoPuntuacion{
+	width:5.5em;
+	}
+.cContPuntuacion{
+	float:right;
+	font-weight:bold;
+	margin: 25px 2.5%;
+	display:inline;
+	border-right:solid 2px #ccc;
+	border-bottom: solid 2px #Ccc;
+	border-top:solid 2px #c30;
+	border-left:solid 2px #c30;
+	border-radius:3px 10px;
+	padding:1%;
+	}
+
+
+/* Lo siguiente para input text de potencias potencias */
+.cCuestionPot{
+	margin-top:0em;
+	margin-bottom:10px;
+	margin-left:20px;
+	display:block;
+	max-width:95%;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	}
+.cCuestionPot span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:middle;
+	}
+.cCuestionPot p{
+	display:inline-block;
+	max-width:90%;
+	margin-left:0px;
+	/*clear:right;
+	margin-right:5px;*/
+	}
+input.cBaseResult{
+	width:2em;
+	border:thin solid #CCC;
+	text-align:right;
+	margin-right:2px;
+	}
+input.cExpResult{
+	font-size:1em;
+	width:2em;
+	border:thin solid #CCC;
+	vertical-align:super;
+	margin-right:5px;
+	}
+sup .cExpResult{
+	margin-right:-1px;
+	}
+
+
+/*ESTILO PARA INPUT DENTRO DE UNA RAÍZ----*/
+.fondoRaiz{
+	background-image:url(../images/images/raiz.html);
+	background-repeat:no-repeat;
+	background-position:top left;
+	padding-left:24px;
+	padding-top:5px;
+	}
+.fondoRaiz3{
+	background-image:url(../images/images/raiz3.html);
+	background-repeat:no-repeat;
+	background-position:top left;
+	padding-left:24px;
+	padding-top:5px;
+	}
+.fondoRaiz5{
+	background-image:url(../images/images/raiz5.html);
+	background-repeat:no-repeat;
+	background-position:top left;
+	padding-left:24px;
+	padding-top:5px;
+	}
+
+	
+
+
+
+/*Estilos para los DragAndDrops*/
+.cCuestionDragNDrop{
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:5px;
+	margin-bottom:10px;
+	display:block;
+	max-width:95%;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+	}
+.cCuestionDragNDrop span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:middle;
+	}
+.cCuestionDragNDrop p{
+	display:inline-block;
+	max-width:90%;
+	margin-left:0px;
+	}
+.cContenedorDragsNDrops{
+	margin:0px;
+	margin-left:20px;
+	padding:0px;
+	min-height:150px;
+	overflow:hidden;
+	background-color:#fff;
+	display:block;
+	}
+.cContenedorDrags{
+	display:inline-block;
+	width:47%;
+	min-height:145px;
+	background-color:#fff;
+	border:1px solid #CCCCCC;
+	margin-right:10px;
+	padding:5px;
+	}
+.cContenedorDrops{
+	width:49%;
+	height:100%;
+	background-color:#FFF;
+	float:right;
+	vertical-align:top;
+	}	
+.cDrag{
+	display:inline-block;
+	background-color:hsl(30,43%,97%);
+	border:solid 1px #ccc;
+	margin:10px;
+	width:auto;
+	padding:5px;
+	text-align:center;
+	box-shadow: 2px 2px 2px hsla(190,5%,45%,0.7);
+	cursor:pointer;
+	/*float:left;*/
+	font-weight:bold;
+	color:hsl (190,5%,24%);
+	}
+.cDrop{
+	display:block;
+	max-width:95%;
+	min-height:70px;
+	border:1px solid #CCC;	
+	margin-bottom:5px;
+	background:hsl(30,43%,97%);
+	vertical-align:top;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+	}
+.cTitDrop{
+	width:100%;
+	display:block;
+	background-color:#ABECD1;
+	color:#333;
+	font-weight:bold;
+	text-align:center;
+	line-height:20px;
+	}
+
+
+/*Para los input text multiples*/
+
+
+.cInputProblemas{
+	margin-left:1.5em;
+}
+
+p.cSubApartado{
+	display:block;
+	max-width:100%;
+	margin-left:0;
+	clear:right;
+	margin-right:5px;
+	margin-top:0;
+	line-height:27px;
+}
+
+.cContMulInputText{
+	display:block;
+	vertical-align:top;
+	margin-left:0;
+	position:relative;
+	top:0px;
+	overflow:auto;
+	}
+.cContMulInputText table{
+	max-width:100%;
+	margin-left:9px;
+	}
+	
+.cResultPropuestoMultipleInputText{
+	width:4em;
+	border:thin solid #CCC;
+	text-align:right;
+	margin-left:10px;
+	margin-right:5px;
+	}
+/*Para los select:*/
+.cCuestionSelect{
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:10px;
+	display:block;
+	column-break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	overflow:hidden;
+}
+.cCuestionSelect span{
+	display:inline-block;
+	margin-right:3px;
+	vertical-align:middle;
+}
+.cCuestionSelect p{
+	display:inline-block;
+	max-width:90%;
+	margin-left:0px;
+}
+
+
+
+	
+/*Estilos añadidos al incluir los ejercicios en las páginas con contenidos*/
+.cContRadio p{
+	margin-bottom:5px;
+	margin-top:3px;
+	}
+/*Los dos siguientes para las soluciones*/
+.cGetImg{
+	background-color:#FFFFFF;
+}
+.cImgHook{
+	max-width:100%;
+	/*background:url(http://www.vitutor.it/images/images/punto.gif);
+	background-repeat:repeat-x;
+	background-position: 100px 20px;*/
+}
+	
+/*.cContRadio p img{
+	padding-bottom:0px;
+	padding-top:0px;
+} A ver que pasa cuando se coloquen las imágenes al tamaño que corresponde*/
+
+
+
+/*-----TABLEOPERACION--------*/
+.tableOp{
+	background-color:#fff;
+	text-align:center;
+	margin:0;
+	display:inline-block;
+	}
+.frac{
+	border-top:solid 2px #333;
+	}
+.tableOp input{
+	margin-left:0;
+	margin-right:0;
+	}
+.tableOp td {
+	background-color:#fff;
+	}
+span.sb td{
+	vertical-align:top;
+	}

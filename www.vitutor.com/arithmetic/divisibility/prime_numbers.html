@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from www.vitutor.com/arithmetic/divisibility/prime_numbers.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 11:35:14 GMT -->
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="keywords" content="Mathematics, maths, math word Problems, math problem solving, exercises, worksheets, activities, formulas, lessons, questions, homework, elementary, middle and high school, Arithmetic, Algebra, Calculus, Statistics, Geometry, Linear algebra, Analytic geometry." />
+<meta name="description" content="Prime numbers, sieve of Eratosthenes, the table of prime numbers, determining prime numbers, factoring, divisors, examples and excersises with solutions."/>
+<meta name="copyright" content="copyright (c) by vitutor" />
+<meta name="robots" content="all" />
+<meta name="author" content="vitutor" />
+<meta http-equiv="expires" content="0" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="icon" href="../../../www.vitutor.us/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.us/favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="../../../www.vitutor.us/js/domtab.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.us/css/k.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.us/css/x.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.co.uk/css/7.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.co.uk/css/6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.org/css/i.css" />
+<style type="text/css">
+ #tabs4 a:hover span,#tabs4 a span#actual_ts_4 {
+      color:#fff;
+      }
+table.gato td {border:#ace1af 1px solid;}
+
+</style>
+<title>Prime Numbers </title>
+
+
+ 
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="container" >
+	
+		<div id="header">
+		
+			<a href="../../maths.html" title="Mathematics" style="text-decoration:none;"><img src="../../../www.vitutor.us/images/logo_v.png" alt="Mathematics. Home"  id="to" width="143" height="30" /></a>
+			
+			<div class="menu">
+
+<ul style=" font-size:0.95em;">
+				<li><a  href="#" title="Notes" id="actual">Notes</a></li>
+				<li><a  href="exercises_dvisibility.html" title="Exercises of divisibility">Exercises</a></li>
+				<li><a  href="problems_dvisibility.html" title="Word problems of gcd and lcm">Problems</a></li>
+                <li><a  href="../../arithmetic.html" title="arithmetic">Arithmetic</a></li>
+				<li><a  href="../../index-2.html" title="Matemáticas">Home</a></li>
+			</ul>
+			<a href="../../index-2.html" title="Math (Spanish)"><img src="../../../www.vitutor.us/images/es_125.png" id="int" alt="Math (Spanish)" width="125" height="30" /></a>
+	</div>			
+			 <!--  id=menu   -->
+				
+
+		</div>			<!--fin header-->
+		
+		<div id="wrapper">
+
+			<div id="content">
+				
+			<div id="tabs4" style="position:relative; top:14px; left:-27px; margin-bottom:18px;">
+					<!--[if lte IE 6]>
+					<div id="tabs4" style="margin-bottom:-5px;">
+					<![endif]-->
+				<ul>
+					<li><a href="multiples.html" title="Multiples"><span>Multiples</span></a></li>
+                    <li><a href="divisors.html" title="Divisors"><span>Divisors</span></a></li>	
+                    <li><a href="dvisibility.html" title="Divisibility rules"><span>Divisibility</span></a></li>	
+					<li><a href="#" title="Prime N." id="actual_t_4" ><span id="actual_ts_4">Prime N.</span></a></li>
+					<li><a href="composite_number.html" title="Composite N."><span>Composite N.</span></a></li>
+                    <li><a href="greatest_common_divisor.html" title="Greatest common divisor"><span>G.C.D.</span></a></li>
+                    <li><a href="euclidean_algorithm.html" title="Euclidean algorithm"><span>Euclidean A.</span></a></li>
+					<li><a href="least_common_multiple.html" title="Least common multiple"><span>L.C.M.</span></a></li>
+					
+				</ul>
+ 				<!--[if lte IE 6]>
+					</div>
+				   <![endif]-->
+				
+				</div>
+				
+				<div id="cont">
+				<div class="out head_1" style="margin-top:-4px;">
+						<div class="in ltin tpin">
+<h1 class="r" id="primo">Prime Numbers </h1>
+						</div>
+					</div><div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;"></div>
+</div>
+<p class="actividades_v">A <strong>prime number</strong> has only two divisors: itself and one.</p>
+<p class="actividades_2_g">5, 13, 59. </p>
+<p class="actividades_v" style="margin-top:30px;">The number <strong>1</strong> has only one divisor, so it is <strong>not a prime number</strong>.</p>
+<p class="actividades_r">To find out if a number is prime,  orderly divide  by prime numbers less than it. When there is no exact division result and  a quotient less than or equal to the divisor is obtained, it is said that the number is prime.</p>
+<p class="actividades_2_g"><img src="../../../www.vitutor.us/arithmetic/divisibility/images/1.gif" alt="Prime Numbers" width="442" height="70" /></p>
+<p class="actividades_2_v">So, 179 is a prime number. </p>
+<h1 class="r" style="margin-top:30px;">Sieve of Eratosthenes </h1>
+<p class="actividades_r">The sieve of Eratosthenes is an algorithm that allows one to find all the prime numbers less than a given natural number.</p>
+<p class="actividades_v">Start with a list of numbers ranging from 2 up to a certain number.</p>
+<p class="actividades_g">Eliminate the multiples of 2 from the list.</p>
+<p class="actividades_v">Then,  take the first number after the 2 that was not eliminated. In this case, (3) and eliminate  their multiples from the list, and so on. </p>
+<p class="actividades_g">The process ends when the square of the largest number confirmed as a prime number is less than the final number on the list. </p>
+<p class="actividades_v">At this point, the numbers that remain on the list are  prime <span class="actividades_g">number</span>s. </p>
+<h4 class="t">Example</h4>
+<p class="actividades_g" style="margin-top:30px;">Calculate this algorithm for all prime numbers less than 40.</p>
+<p class="actividades_r"><span class="numero_v">1. </span>First, write the numbers. In this case they will be between 2 and 40.</p>
+<table cellpadding="4" cellspacing="0" class="gato" style="border:#eee thin solid; margin-left:9%; margin-top:20px; width:600px; font-weight:bold; color:#000; background-color:#fff;" >
+  <tr >
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>2 </td>
+<td>3 </td>
+<td>4 </td>
+<td>5 </td>
+<td>6 </td>
+<td>7 </td>
+<td>8 </td>
+<td>9 </td>
+<td>10 </td>
+<td>11 </td>
+<td>12 </td>
+<td>13 </td>
+<td>14 </td>
+<td>15 </td>
+<td>16 </td>
+<td>17 </td>
+<td>18 </td>
+<td>19 </td>
+<td>20 </td>
+</tr>
+<tr>
+<td>21 </td>
+<td>22 </td>
+<td>23 </td>
+<td>24 </td>
+<td>25 </td>
+<td>26 </td>
+<td>27 </td>
+<td>28 </td>
+<td>29 </td>
+<td>30 </td>
+<td>31 </td>
+<td>32 </td>
+<td>33 </td>
+<td>34 </td>
+<td>35 </td>
+<td>36 </td>
+<td>37 </td>
+<td>38 </td>
+<td>39 </td>
+<td>40 </td>
+</tr>
+
+</table>
+
+<p class="actividades_r"><span class="numero_v">2. </span>Remove the multiples of 2. </p>
+<table cellpadding="2" cellspacing="0" class="gato" style="border:#eee thin solid; margin-left:9%; margin-top:20px; width:600px; font-weight:bold;"  >
+<tr >
+<td></td>
+<td style="color:#900; background-color:#eee;" >2 </td>
+<td>3 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>5 </td>
+<td>&nbsp;</td>
+<td>7 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>9 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>11 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>13 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>15 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>17 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>19 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>21 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>23 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>25 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>27 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>29 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>31 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>33 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>35 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>37 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>39 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+<p class="actividades_r"><span class="numero_v">3. </span>The next number in the list is 3. Since 3<sup>2</sup> &lt; 40, eliminate the multiples of 3. </p>
+<table cellpadding="2" cellspacing="0"  style="border:#eee thin solid; margin-left:9%; margin-top:20px; width:600px; font-weight:bold; color:#000; background-color:#fff;" class="gato">
+  <tr >
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">2 </td>
+<td style="color:#900; background-color:#eee;">3 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>5 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>7 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>11 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>13 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>17 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>19 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>23 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>25 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>29 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>31 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>35 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>37 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+<p class="actividades_r"><span class="numero_v">4. </span>The next number in the list is 5. Since 5<sup>2</sup> &lt; 40, eliminate the multiples of 5. </p>
+<table cellpadding="2" cellspacing="0"  style="border:#eee thin solid; margin-left:9%; margin-top:20px; width:600px; font-weight:bold; color:#000; background-color:#fff;" class="gato">
+  <tr >
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">2 </td>
+<td style="color:#900; background-color:#eee;">3 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">5 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>7 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>11 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>13 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>17 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>19 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>23 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>29 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>31 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>37 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+<p>&nbsp;</p>
+<p class="actividades_r"><span class="numero_v">5. </span>The next number in the list is 7. Since 7<sup>2</sup> &gt; 40, the algorithm ends and the numbers that remain are prime. </p>
+<table cellpadding="2" cellspacing="0"  style="border:#eee thin solid; margin-left:9%; margin-top:20px; width:600px; font-weight:bold; color:#000; background-color:#fff;" class="gato">
+  <tr >
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">2 </td>
+<td style="color:#900; background-color:#eee;">3 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">5 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">7 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">11 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">13 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">17 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">19 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">23 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">29 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">31 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td style="color:#900; background-color:#eee;">37 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+<h3 class="r" style="margin-top:30px;">Table of prime numbers </h3>
+						<table cellpadding="2" cellspacing="0"  style="border:#eee thin solid; margin-left:9%; margin-top:20px; width:600px; font-weight:bold; color:#900; background-color:#eee;" class="gato">
+<tr >
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>2 </td>
+<td>3 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>5 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>7 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>11 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>13 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>17 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>19 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>23 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>29 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>31 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>37 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>41 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>43 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>47 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>53 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>59 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>61 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>67 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>71 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>73 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>79 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>83 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>89 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>97 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>101 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>103 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>107 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>109 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>113 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>127 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>131 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>137 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>139 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>149 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>151 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>157 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>163 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>167 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>173 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>179 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>181 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>191 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>193 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>197 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+<td>199 </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<br />	
+<br />
+	<div style="margin-left:1.5%;">
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div><br />
+</div>	 <!--id="cont"  -->
+				<div id="sub">
+					<ul>
+						<li class="ka" style="width:48px;">
+							<a href="dvisibility.html" title="Divisibility rules">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_i.gif" width="40" height="20" alt="Divisibility" /></a>
+						</li>
+						
+						<li class="ke" style="width:48px;">
+							<a href="#to" title="Subir"><img src="../../../www.vitutor.us/images/flechas/f_v_a.gif" alt="Subir" width="20" height="40" /></a>
+						</li>
+						
+						<li class="ki" style="margin-top:-75px; width:48px">
+							<a href="composite_number.html" title="Composite N.">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_d.gif" alt="Composite N." width="40" height="20" /></a>
+						</li>
+					</ul>
+				
+							
+				</div>
+					
+			</div> 		<!--id="content"  -->
+		
+		</div>				<!--id="wrapper"  --><div id="vin_s" style="margin-top:40px;">
+               <form action="http://www.google.es/" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="22" />
+                  <input type="submit" name="sa" value="Buscar" />
+                </div>
+              </form>
+              
+              <script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+              
+              
+<div style="margin-left:-1px;">
+
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+                <ul class="loso">
+			<li><span class="sitio">Site</span></li>
+            <li><a href="../../maths.html" title="Math">Math</a> </li>
+            <li><a href="../../formulas.html" title="Formulas">Formulas</a></li>
+            <li><a href="../../problems.html" title="Word Problems">Word Problems</a></li>
+            <li><a   href="../../worksheets.html" title="Worksheets">Worksheets</a> </li>
+            <li><a href="../../arithmetic.html" title="Arithmetic">Arithmetic</a></li>
+            <li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+            <li><a href="../../algeb.html" title="Algebra">Algebra</a></li>
+            <li><img src="../../images/lista.png" width="125" height="5" alt="Subject" /></li>
+            <li><a href="multiples.html" title="Multiples"><span>Multiples</span></a></li>
+            <li><a href="divisors.html" title="Divisors"><span>Divisors</span></a></li>	
+            <li><a href="dvisibility.html" title="Divisibility rules"><span>Divisibility</span></a></li>	
+            <li><a href="prime_numbers.html" title="Prime N." id="acto"><span>Prime Numbers</span></a></li>
+            <li><a href="composite_number.html" title="Composite N."><span>Composite Numbers</span></a></li>
+            <li><a href="greatest_common_divisor.html" title="Greatest common divisor"><span>G.C.D.</span></a></li>
+            <li><a href="euclidean_algorithm.html" title="Euclidean algorithm"><span>Euclidean algorithm</span></a></li>
+            <li><a href="least_common_multiple.html" title="Least common multiple"><span>L.C.M.</span></a></li>
+            <li><a  href="exercises_dvisibility.html" title="Exercises of divisibility">Exercises</a></li>
+        <li><a  href="problems_dvisibility.html" title="Word problems of gcd and lcm">Word problems</a></li>
+	</ul>
+
+			</div>  	<!--id="vin_s"  -->
+		
+			
+
+		
+				
+
+<div id="footer">
+			<img src="../../../www.vitutor.us/images/pie_c_2.gif" width="161" height="20" alt="Copyright" class="copy"/>
+           <a href="../../ad.html" title="Política de privacidad" style="margin-left:22.5%; position:relative; bottom:4px;"><span style="background-color:#fbf8f5;">Privacy Policy </span></a>
+           <a href="mailto:" class="correo" title="E-mail" style="background-color:#eee;">
+			<img src="../../../www.vitutor.us/images/pie_correo_4.gif" width="216" height="20" alt="E-mail" class="imagen" /></a>
+</div>  <!--id="footer"  -->
+
+</div>             <!--  id="container"   -->
+	
+</body>
+
+<!-- Mirrored from www.vitutor.com/arithmetic/divisibility/prime_numbers.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 11:35:15 GMT -->
+</html>

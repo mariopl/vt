@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/algebra/sistemas I/cramer.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:08:28 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Números reales, conceptos, definiciones, ejemplos prácticos, apuntes, 1º de Bachillerato, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, teleformación, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza." />
+<meta name="description" content="Regla de Cramer, método Cramer, sistema de Cramer ejemplos, ejercicios resueltos. 2º de Bachillerato."/>
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+     <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/ejCombinados.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+
+input.cResultPropuestoMultipleInputText{ margin-left:0.2em;}
+
+/*.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block;  
+	}
+.cContRes{
+	display:block; min-height:100px;
+	}*/
+
+input.cResultPropuestoInputText{ width:5em;
+	}
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+ 
+ 
+
+<title>Regla de Cramer - Vitutor</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+    <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>
+    </div><!--fin.idiom-->
+    
+
+<div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+  
+</header>
+<article>
+	<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+    <h1 class="tit-gris" id="to">Regla de Cramer</h1>
+    <nav id="menu-tema">
+        <ul class="nav">
+        <li><a href="#" title="Teoría de ">Teoría</a>
+            <ul>
+                <li><a href="#" title="Cramer" class="actual"><span>Regla de Cramer</span></a></li>
+                <li><a href="rouche.html" title="Teorema Rouché"><span>Teorema de Rouché</span></a></li>
+                <li><a href="homogeneos_2.html" title="Homogéneos_2"><span>Sistemas homogéneos</span></a></li>
+                <li><a href="discusion_2.html"  title="Discusión de sistemas con parámetros"><span>Discusión parámetros</span></a></li>
+                <li><a href="res_2.html" title="Resumen"><span>Resumen</span></a></li>
+                <li><a href="regla_cramer.html" title="Índice"><span>Índice</span></a></li>
+        </ul>
+        </li>
+        <li><a href="#" title="Ejercicios de ">Ejercicios</a>
+          <ul>
+				<li><a  href="sistemas_2_Actividades.html" title="Ejercicios 1">Ejercicios 1</a></li>
+				<li><a  href="sistemas_2_Evaluacion.html" title="Ejercicios 2">Ejercicios 2</a></li>
+                <li><a  href="c_e.html" title="Sistemas de ecuaciones resueltos por la regla de Cramer">Regla de Cramer</a></li>
+                <li><a  href="d_e.html" title="Ejercicios de discusión de sistemas por Rouché">Discusión sistemas</a></li>
+                <li><a  href="h_e.html" title="Ejercicios resueltos de sistemas homogéneos">Sistemas homogéneos</a></li>
+         </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    <section>
+    <div class="sombra-tit">
+      <h2 class="r">&nbsp;</h2></div>
+       <p class="a">La regla de Cramer se aplica para resolver sistemas de ecuaciones lineales  que cumplan las  siguientes condiciones:	</p>
+        <p class="b"><span class="sb">&nbsp;1&nbsp;</span> El número de ecuaciones es igual al número de incógnitas.</p>
+        <p class="b"><span class="sb">&nbsp;2&nbsp;</span> El determinante de la matriz de los coeficientes es distinto de cero.</p>
+        <p class="a">Tales sistemas son sistemas compatibles determinados y se denominan sistemas de Cramer.</p>
+        <p class="b"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/46.gif" width="330" height="111" alt="Sistema"  /></p>
+         <p class="a"> Sea &Delta; el determinante de la matriz de coeficientes.</p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/44a.gif" alt="Delta" width="285" height="87"  />						</p>
+        <p class="a">Todo sistema de Cramer tiene una sola solución (es decir, es un sistema compatible determinado) que viene dada por las siguientes expresiones:</p>
+        <p class="a">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_1.gif" alt="soluciones" width="508" height="42" />
+        </p>
+        <p class="a">
+          <em>&Delta;<sub>1</sub></em>, <em>&Delta;<sub>2</sub></em> , <em>&Delta;<sub>3</sub></em>, ... ,<em> &Delta;<sub>n</sub></em> son los determinantes que se obtiene al sustituir los coeficientes del 2&ordm; miembro (los términos independientes) en la 1&ordf; columna, en la 2&ordf; columna, en la 3&ordf; columna y en la enésima columna respectivamente.</p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/43.a_1.gif" alt="soluciones" width="237" height="134"  />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/43.a_2.gif" alt="soluciones" width="237" height="134" />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/43.a_3.gif" width="237" height="133" alt="soluciones"  />
+        </p>
+        <p class="b">...</p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/43.a_4.gif" width="245" height="136" alt="soluciones" />
+        </p>   
+  </section>
+  <section>
+    <div class="sombra-tit">
+      <h2 class="r">Ejemplo</h2></div>
+        <p><span class="sb">1</span></p>
+        <p class="av" style="margin-top:30px;"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/49.gif" alt="sistema" width="118" height="65" style="vertical-align:middle;"  /></p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_1.gif" alt="solución" width="351" height="65" />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_2.gif" alt="solución" width="360" height="65" />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_3.gif" alt="solución" width="277" height="35" />
+        </p>
+        <p><span class="sb">2</span></p>
+        <p class="ar"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/49_1.gif"  width="146" height="81" alt="SCI Cramer"></p>
+        <p class="b"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_1_2.gif" width="501" height="81" alt="SCI Cramer_1"></p>
+        <p class="b"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/SCDCramer_2.gif" width="514" height="22" alt="SCI Cramer_2"></p>
+        <p class="av">Como el sistema no es un sistema de Cramer, debemos transformarlo. </p>
+        <p class="ar"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/49_1_1.gif" width="134" height="81" alt="SCI Cramer_3"></p>
+        <p class="av">Como <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_1_4.gif" width="77" height="53" class="m" alt="SCI Cramer_3_1"> , podemos limitarnos a estudiar el sistema: </p>
+        <p class="ar"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/49_1_3.gif" width="257" height="77" alt="SCI Cramer_4"></p>
+        <p class="b">Estamos ante un sistema con el mismo número de ecuaciones que de incógnitas y con determinante de la matriz de coeficientes distinto de cero. Es decir, estamos ante un sistema de Cramer. </p>
+        <p class="b">Las soluciones de este sistema de Cramer, que vendrán dadas en función de λ serán las mismas que las del sistema original. </p>
+        <p class="b"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_1_3.gif" width="617" height="53" alt="SCI Cramer_6 "></p>
+        <p class="b"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_3_1.gif" width="394" height="49" alt="SCI Cramer_7"></p>
+     
+    </section>
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+
+   
+ <div class="contFlechas">
+    
+    <div class="flecha flecha-izq">
+    &nbsp;
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+
+    	<div class="set"><a href="numeros_reales.html" title="Índice de números reales"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+   		</div><!--fin.flecha-->
+    
+    	<div class="flecha flecha-der">
+        <a href="rouche.html" title="Página siguiente"><img  src="../../../www.vitutor.it/images/flecha-der.png" alt="Página siguiente" width="30" height="25" title="Siguiente"></a></div>
+    	</div><!-- fin div-contFlechas-->
+
+</article>
+
+
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+ 
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+    <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+          <li class="active"><a href="#" title="Cramer"><span>Regla de Cramer</span></a></li>
+          <li><a href="rouche.html" title="Teorema Rouché"><span>Teorema de Rouché</span></a></li>
+          <li><a href="homogeneos_2.html" title="Homogéneos_2"><span>Sistemas homogéneos</span></a></li>
+          <li><a href="discusion_2.html"  title="Discusión de sistemas con parámetros"><span>Discusión parámetros</span></a></li>
+          <li><a href="res_2.html" title="Resumen"><span>Resumen</span></a></li>
+          <li><a href="regla_cramer.html" title="Índice"><span>Índice</span></a></li>
+</ul>
+</nav><!-- fin menú-lateral-->
+<div class="sep-lateral">Ejercicios</div>
+  	<nav class="menu-lateral">
+  	<ul>
+          <li><a  href="sistemas_2_Actividades.html" title="Ejercicios 1">Ejercicios 1</a></li>
+          <li><a  href="sistemas_2_Evaluacion.html" title="Ejercicios 2">Ejercicios 2</a></li>
+          <li><a  href="c_e.html" title="Sistemas de ecuaciones resueltos por la regla de Cramer">Regla de Cramer</a></li>
+          <li><a  href="d_e.html" title="Ejercicios de discusión de sistemas por Rouché">Discusión sistemas</a></li>
+          <li><a  href="h_e.html" title="Ejercicios resueltos de sistemas homogéneos">Sistemas homogéneos</a></li>
+       
+    </ul>
+</nav><!-- fin menú-lateral-->
+    
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index-2.html" title="Inicio">Inicio</a></li>
+      <li><a href="#" title="Álgebra">Álgebra lineal</a>
+      	<ul>
+          <li><a href="sitemas_gauss.html" title="Sistemas Gauss">Sistemas Gauss</a></li>
+          <li><a href="../matrices/las_matrices.html" title="Matrices">Matrices</a></li>
+          <li><a href="../determinantes/los_determinantes.html" title="Determinantes ">Determinantes </a></li>
+          <li><a href="regla_cramer.html" title="Regla de Cramer ">Regla de Cramer </a></li>
+          <li><a href="../pl/programacion_lineal.html" title="Programación lineal">Programación lineal</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="Bachillerato">Bachillerato</a>
+            <ul>
+                <li><a href="../../bac_2.html.html" title="2º Bachillerato tecnológico">2º Bac tecnológico</a></li>
+                <li><a href="../../bac_2cs.html" title="2º Bachillerato CS">2º Bac CS</a></li>
+            </ul>			
+      </li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+				<li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            	<li><a href="../../ejercicios/ejercicios_alineal.html" title="Ejercicios de Álgebra lineal">Álgebra lineal</a></li>
+            	<li><a href="../../ejercicios/ejercicios_bachillerato2.html" title="Ejercicios y problemas 2º Bachillerato tecnológico">2º Bac </a></li>
+            	<li><a href="../../ejercicios/ejercicios_bachillerato2cs.html" title="Ejercicios y problemas 2ºCS">2º Bac CS</a></li>
+             </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->   
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</body>
+
+<!-- Mirrored from www.vitutor.com/algebra/sistemas I/cramer.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:08:33 GMT -->
+</html>

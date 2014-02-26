@@ -1,0 +1,969 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/estadistica/inferencia/i_e.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:35:56 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Números reales, examen, examen resuelto, examenes resueltos, ejercicios resueltos, problemas resueltos, 4º de ESO, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza."  />
+<meta name="description" content="Problemas resueltos de inferencia estadística, contrastes de hipótesis, Bachillerato." />
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+    <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/hojaEjercicios.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+/*
+.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block; 
+	}
+
+.contenidoSoluciones1 {display:block;}
+*/
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/scriptTabs.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+  <title>Problemas resueltos de inferencia estadística - Vitutor</title>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+   <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>    </div><!--fin.idiom--><div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+  
+</header>
+<article>
+<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+ <h1 class="tit-gris" id="to">Problemas  de inferencia estadística </h1>
+    <nav id="menu-tema">
+        <ul class="nav">
+        <li><a href="#" title="Teoría de ">Teoría</a>
+            <ul>
+                <li><a href="inferenciaContenidos.html" title="Muestreo"><span>Muestreo</span></a></li>	
+                <li><a href="intervalos_1.html" title=" Intervalos característicos"><span>Intervalos</span></a></li>	 
+                <li><a href="intervalos.html" title="Teorema central del límite"><span>Teorema</span></a></li>
+                <li><a href="estimaciones.html" title="Estimación"><span>Estimación</span></a></li>
+                <li><a href="estimaciones_1.html" title=" Estimación de la media de una población"><span>Estimación media</span></a></li>
+                <li><a href="estimaciones_2.html" title="Estimación de una proporción"><span>Estimación proporción</span></a></li>
+                <li><a href="contrastes.html" title="Contrastes de hipótesis"><span>Contrastes hipótesis</span></a></li>
+                <li><a href="contrastes_1.html" title="Contraste Bilateral"><span>Contraste Bilateral</span></a></li>
+                <li><a href="contrastes_2.html" title="Contraste unilateral"><span>Contraste unilateral</span></a></li>
+                <li><a href="contrastes_3.html" title="Errores"><span>Errores</span></a></li>
+                <li><a href="res.html" title="Resumen"><span>Resumen</span></a></li>
+                <li><a href="estadistica_inferencial.html" title="Índice"><span>Índice</span></a></li>
+					
+        </ul>
+        </li>
+        <li><a href="#" title="Ejercicios de ">Ejercicios</a>
+          <ul>
+			  <li><a href="inferenciaActividades.html" title="Ejercicios 1">Ejercicios I</a></li>
+              <li><a href="inferenciaEvaluacion.html"  title="Ejercicios 2">Ejercicios II</a></li>
+              <li><a href="c_e.html" title="Ejercicios contrastes de hipótesis">Contrastes hipótesis</a></li>
+              <li><a href="#"  title="Problemas" class="actual">Problemas</a></li>
+             </ul>
+
+        </li>
+      </ul>
+    </nav>
+
+
+  <div id="contenedor-ej">
+  	  <ul class="menuTab">
+  	    <li id="ejercicios" class="activa">Ejercicios</li>
+  	    <li id="soluciones">Soluciones</li>
+      </ul>
+    <div class="marcoContent">
+  	    <div class="content ejercicios">
+        
+        <div class="bloque clear">
+        <p><span class="num-ej">1</span>En una fábrica que consta de  600 trabajadores queremos tomar una muestra de 20. Sabemos que hay 200 trabajadores en la sección A, 150 en la B, 150 en la C y 100 en la D.</p>
+       
+      </div><!-- fin div.bloque-->
+      
+      
+      <div class="bloque clear">
+        <p><span class="num-ej">2</span>En cierto barrio se quiere hacer un estudio para conocer mejor el tipo de actividades de ocio que gustan más a sus habitantes. Para ello van a ser encuestados 100 individuos elegidos al azar.</p>
+         <div class="pop-ej">
+        <p><span class="num-subej">1</span>Explicar qué procedimiento de selección sería más adecuado utilizar: muestreo con o sin reposición. ¿Por qué?</p>
+        <p><span class="num-subej">2</span>Como los gustos cambian con la edad y se sabe que en el barrio viven
+                2.500 niños, 7.000 adultos y 500 ancianos, posteriormente se decide elegir la muestra anterior utilizando un muestreo estratificado. Determinar el tamaño muestral correspondiente a cada estrato.</p>
+		</div>
+      </div><!-- fin div.bloque-->
+      
+      <div class="bloque clear">
+        <p><span class="num-ej">3</span>En cierta cadena de centros comerciales trabajan 150 personas en el departamento de personal, 450 en el departamento de ventas, 200 en el departamento de contabilidad y 100 en el departamento de atención al cliente. Con objeto de realizar una encuesta laboral, se quiere seleccionar una muestra de 180 trabajadores.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>¿Qué tipo de muestreo deberíamos utilizar para la selección de la muestra si queremos que incluya a trabajadores de los cuatro departamentos mencionados?</p>
+        <p><span class="num-subej">2</span>¿Qué número de trabajadores tendríamos que seleccionar en cada departamento atendiendo a un criterio de proporcionalidad?</p>
+		</div>
+      </div><!-- fin div.bloque-->
+      
+      
+       <div class="bloque clear">
+        <p><span class="num-ej">4</span>Sea la población de elementos: <strong>{22,24, 26}</strong>.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Escriba todas las muestras posibles de tamaño dos, escogidas mediante muestreo aleatorio simple.</p>
+        <p><span class="num-subej">2</span>Calcule la varianza de la población.</p>
+        <p><span class="num-subej">3</span>Calcule la varianza de las medias muestrales.</p>
+		</div>
+      </div><!-- fin div.bloque-->
+      
+       <div class="bloque clear">
+        <p><span class="num-ej">5</span>Las bolsas de sal envasadas por una máquina tienen μ = 500 g y σ =  35 g. Las bolsas se empaquetaron en cajas de 100 unidades.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Calcular la probabilidad de que la media de los pesos de las bolsas de un paquete sea menor que 495 g.</p>
+        <p><span class="num-subej">2</span>Calcular la probabilidad de que una caja 100 de bolsas pese más de 51 kg.</p>
+		</div>
+      </div><!-- fin div.bloque-->
+       <div class="bloque clear">
+        <p><span class="num-ej">6</span>El tiempo que tardan las cajeras de un supermercado en cobrar a los clientes sigue una ley normal con media desconocida y desviación típica 0,5 minutos. Para una muestra aleatoria de 25 clientes se obtuvo un tiempo medio de 5,2 minutos.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Calcula el intervalo de confianza al nivel del 95% para el tiempo medio que se tarda en cobrar a los clientes.</p>
+        <p><span class="num-subej">2</span>Indica el tamaño muestral necesario para estimar dicho tiempo medio con un el error de ± 0,5 minutos y un nivel de confianza del 95%.</p>
+		</div>
+      </div><!-- fin div.bloque-->
+       <div class="bloque clear">
+        <p><span class="num-ej">7</span>En una fábrica de componentes electrónicos, la proporción de componentes finales defectuosos era del 20%. Tras una serie de operaciones e inversiones destinadas a mejorar el rendimiento se analizó una muestra aleatoria de 500 componentes, encontrándose que 90 de ellos eran defectuosos. ¿Qué nivel de confianza debe adoptarse para aceptar que el rendimiento no ha sufrido variaciones?</p>
+       
+      </div><!-- fin div.bloque-->
+       <div class="bloque clear">
+        <p><span class="num-ej">8</span>La variable altura de las alumnas que estudian en una escuela de idiomas sigue una distribución normal de media 1,62 m y la desviación típica 0,12 m. ¿Cuál es la probabilidad de que la media de una muestra aleatoria de 100 alumnas sea mayor que 1.60 m? </p>
+        
+      </div><!-- fin div.bloque-->
+       <div class="bloque clear">
+        <p><span class="num-ej">9</span>Se ha tomado una muestra de los precios de un mismo producto alimenticio en 16 comercios, elegidos al azar en un barrio de una ciudad, y se han encontrado los siguientes precios:</p>
+        <p class="a">95, 108, 97, 112, 99, 106, 105, 100, 99, 98, 104, 110, 107, 111, 103, 110.</p>
+        <p class="a">Suponiendo que los precios de este producto se distribuyen según una ley normal de varianza 25 y media desconocida:</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>¿Cuál es la distribución de la media muestral?</p>
+        <p><span class="num-subej">2</span>Determine el intervalo de confianza, al 95%, para la media poblacional.</p>
+		</div>
+      </div><!-- fin div.bloque-->
+       <div class="bloque clear">
+        <p><span class="num-ej">10</span>La media de las estaturas de una muestra aleatoria de 400 personas de una ciudad es 1,75 m. Se sabe que la estatura de las personas de esa ciudad es una variable aleatoria que sigue una distribución normal con varianza σ<sup>2</sup> = 0,16 m<sup>2</sup>.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Construye un intervalo, de un 95% de confianza, para la media de las estaturas de la población. </p>
+        <p><span class="num-subej">2</span>¿Cuál sería el mínimo tamaño muestral necesario para que pueda decirse que la verdadera media de las estaturas está a menos de 2 cm de la media muestral, con un nivel de confianza del 90%?</p>
+		</div>
+      </div><!-- fin div.bloque-->
+       <div class="bloque clear">
+        <p><span class="num-ej">11</span>Las ventas mensuales de una tienda de electrodomésticos se distribuyen según una ley normal, con desviación típica 900 €. En un estudio estadístico de las ventas realizadas en los últimos nueve meses, se ha encontrado un intervalo de confianza para la media mensual de las ventas, cuyos extremos son 4 663 € y 5 839 €.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>¿Cuál ha sido la media de las ventas en estos nueve meses?</p>
+        <p><span class="num-subej">2</span>¿Cuál es el nivel de confianza para este intervalo?</p>
+		</div>
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">12</span>Se desea estimar la proporción, p, de individuos daltónicos de una población a través del porcentaje observado en una muestra aleatoria de individuos, de tamaño n. </p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Si el porcentaje de individuos daltónicos en la muestra es igual al 30%, calcula el valor de n para que, con un nivel de confianza de 0,95, el error cometido en la estimación sea inferior al 3,1%.</p>
+        <p><span class="num-subej">2</span>Si el tamaño de la muestra es de 64 individuos, y el porcentaje de individuos daltónicos en la muestra es del 35%, determina, usando un nivel de significación del 1%, el correspondiente intervalo de confianza para la proporción de daltónicos de la población.</p>
+		</div>
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">13</span>En una población una variable aleatoria sigue una ley normal de media desconocida y desviación típica 2.</p>
+       <div class="pop-ej">
+        <p><span class="num-subej">1</span>Observada una muestra de tamaño 400, tomada al azar, se ha obtenido una media muestra al igual a 50. ¿Calcule un intervalo, con el 97 % de confianza, para la media de la población.</p>
+        <p><span class="num-subej">2</span>Con el mismo nivel de confianza, ¿qué tamaño mínimo debe tener la muestra para qué la amplitud del intervalo que se obtenga sea, como máximo, 1? </p>
+		</div>
+      </div><!-- fin div.bloque-->
+     
+      <div class="bloque clear">
+        <p><span class="num-ej">14</span>La cantidad de hemoglobina en sangre del hombre sigue una ley normal con una desviación típica de 2g/dl.</p>
+        <p class="a">Calcule el nivel de confianza de una muestra de 12 extracciones de sangre que indique que la media poblacional de hemoglobina en sangre está entre 13 y 15 g/dl. </p>
+        
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">15</span>Se sabe que la desviación típica de las notas de cierto examen de Matemáticas es 2,4. Para una muestra de 36 estudiantes se obtuvo una nota media de 5,6. ¿Sirven estos datos para confirmar la hipótesis de que la nota media del examen fue de 6, con un nivel de confianza del 95%?</p>
+       
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">16</span>Un sociólogo ha pronosticado, que en una determinada ciudad, el nivel  de abstención en las próximas elecciones será del 40% como mínimo. Se  elige al azar una muestra aleatoria de 200 individuos, con derecho a  voto, 75 de los cuales estarían dispuestos a votar. Determinar con un  nivel de significación del 1%, si se puede admitir el pronóstico.</p>
+        
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">17</span>Un informe indica que el precio medio del billete de avión entre Canarias y Madrid es, como máximo, de 120 € con una desviación típica de 40 €. Se toma una muestra de 100 viajeros y se obtiene que la media de los precios de sus billetes es de 128 €.&nbsp;</p>
+                <p class="a">¿Se puede aceptar, con un nivel de significación igual a 0,1, la afirmación de partida?</p>
+       
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">18</span>Una marca de nueces afirma que, como máximo, el 6% de las nueces están vacías. Se eligieron 300 nueces al azar y se detectaron 21 vacías.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Con un nivel de significación del 1%, ¿se puede aceptar la afirmación de la marca?</p>
+        <p><span class="num-subej">2</span>Si se mantiene el porcentaje muestral de nueces que están vacías y 1-α = 0.95, ¿qué tamaño muestral se necesitaría para estimar la proporción de nueces con un error menor del 1% por ciento?</p>
+		</div>
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">19</span>La duración de la bombillas de 100 W que fabrica una empresa sigue una distribución normal con una desviación típica de 120 horas de duración. Su vida media está garantizada durante un mínimo de 800 horas. Se escoge al azar una muestra de 50 bombillas de un lote y, después de comprobarlas, se obtiene una vida media de 750 horas. Con un nivel de significación de 0,01, ¿habría que rechazar el lote por no cumplir la garantía? </p>
+        
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">20</span>Un fabricante de lámparas eléctricas está ensayando un nuevo método de producción que se considerará aceptable si las lámparas  obtenidas por este método dan lugar a una población normal de duración media 2400 horas, con una desviación típica igual a 300. Se toma una muestra de 100 lámparas producidas por este método y esta muestra tiene una duración media de 2320 horas. ¿Se puede aceptarr la hipótesis de validez del nuevo proceso de fabricación con un riesgo igual o menor al 5%?</p>
+        
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">21</span>El control de calidad una fábrica de pilas y baterías sospecha que hubo defectos en la producción de un modelo de batería para teléfonos móviles, bajando su tiempo de duración. Hasta ahora el tiempo de duración en conversación seguía una distribución normal con media 300 minutos y desviación típica 30 minutos. Sin embargo, en la inspección del último lote producido, antes de enviarlo al mercado, se obtuvo que de una muestra de 60 baterías el tiempo medio de duración en conversación fue de 290 minutos. Suponiendo que ese tiempo sigue siendo Normal con la misma desviación típica:
+                </p>
+                <p class="a"> ¿Se puede concluir que las sospechas del control de calidad son ciertas a un nivel de significación del 2%?</p>
+        
+      </div><!-- fin div.bloque-->
+      <div class="bloque clear">
+        <p><span class="num-ej">22</span>Se cree que el nivel medio de protombina en una población normal es de 20 mg/100 ml de plasma con una desviación típica de 4 miligramos/100 ml. Para comprobarlo, se toma una muestra de 40 individuos en los que la media es de 18.5 mg/100 ml. ¿Se puede aceptar la hipótesis, con un nivel de significación del 5%?</p>
+        
+      </div><!-- fin div.bloque-->
+
+        <div class="cFlechaSol"><span style="vertical-align:top;">Soluciones</span> <img alt=">>>" src="http://www.vitutor.it/images/flecha-ej-2.gif" width="20" height="20"/>
+        </div><!-- fin div.flechaSol-->
+        
+        </div><!--fin div.content-ejercicios-->
+        
+  	    <div class="content soluciones">
+  	      <div class="contenedorSoluciones getFoco">
+  	        <ul class="tabSol">
+  	          <li id="tabSol1" class="activa">1</li>
+  	          <li id="tabSol2">2</li>
+  	          <li id="tabSol3">3</li>
+  	          <li id="tabSol4">4</li>
+  	          <li id="tabSol5">5</li>
+              <li id="tabSol6">6</li>
+  	          <li id="tabSol7">7</li>
+  	          <li id="tabSol8">8</li>
+  	          <li id="tabSol9">9</li>
+              <li id="tabSol10">10</li>
+  	          <li id="tabSol11">11</li>
+  	          <li id="tabSol12">12</li>
+  	          <li id="tabSol13">13</li>
+              <li id="tabSol14">14</li>
+  	          <li id="tabSol15">15</li>
+  	          <li id="tabSol16">16</li>
+  	          <li id="tabSol17">17</li>
+              <li id="tabSol18">18</li>
+              <li id="tabSol19">19</li>
+              <li id="tabSol20">20</li>
+              <li id="tabSol21">21</li>
+              <li id="tabSol22">22</li>
+            </ul>
+          </div><!-- fin div contenedorSoluciones-->
+          
+ 	<div id="contenidoSol1" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 1 resuelto</h3>
+  		<p>En una fábrica que consta de  600 trabajadores queremos tomar una muestra de 20. Sabemos que hay 200 trabajadores en la sección A, 150 en la B, 150 en la C y 100 en la D.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_1.gif" alt="solución" width="400" height="42"  /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_2.gif" alt="solución" width="413" height="42"  /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_3.gif" alt="solución" width="413" height="42"  /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_4.gif" alt="solución" width="402" height="42"  /></p>
+  </div><!--fin.contenidoSol1-->
+  
+  
+  <div id="contenidoSol2" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 2 resuelto</h3>
+  		<p>En cierto barrio se quiere hacer un estudio para conocer mejor el tipo de actividades de ocio que gustan más a sus habitantes. Para ello van a ser encuestados 100 individuos elegidos al azar.</p>
+      
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Explicar qué procedimiento de selección sería más adecuado utilizar: muestreo con o sin reposición. ¿Por qué? </p>
+        <p class="b">
+Todas las fórmulas que hemos estudiado de teoría del muestreo y de inferencia estadística presuponen que las poblaciones son infinitas o que, si no lo son, el muestreo aleatorio se realiza con reposición.	</p>
+        <p><span class="num-subej">2</span> Como los gustos cambian con la edad y se sabe que en el barrio viven
+2.500 niños, 7.000 adultos y 500 ancianos, posteriormente se decide elegir la muestra anterior utilizando un muestreo estratificado. Determinar el tamaño muestral correspondiente a cada estrato.</p>
+       <p class="b">Para efectuar un muestreo aleatorio estratificado, será necesario que la
+muestra refleje fielmente los estratos existentes en la población; deben considerarse
+los estratos formados por: niños, adultos y ancianos.					  </p>
+
+        <p class="b">
+        El tamaño muestral de cada estrato deberá ser proporcional a la presencia del mismo en la población original:</p>
+        <p class="b"> Población total: 2500 + 7000 + 500 = 10 000.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_5.gif" alt="Solución" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_6.gif" alt="Solución" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_7.gif" alt="Solución" /></p>
+        
+        </div><!--fin.popej--> 
+  </div><!--fin.contenidoSol2-->
+  
+  
+  <div id="contenidoSol3" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 3 resuelto</h3>
+  		<p> En cierta cadena de centros comerciales trabajan 150 personas en el departamento de personal, 450 en el departamento de ventas, 200 en el departamento de contabilidad y 100 departamento de atención al cliente. Con objeto de realizar una encuesta laboral, se quiere seleccionar una muestra de 180 trabajadores.</p>
+        
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> ¿Qué tipo de muestreo deberíamos utilizar para la selección de la muestra si queremos que incluya a trabajadores de los cuatro departamentos mencionados?</p>
+        <p>Utilizaremos un muestreo aleatorio estratificado, ya que queremos que haya representantes de cada uno de los departamentos.</p>
+        <p><span class="num-subej">2</span> ¿Qué número de trabajadores tendríamos que seleccionar en cada departamento atendiendo a un criterio de proporcionalidad?
+</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_8.gif" alt="solución"  />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_9.gif" alt="solución"  />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_10.gif" alt="solución"  />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_11.gif" alt="solución"  />
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_12.gif" alt="solución"  />
+        </p>
+            </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol3-->
+  
+  
+  <div id="contenidoSol4" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 4 resuelto</h3>
+  		<p>Sea la población de elementos: <strong>{22,24, 26}</strong>.</p>
+        
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span>Escriba todas las muestras posibles de tamaño dos, escogidas mediante muestreo aleatorio simple.</p>
+        <p class="b">
+M<sub>1</sub> = {22, 24},&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>M<sub>1</sub></span> = {22, 26},&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>M<sub>1</sub></span> = {24, 26}</p>
+        <p><span class="num-subej">2</span>Calcule la varianza de la población.</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_13.gif" alt="varianza" width="176" height="42" />					  						
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_14.gif" alt="varianza" width="384" height="42" />					  						
+        </p>
+        <p><span class="num-subej">3</span>Calcule la varianza de las medias muestrales.</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_15.gif" alt="varianza" width="365" height="26" />						
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_16.gif" alt="varianza" width="193" height="42" />						
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_17.gif" alt="varianza" width="389" height="42" />						
+        </p>
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol4-->
+  
+  
+  <div id="contenidoSol5" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 5 resuelto</h3>
+  		<p>Las bolsas de sal envasadas por una máquina tienen μ = 500 g y σ =  35 g. Las bolsas se empaquetaron en cajas de 100 unidades.</p>
+        
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Calcular la probabilidad de que la media de los pesos de las bolsas de un paquete sea menor que 495 g.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_18.gif" alt=" solución" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_19.gif" alt=" solución" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_20.gif" alt=" solución" /></p>
+        <p><span class="num-subej">2</span>Calcular la probabilidad de que una caja 100 de bolsas pese más de 51 kg.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_21.gif" alt=" solución" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_22.gif" alt=" solución" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_23.gif" alt=" solución" /></p>
+        
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol5-->
+   <div id="contenidoSol6" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 6 resuelto</h3>
+  		<p>El tiempo que tardan las cajeras de un supermercado en cobrar a los clientes sigue una ley normal con media desconocida y desviación típica 0,5 minutos. Para una muestra aleatoria de 25 clientes se obtuvo un tiempo medio de 5,2 minutos.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Calcula el intervalo de confianza al nivel del 95% para el tiempo medio que se tarda en cobrar a los clientes.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/3.png" alt="curva" width="350" height="140"  style="margin-left:10.5%;" /></p>
+		<p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_24.gif" alt="intervalo" width="444" height="48" /> </p>
+        <p><span class="num-subej">2</span>Indica el tamaño muestral necesario para estimar dicho tiempo medio con un el error de ± 0,5 minutos y un nivel de confianza del 95%.</p>
+       <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_25.gif" alt="tamaño" width="413" height="45"  /></p>
+		<p class="b"><span class="sol" style="margin-left:7.5%;">n ≥ 4 </span></p>
+
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol6-->
+  <div id="contenidoSol7" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 7 resuelto</h3>
+  		<p>En una fábrica de componentes electrónicos, la proporción de componentes finales defectuosos era del 20%. Tras una serie de operaciones e inversiones destinadas a mejorar el rendimiento se analizó una muestra aleatoria de 500 componentes, encontrándose que 90 de ellos eran defectuosos. ¿Qué nivel de confianza debe adoptarse para aceptar que el rendimiento no ha sufrido variaciones?</p>
+        <p class="b">p = 0.2 &nbsp;&nbsp;&nbsp;&nbsp;q = 1 - p =0.8 &nbsp;&nbsp;&nbsp;p'= 90/ 500 = 0.18</p>
+        <p class="b">E = 0.2 - 0.18 = 0.02</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/35.gif" alt="error" width="292" height="40" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/4.png" alt="curva" width="350" height="138" /></p>
+        <p class="b"><strong>P</strong> (1 - z<sub>α/2</sub> &lt;1.12) = 0.86861 - 0.8686 = 0.1314</p>
+        <p class="b">0.8686 - 0.1314 = 0.737</p>
+        <p class="b"><span class="sol">Nivel de confianza: 73.72%</span> </p>
+
+        
+  </div><!--fin.contenidoSol7-->
+  <div id="contenidoSol8" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 8 resuelto</h3>
+  		<p>La variable altura de las alumnas que estudian en una escuela de idiomas sigue una distribución normal de media 1,62 m y la desviación típica 0,12 m. ¿Cuál es la probabilidad de que la media de una muestra aleatoria de 100 alumnas sea mayor que 1.60 m?</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/40_1.gif" alt="probabilidad" />						
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/40_2.gif" alt="probabilidad" />						
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/40_3.gif" alt="probabilidad" />						
+        </p>
+  </div><!--fin.contenidoSol8-->
+  <div id="contenidoSol9" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 9 resuelto</h3>
+  		<p>Se ha tomado una muestra de los precios de un mismo producto alimenticio en 16 comercios, elegidos al azar en un barrio de una ciudad, y se han encontrado los siguientes precios:</p>
+        <p class="a">95, 108, 97, 112, 99, 106, 105, 100, 99, 98, 104, 110, 107, 111, 103, 110.	</p>
+		<p class="a">Suponiendo que los precios de este producto se distribuyen según una ley normal de varianza 25 y media desconocida:	</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> ¿Cuál es la distribución de la media muestral?</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_26.gif" alt="media" style="margin-left:-30px;" width="560" height="42"  /></p>
+		<p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/1_27.gif" alt="media"  /></p>
+        <p><span class="num-subej">2</span>Determine el intervalo de confianza, al 95%, para la media poblacional.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/39.gif" alt="distribución" width="243" height="41" /></p>
+        <p class="b">95%&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>z<sub>α/2 </sub> =1.96 </span></p>
+        <p class="b">(104 - 1.96 · 1. 25,&nbsp;&nbsp;104 + 1.9 · 1.25) = <span class="sol">(101.55; 106.45) </span></p>
+
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol9-->
+  <div id="contenidoSol10" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 10 resuelto</h3>
+  		<p>La media de las estaturas de una muestra aleatoria de 400 personas de una ciudad es 1,75 m. Se sabe que la estatura de las personas de esa ciudad es una variable aleatoria que sigue una distribución normal con varianza σ<sup>2</sup> = 0,16 m<sup>2</sup>.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Construye un intervalo, de un 95% de confianza, para la media de las estaturas de la población.</p>
+        <p class="b">
+<strong>n=400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:overline">x </span>=1.75&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; σ=0.4</strong> </p>
+		<p class="b">
+1- α=0.95&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>z<sub> α/2</sub>=1.96</strong> </p>
+<p class="b">
+<strong>(1.75 ± 1.96 · 0.4/20 )&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span>→</span> &nbsp;&nbsp;<span class="sol">(1.7108,1.7892)</span>						</p>
+        <p><span class="num-subej">2</span>¿Cuál sería el mínimo tamaño muestral necesario para que pueda decirse que la verdadera media de las estaturas está a menos de 2 cm de la media muestral, con un nivel de confianza del 90%?</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/15_1.gif" alt="solución" width="290" height="47"  /></p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/15_2.gif" alt="solución" width="284" height="22"  /></p>
+        <p class="b"><span class="sol">La muestra debe tener al menos 1083 personas.</span></p>
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol10-->
+  <div id="contenidoSol11" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 11 resuelto</h3>
+  		<p>Las ventas mensuales de una tienda de electrodomésticos se distribuyen según una ley normal, con desviación típica 900 €. En un estudio estadístico de las ventas realizadas en los últimos nueve meses, se ha encontrado un intervalo de confianza para la media mensual de las ventas, cuyos extremos son 4 663 € y 5 839 €.</p>
+        
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> ¿Cuál ha sido la media de las ventas en estos nueve meses?</p>
+        <p class="b">n = 9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:overline">&nbsp;x </span>= (4663 + 5839) / 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span  class="sol"><span style="text-decoration:overline">&nbsp;x </span>=5251</span></p>
+        <p><span class="num-subej">2</span>¿Cuál es el nivel de confianza para este intervalo?</p>
+       <p class="b">E= ( 5839  - 4663) / 2 = 588</p>
+        <p class="b">588 = <span class="ejer">z<sub> α/2</sub></span> · 900 / 3  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ejer">z<sub> α/2</sub></span> = 1.96				</p>
+        <p class="b"><span class="sol">1-α = 0.95&nbsp;&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;&nbsp;95%</span></p>
+
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol11-->
+  <div id="contenidoSol12" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 12 resuelto</h3>
+  		<p>Se desea estimar la proporción, p, de individuos daltónicos de una población a través del porcentaje observado en una muestra aleatoria de individuos, de tamaño n.</p>
+        
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Si el porcentaje de individuos daltónicos en la muestra es igual al 30%, calcula el valor de n para que, con un nivel de confianza de 0,95, el error cometido en la estimación sea inferior al 3,1%</p>
+        <p class="b">1- α=0.95&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>z<sub> α/2</sub>=1.96</span>						</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/16.gif" width="306" height="45" alt="solución" /></p>
+        <p class="b"><span class="sol"> Al menos 840 individuos.</span></p>
+        <p><span class="num-subej">2</span>Si el tamaño de la muestra es de 64 individuos, y el porcentaje de individuos daltónicos en la muestra es del 35%, determina, usando un nivel de significación del 1%, el correspondiente intervalo de confianza para la proporción de daltónicos de la población.</p>
+        <p class="b">
+α=0.01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>1- α=0.99</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>z<sub> α/2</sub>=2.575</span>	</p>
+		<p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/17.gif" alt="solución" width="404" height="52"  /></p>
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol12-->
+  <div id="contenidoSol13" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 13 resuelto</h3>
+  		<p>En una población una variable aleatoria sigue una ley normal de media desconocida y desviación típica 2.</p>
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Observada una muestra de tamaño 400, tomada al azar, se ha obtenido una media muestra al igual a 50. ¿Calcule un intervalo, con el 97 % de confianza, para la media de la población.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/2.png" alt="curva" width="350" height="142" />	</p>
+		<p class="b" style="margin-top:30px;"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/31_1.gif" alt="Intervalo"  /></p>
+        <p><span class="num-subej">2</span>Con el mismo nivel de confianza, ¿qué tamaño mínimo debe tener la muestra para qué la amplitud del intervalo que se obtenga sea, como máximo, 1?</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/32.gif" alt="tamaño" width="329" height="38" /></p>
+		<p class="b"><span class="sol">n ≥ 76 </span></p>
+        </div><!--fin.popej-->    
+          
+  </div><!--fin.contenidoSol13-->
+  <div id="contenidoSol14" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 14 resuelto</h3>
+  		<p>La cantidad de hemoglobina en sangre del hombre sigue una ley normal con una desviación típica de 2g/dl.</p>
+        <p class="a">Calcule el nivel de confianza de una muestra de 12 extracciones de sangre que indique que la media poblacional de hemoglobina en sangre está entre 13 y 15 g/dl. </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/7.png" alt="curva" width="350" height="138" />	</p>
+        <p class="b" style="margin-top:30px;"> <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/41_1.gif" alt="nivel de confianza" width="313" height="41" /> </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/41_2.gif" alt="nivel de confianza" width="372" height="23" /></p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/41_3.gif" alt="nivel de confianza" width="317" height="18" /></p>
+  </div><!--fin.contenidoSol14-->
+  <div id="contenidoSol15" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 15 resuelto</h3>
+  		<p>Se sabe que la desviación típica de las notas de cierto examen de Matemáticas es 2,4. Para una muestra de 36 estudiantes se obtuvo una nota media de 5,6. ¿Sirven estos datos para confirmar la hipótesis de que la nota media del examen fue de 6, con un nivel de confianza del 95%?</p>
+        <p class="a"><span class="nr">1.</span> Enunciamos las hip&oacute;tesis nula y alternativa:</p>
+        <p class="b"><strong>H<sub>0</sub> : &mu; = 6 </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La nota media no ha variado.</p>
+        <p class="b"> <strong>H<sub>1</sub> : &mu; &ne; 6 </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;La nota media  ha variado.</span></p>
+        <p class="a"><span class="nr">2.</span> Zona de aceptaci&oacute;n </p>
+        <p class="b">Para <strong>&alpha; = 0.05</strong>, le corresponde un valor cr&iacute;tico: <strong>z<sub>&alpha;/2</sub> = 1.96</strong>.</p>
+        <p class="b">Determinamos el intervalo de confianza para la media:</p>
+        <p class="b"><span class="b" style="margin-left:7.5%;"><strong> (6-1,96 ·  0,4 ; 6+1,96 ·  0,4) =            (5,22 ; 6,78)</strong></span></p>
+        <p class="a"><span class="nr">3.</span> Verificaci&oacute;n. </p>
+        <p class="b"> Valor obtenido de la media de la muestra:<strong> <span class="sol">5,6 </span></strong>.</p>
+        <p class="a"><span class="nr">4.</span>  Decisi&oacute;n</p>
+        <p class="b"><span class="sol">Aceptamos  la hip&oacute;tesis nula H<sub>0</sub></span>,  con un nivel de significaci&oacute;n del 5%.</p>
+       
+        
+        
+  </div><!--fin.contenidoSol15-->
+  <div id="contenidoSol16" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 16 resuelto</h3>
+  		<p>Un sociólogo ha pronosticado, que en una determinada ciudad, el nivel de abstención en las próximas elecciones será del 40% como mínimo. Se elige al azar una muestra aleatoria de 200 individuos, con derecho a voto, 75 de los cuales estarían dispuestos a votar. Determinar con un nivel de significación del 1%, si se puede admitir el pronóstico.</p>
+        <p class="a"><span class="nr">1.</span> Enunciamos las hip&oacute;tesis nula y alternativa:</p>
+        <p class="b"><strong>H<sub>0</sub> : &mu; ≥ 0.40 </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La abstención será como mínimo del 40%.</p>
+        <p class="b"> <strong>H<sub>1</sub> : &mu; &lt;  0.40</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;La abstención será como máximo del 40%; </span></p>
+        <p class="a"><span class="nr">2.</span> Zona de aceptaci&oacute;n </p>
+        <p class="b" >Para <strong>&alpha; = 0.01</strong>, le corresponde un valor cr&iacute;tico: <strong>z<sub>&alpha;</sub> = 2.33</strong>.</p>
+        <p class="b" >Determinamos el intervalo de confianza para la media:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/28.gif" alt="Intervalo de confianza" style="margin:20px 0 0 9%;" /></p>
+        <p class="a"><span class="nr">3.</span>Verificaci&oacute;n. </p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/29.gif" alt="Proporción de la muestra"   width="123" height="36" /></p>
+        <p class="a"><span class="nr">4.</span>Decisi&oacute;n</p>
+        <p class="b"><span class="sol"><strong>Aceptamos  la hip&oacute;tesis nula <span class="a">H<sub>0</sub></span></strong></span>. Podemos afirmar, con un nivel de significaci&oacute;n del 1%, que la <span class="a">&nbsp;La abstención será como mínimo del 40%.</span>								 </p>
+
+          
+  </div><!--fin.contenidoSol16-->
+  <div id="contenidoSol17" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 17 resuelto</h3>
+  		<p>Un informe indica que el precio medio del billete de avión entre Canarias y Madrid es, como máximo, de 120 € con una desviación típica de 40 €. Se toma una muestra de 100 viajeros y se obtiene que la media de los precios de sus billetes es de 128 €.</p>
+        <p>¿Se puede aceptar, con un nivel de significación igual a 0,1, la afirmación de partida? </p>
+        <p class="a"><span class="nr">1.</span> Enunciamos las hip&oacute;tesis nula y alternativa:</p>
+        <p class="b"><strong>H<sub>0</sub> :  &mu; ≤ 120 </strong>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="b"> <strong>H<sub>1</sub> : &mu; &gt; 120  </strong>&nbsp;&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;</span></p>
+        <p class="a"><span class="nr">2.</span>Zona de aceptaci&oacute;n </p>
+        <p class="b"> Para <strong>&alpha; = 0.1</strong>, le corresponde un valor cr&iacute;tico: <strong>z<sub>&alpha;</sub> = 1.28 </strong>.</p>
+        <p class="b">Determinamos el intervalo de confianza:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/30.gif" alt="Intervalo de confianza" style="margin:20px 0 0 9%;" /></p>
+        <p class="a"><span class="nr">3.</span> Verificaci&oacute;n. </p>
+        <p class="b">Valor obtenido de la media de la muestra:<strong> <span class="sol"> 128 € </span></strong>.</p>
+        <p class="a"><span class="nr">4.</span> Decisi&oacute;n</p>
+        <p class="b"><span class="sol"><strong>No aceptamos  la hip&oacute;tesis nula <span class="a">H<sub>0</sub></span></strong></span>. Con un nivel de significación del 10%. </p>
+        
+  </div><!--fin.contenidoSol17-->
+  <div id="contenidoSol18" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 18 resuelto</h3>
+  		<p>Una marca de nueces afirma que, como máximo, el 6% de las nueces están vacías. Se eligieron 300 nueces al azar y se detectaron 21 vacías.</p>
+        
+        <div class="pop-ej">
+        <p><span class="num-subej">1</span> Con un nivel de significación del 1%, ¿se puede aceptar la afirmación de la marca?</p>
+        <p class="a">
+        <span class="nr">1</span>&nbsp;&nbsp;&nbsp;Enunciamos las hip&oacute;tesis nula y alternativa:</p>
+        <p class="b">
+        <strong>H<sub>0</sub> : p ≤ 0.06 </strong>&nbsp;&nbsp;&nbsp;&nbsp;/p>
+        <p class="b"> 
+        <strong>H<sub>1</sub> : p &gt;</strong><strong>0.06</strong>&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;</span><br />
+        </p>
+        <p class="a" style="margin-top:30px;">
+        <span class="nr">2</span>Zona de aceptaci&oacute;n	</p>
+        <p class="b">
+        <strong>&alpha; = 0.01</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>z<sub>&alpha;</sub> = 2.33</strong>.	</p>
+        
+        <p class="b">Determinamos el intervalo de confianza:</p>
+        
+        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/44.gif" alt="Intervalo de confianza" style="margin:20px 0 0 9%;" />
+        </p>
+        <p class="a" style="margin-top:30px;">
+        <span class="nr">3</span>Verificaci&oacute;n.</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/45.gif" alt="proporción" width="118" height="36" /></p>
+        <p class="a" style="margin-top:30px;">
+        <span class="nr">4</span>Decisi&oacute;n						</p>
+        <p class="b">
+		<span class="sol"><strong> Aceptamos  la hip&oacute;tesis nula <span class="a">H<sub>0</sub></span></strong></span>. Con un nivel de significación del 1%.						</p>
+        <p><span class="num-subej">2</span>Si se mantiene el porcentaje muestral de nueces que están vacías y 1-α = 0.95, ¿qué tamaño muestral se necesitaría para estimar la proporción de nueces con un error menor del 1% por ciento?</p>
+        <p class="b">
+        <strong>1 - &alpha;</strong> = 0, 9 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ejer"><strong>z<sub> α/2</sub></strong></span> = 1, 96						</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/46_1.gif" alt="tamaño" width="359" height="39" />						
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/46_2.gif" alt="tamaño" width="80" height="18" />						
+        </p>
+        </div><!--fin.popej-->    
+  </div><!--fin.contenidoSol18-->
+  <div id="contenidoSol19" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 19 resuelto</h3>
+  		<p>La duración de la bombillas de 100 W que fabrica una empresa sigue una distribución normal con una desviación típica de 120 horas de duración. Su vida media está garantizada durante un mínimo de 800 horas. Se escoge al azar una muestra de 50 bombillas de un lote y, después de comprobarlas, se obtiene una vida media de 750 horas. Con un nivel de significación de 0,01, ¿habría que rechazar el lote por no cumplir la garantía?</p>
+        <p class="a" >
+        <span class="nr">1</span>&nbsp;&nbsp;&nbsp;Enunciamos las hip&oacute;tesis nula y alternativa:						</p>
+        <p class="b">
+        <strong>H<sub>0</sub> : µ ≥ 800 </strong>&nbsp;&nbsp;&nbsp;&nbsp;						</p>
+        <p class="b">
+        <strong>H<sub>1</sub> : µ &lt;8</strong><strong>00</strong>&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;</span>					  </p>
+        <p class="a" style="margin-top:30px;">
+        <span class="nr">2</span>Zona de aceptaci&oacute;n						</p>
+        <p class="b">
+        <strong>&alpha; = 0.01</strong>;&nbsp;&nbsp;&nbsp;<strong>&nbsp;z<sub>&alpha;</sub> = 2.33</strong>						</p>
+        <p class="b">
+        Determinamos el intervalo de confianza:						</p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/48.gif" alt="Intervalo de confianza" width="263" height="41" /><br />
+        </p>
+        <p class="a" style="margin-top:30px;">
+        <span class="nr">3</span>Verificaci&oacute;n.						</p>
+        <p class="b">
+        <strong><span style="text-decoration:overline;">x</span></strong> = <span class="escarlata"> 750 </span>						</p>
+        <p class="a" style="margin-top:30px;">
+        <span class="nr">4</span>Decisi&oacute;n	</p>
+        <p class="b">
+        <span class="sol"><strong> Rechazamos  la hip&oacute;tesis nula <span class="a">H<sub>0</sub></span></strong></span>. Con un nivel de significación del 1%.						</p>
+        
+  </div><!--fin.contenidoSol19-->
+  <div id="contenidoSol20" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 20 resuelto</h3>
+  		<p>Un fabricante de lámparas eléctricas está ensayando un nuevo método de producción que se considerará aceptable si las lámparas  obtenidas por este método dan lugar a una población normal de duración media 2400 horas, con una desviación típica igual a 300. Se toma una muestra de 100 lámparas producidas por este método y esta muestra tendrá una duración media de 2320 horas. ¿Se puede aceptar la hipótesis de validez del nuevo proceso de fabricación con un riesgo igual o menor al 5%?</p>
+        <p class="a">
+        <span class="nr">1</span>&nbsp;&nbsp;&nbsp;Enunciamos las hip&oacute;tesis nula y alternativa:
+        </p>
+        <p class="b">
+        <strong>H<sub>0</sub> : &mu; = 2400 </strong>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="b">
+        <strong>H<sub>1</sub> : &mu; &ne;2400</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;</span>
+        </p>
+        <p class="a">
+        <span class="nr">2</span>Zona de aceptaci&oacute;n 
+        </p>
+        <p class="b">
+        <strong>&alpha; = 0.05</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>z<sub>&alpha;</sub> = 1.96</strong>.
+        </p>
+        <p class="b">Determinamos el intervalo de confianza para la media:
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/49.gif" alt="Intervalo de confianza" width="525" height="48" />
+        </p>
+        <p class="a">
+        <span class="nr">3</span>Verificaci&oacute;n. 
+        </p>
+        <p class="b">
+        Valor obtenido de la media de la muestra:<strong> <span class="escarlata">2320 </span></strong>.
+        </p>
+        <p class="a">
+        <span class="nr">4</span>Decisi&oacute;n
+        </p>
+        <p class="a">
+        <span class="sol san2">Rechazamos  la hip&oacute;tesis nula H<sub>0</sub></span>,  con un nivel de significaci&oacute;n del 5%.
+        </p>
+        
+  </div><!--fin.contenidoSol20-->
+  <div id="contenidoSol21" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 21 resuelto</h3>
+  		<p>El control de calidad una fábrica de pilas y baterías sospecha que hubo defectos en la producción de un modelo de batería para teléfonos móviles, bajando su tiempo de duración. Hasta ahora el tiempo de duración en conversación seguía una distribución normal con media 300 minutos y desviación típica 30 minutos. Sin embargo, en la inspección del último lote producido, antes de enviarlo al mercado, se obtuvo que de una muestra de 60 baterías el tiempo medio de duración en conversación fue de 290 minutos. Suponiendo que ese tiempo sigue siendo Normal con la misma desviación típica:
+</p>
+        <p>¿Se puede concluir que las sospechas del control de calidad son ciertas a un nivel de significación del 2%?</p>
+        <p class="a">
+        <span class="nr">1</span>&nbsp;&nbsp;&nbsp;Enunciamos las hip&oacute;tesis nula y alternativa:
+        </p>
+        <p class="b">
+        <strong>H<sub>0</sub> : µ ≥ 300 </strong>&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <p class="b"><strong>H<sub>1</sub> : µ &lt; </strong><strong>300</strong>&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;</span>
+        </p>
+        <p class="a">
+        <span class="nr">2</span>Zona de aceptaci&oacute;n 
+        </p>
+        <p class="b">
+        <strong>&alpha; = 0.02;&nbsp;&nbsp;&nbsp;1 - &alpha; = 0. 98;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P(1.96)= 0. 98;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z<sub>&alpha;</sub> = 1.96 </strong>.
+        </p>
+        <p class="b">Determinamos el intervalo de confianza:
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/47.gif" alt="Intervalo de confianza" />
+        </p>
+        <p class="a">
+        <span class="nr">3</span>Verificaci&oacute;n. 
+        </p>
+        <p class="b">
+        <strong>µ</strong> = <span class="escarlata"> 290</span>
+        </p>
+        <p class="a">
+        <span class="nr">4</span>Decisi&oacute;n
+        </p>
+        <p class="a">
+        <span class="sol"><strong> Rechazamos  la hip&oacute;tesis nula <span class="a">H<sub>0</sub></span></strong></span>. Con un nivel de significación del 2%. 
+        </p>
+        
+  </div><!--fin.contenidoSol21-->
+  <div id="contenidoSol22" class="contenidoSoluciones">
+  		<h3 class="tit-sol">Ejercicio 22 resuelto</h3>
+  		<p>Se cree que el nivel medio de protombina en una población normal es de 20 mg/100 ml de plasma con una desviación típica de 4 miligramos/100 ml. Para comprobarlo, se toma una muestra de 40 individuos en los que la media es de 18.5 mg/100 ml. ¿Se puede aceptar la hipótesis, con un nivel de significación del 5%?</p>
+        <p class="a"><span class="nr">1</span>&nbsp;&nbsp;&nbsp;Enunciamos las hip&oacute;tesis nula y alternativa:
+</p>
+        <p class="b">
+        <strong>H<sub>0</sub> : &mu; =20 mg/100 ml </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <p class="b"><strong>H<sub>1</sub> : &mu; &ne; 20 mg/100 ml </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="a">&nbsp;</span>
+        </p>
+        <p class="a"><span class="nr">
+        2</span>Zona de aceptaci&oacute;n 
+        </p>
+        <p class="b">
+        Para <strong>&alpha; = 0.05</strong>, le corresponde un valor cr&iacute;tico: <strong>z<sub>&alpha;/2</sub> = 1.96</strong>.
+        </p>
+        <p class="b">Determinamos el intervalo de confianza para la media:
+        </p>
+        <p class="b">
+        <img src="../../../www.vitutor.co.uk/estadistica/inferencia/images/50.gif" alt="intervalo" width="377" height="41" />
+        </p>
+        <p class="a"><span class="nr">3</span>Verificaci&oacute;n. 
+        </p>
+        <p class="b">
+        Valor obtenido de la media de la muestra:<strong> <span class="escarlata">18.5</span></strong>.
+        </p>
+        <p class="a">
+        <span class="nr">4</span>Decisi&oacute;n
+        </p>
+        <p class="a">
+        <span class="sol san2">Rechazamos  la hip&oacute;tesis nula H<sub>0</sub></span>,  con un nivel de significaci&oacute;n del 5%.
+        </p>
+        
+  </div><!--fin.contenidoSol22-->
+  
+  
+  
+ 
+        
+  	      <div class="flechas-ej"> <input class="botonAnterior flecha-ant" type="image" src="../../../www.vitutor.it/images/flecha-ej.gif" alt="Anterior">
+     <div class="cFlechaEj"><img alt="<<" src="../../../www.vitutor.it/images/flecha-ej.gif"> Ejercicios</div> 
+     <input class="botonSiguiente flecha-sig" type="image" src="../../../www.vitutor.it/images/flecha-ej-2.gif" alt="Siguiente">  
+          </div><!-- fin div flechas-ej-->
+  	      
+
+      </div><!-- fin div.content- soluciones-->
+    </div><!-- fin div.marco content-->
+</div><!-- fin div-contendor ejercicios-->
+  
+
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+   
+ <div class="contFlechas">
+
+    
+    <div class="flecha">
+    <a href="c_e.html" title="Página anterior">
+    <img src="../../../www.vitutor.it/images/flecha-iz.png" alt="Página anterior" width="30" height="25" title="Anterior">
+    </a>
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+    	<div class="set"><a href="numeros_reales.html" title="Índice del tema"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+</div><!--fin.flecha-->
+		<div class="flecha flecha-der">
+        &nbsp;
+        </div>
+ </div><!--contFlechas-->   
+
+</article>
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+ 
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+   <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+          <li><a href="inferenciaContenidos.html" title="Muestreo"><span>Muestreo</span></a></li>	
+          <li><a href="intervalos_1.html" title=" Intervalos característicos"><span>Intervalos</span></a></li>	 
+          <li><a href="intervalos.html" title="Teorema central del límite"><span>Teorema</span></a></li>
+          <li><a href="estimaciones.html" title="Estimación"><span>Estimación</span></a></li>
+          <li><a href="estimaciones_1.html" title=" Estimación de la media de una población"><span>Estimación media</span></a></li>
+          <li><a href="estimaciones_2.html" title="Estimación de una proporción"><span>Estimación proporción</span></a></li>
+          <li><a href="contrastes.html" title="Contrastes de hipótesis"><span>Contrastes hipótesis</span></a></li>
+          <li><a href="contrastes_1.html" title="Contraste Bilateral"><span>Contraste Bilateral</span></a></li>
+          <li><a href="contrastes_2.html" title="Contraste unilateral"><span>Contraste unilateral</span></a></li>
+          <li><a href="contrastes_3.html" title="Errores"><span>Errores</span></a></li>
+          <li><a href="res.html" title="Resumen"><span>Resumen</span></a></li>
+          <li><a href="estadistica_inferencial.html" title="Índice"><span>Índice</span></a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+<div class="sep-lateral">Ejercicios</div>
+  	<nav class="menu-lateral">
+  	<ul>
+        <li><a href="inferenciaActividades.html" title="Ejercicios 1">Ejercicios I</a></li>
+        <li><a href="inferenciaEvaluacion.html"  title="Ejercicios 2">Ejercicios II</a></li>
+        <li><a href="c_e.html" title="Ejercicios contrastes de hipótesis">Contrastes hipótesis</a></li>
+        <li class="active"><a href="#"  title="Problemas">Problemas</a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+    
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index-2.html" title="Inicio">Inicio</a></li>
+      <li><a href="../../estadistica.html" title="Estadística">Estadística</a></li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+            <li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            <li><a href="../../ejercicios/ejercicios_estadistica.html" title="Ejercicios y problemas de Estadística">Estadística</a></li>
+            <li><a href="../../ejercicios/ejercicios_bachillerato2cs.html" title="Ejercicios y problemas 1º Bachillerato CS">1º Bac CS</a></li>
+            </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->   
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</body>
+
+<!-- Mirrored from www.vitutor.com/estadistica/inferencia/i_e.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:35:56 GMT -->
+</html>

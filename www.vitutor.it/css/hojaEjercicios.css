@@ -1,0 +1,278 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+.contenedorSoluciones{
+	border-bottom:solid 1px #ccc;
+	padding-left:0px;
+	overflow:hidden;
+	}
+
+ul.tabSol{
+	padding-left:3%;
+	padding-top:6px;
+	margin-bottom:0;
+	}
+.tabSol li{
+	display:inline-block;
+	float:left;
+	background-color:#7A7A7A; /*#646464 hsl(190,5%,24%)*/
+	margin-top:3px;
+	margin-left:1px; 
+	padding:1px 9px 3px 9px;
+	border-left:solid 1px #ccc;
+	cursor:pointer;  
+	color:#FFF;
+    font-weight:bold;
+	}
+	
+.tabSol li:hover{
+	font-weight:bold;
+	text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	-moz-text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	-webkit-text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	-o-text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+
+	box-shadow: 1px 1px 1px hsla(190,5%,45%,0.8);
+	-moz-text-shadow: 1px 1px 1px hsla(190,5%,45%,0.8);
+	-webkit-text-shadow: 1px 1px 1px hsla(190,5%,45%,0.8);
+	-o-text-shadow: 1px 1px 1px hsla(190,5%,45%,0.8);
+	}
+.cajaContenido{
+	margin-top:0.5em;
+	padding:0.5em 0.8em 0.5em 0.8em;
+	}
+
+#contenedor-ej{
+	width:100%;
+	}
+#contenedor-ej ul{  
+    list-style:none;  
+    list-style-position:outside;
+	}  
+#contenedor-ej ul.menuTab li{  
+	display:inline-block;
+    margin-right:8px;  
+    margin-bottom:-1px;
+	z-index:1; 
+	}  
+#contenedor-ej ul.menuTab li{  
+    font-weight:700;  
+    padding:1px 4px 1px 4px;
+	color:#E5E5E5;  
+    cursor:pointer;  
+    }
+
+/*#contenedor-ej ul.menuTab #ejercicios{
+	background: #3A3F40;
+	border-radius:8px 8px 0 0;
+	-moz-border-radius:8px 8px 0 0;
+	-webkit-border-radius:8px 8px 0 0;
+	-o-border-radius:8px 8px 0 0;
+	}
+
+#contenedor-ej ul.menuTab #soluciones{
+	background: #3A3F40;
+	border-radius:8px 8px 0 0;
+	-moz-border-radius:8px 8px 0 0;
+	-webkit-border-radius:8px 8px 0 0;
+	-o-border-radius:8px 8px 0 0;
+	}
+#contenedor-ej ul.menuTab #ejercicios.activa{
+	background-color: #009933;
+}
+
+#contenedor-ej ul.menuTab #soluciones.activa{
+	background-color: #009933;
+}*/
+h2{
+	padding-left:2%;
+	}
+#contenedor-ej ul.menuTab li:hover{
+    color:#fff;
+	text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	-moz-text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	-webkit-text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	-o-text-shadow: 1px 1px 1px hsla(190,5%,75%,0.8);
+	}
+#contenedor-ej ul.menuTab li.activa{
+   	color:#fff;  
+	border-top:2px solid #B2B2B2;
+	border-right:2px solid #B2B2B2;
+	border-left:2px solid #B2B2B2;
+	}
+.tabSol li.activa{
+	background-color: #009933;
+	}
+.marcoContent{
+	border:2px solid #E5E5E5;
+	width:100%;
+	z-index:2;
+	padding-top:0;
+	}
+	
+
+/*---FLECHAS----*/
+.flechas-ej{
+	margin-top:20px;
+	width:96%;
+	padding:0.5% 2% 2% 2%;
+	margin-bottom:2%;
+	margin-top:2%;
+	clear:both;
+	}
+.flecha-ant{
+	margin-top:20px;
+	float:left;
+	}
+.flecha-ant:hover{
+	border: 1px solid #CCC;
+	}
+.flecha-sig{
+	margin-top:20px;
+	float:right;
+	}
+.flecha-sig:hover{
+	border: 1px solid #CCC;
+	}
+	
+	
+.cFlechaSol{
+	
+	float:right;
+	color:hsl(0,80%,31%);
+	margin-top: 1em;
+	font-weight:bold;
+	cursor:pointer;
+	vertical-align:middle;
+}
+.cFlechaSol img{
+	vertical-align:bottom;
+	}
+.cFlechaEj{
+	margin-top:20px;
+	float:left;
+	color:hsl(0,80%,31%);
+	font-weight:bold;
+	cursor:pointer;
+	vertical-align:middle;
+}
+.cFlechaEj img{
+	vertical-align:bottom;
+	}
+
+/***Contenido***/
+
+.content{  
+   	background:#fff;
+    text-align:justify;  
+    font-size:12px;  
+    line-height:2em;  
+    color:#000;
+	padding-left:2%;
+	padding-right:2%;
+	padding-bottom:2%; 
+	overflow:hidden;
+  	}  
+
+.content{
+	width:96%;
+	}
+.content.ejercicios{  
+    display:inline-block; 
+	}  
+.content.soluciones{  
+	display:none;  
+	}
+.contenidoSoluciones{
+	padding-left:20px;
+	display:none;
+	width:95%;
+	word-wrap:break-word;
+	}
+.contenidoSoluciones img{
+	max-width:100%;
+	height:auto;
+	margin-bottom:10px;
+	}
+.contenidoSoluciones p{
+	margin-left:0;}
+	
+.contenidoSoluciones p.b {
+    margin-left:3em;
+}	
+.contenidoSoluciones p.a {
+    margin-left:1em;
+}
+/*#contenidoSol1{
+	display:block;
+	}*/
+
+.tit-sol{
+	color:#fff;
+	background:hsl(190,5%,54%);
+	border:hsl(190,5%,54%) solid 2px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	margin-top:0.8em;
+	padding:0;
+	text-align:center;
+	display:block;
+	max-width:95%;
+	}
+.tit-sol h3{
+	padding-top:0;
+	padding-bottom:0;
+	margin:0;
+	}
+
+
+/**Los siguiente es exclusivo de los ejercicios interactivos con pestañas***/
+#contenedor-ej ul.menuTab li{
+	background: #3A3F40;
+	border-radius:8px 8px 0 0;
+	-moz-border-radius:8px 8px 0 0;
+	-webkit-border-radius:8px 8px 0 0;
+	-o-border-radius:8px 8px 0 0;
+	}
+#contenedor-ej ul.menuTab li.activa{
+	background-color: #009933;
+}	
+.content.primeraPestana{  
+    display:inline-block; 
+	}  
+.content.noPrimeraPestana{  
+	display:none;  
+	}
+
+/*--ESTILOS EJERCICIOS POTENCIAS--*/
+.cOperacion{
+	display:block;
+	}
+.cOperacion input{
+	display:inline;
+	}
+.cOperandos{
+	display:inline-block;
+	}
+	
+/*ESTILO HOJA PROBLEMAS NO INTERACTIVOS-------*/
+.cuenta{
+	text-align:right;
+	display:inline-block;
+	vertical-align:top;
+	margin-left:30px;
+	}
+	
+.num-subej cuenta{
+	margin-right:20px;
+}
+	
+.supline{
+	text-decoration:overline;
+	}
+.curva{
+	
+	text-decoration:overline;
+	}

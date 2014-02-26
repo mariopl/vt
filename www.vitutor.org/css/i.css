@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* CSS Document */
+
+#tabs4, #vin_s, #sub, #footer, #bajo {display:none;}
+.menu, .principal, .mar, .domtabs {display:none;}
+div.a1{display:none !important;}
+#container{margin-left:0; text-align:left;}
+html,body{ font-size:8pt;
+		line-height:16pt; 
+		font-family:Helvetica, sans-serif;
+		background: #fff;
+		color:#000;
+		text-align:left;
+		}
+div p{text-align:left; margin-left:0;}
+div.left{margin-left:0;}
+div.left{margin-left:0;}
+div#wrapper{
+		float:none;
+		text-align:left;
+		 margin-left:0;
+		}
+div#vin_s{
+	float:none; 
+	width:0;
+	}
+
+h1 {
+		font-size:12pt;
+		}
+		
+h2 {
+		font-size:11pt;
+		}
+h3 {
+
+		font-size:10pt;
+		}
+h4 {
+
+		font-size:9pt;
+		}	
+.r{
+		border:0;
+		padding:0;
+		margin:0;
+		text-align:center;
+		font-size:11pt;
+		font-weight:bold;
+		color:#900;
+		background: #fff;
+		}
+		
+.v{
+		border:0;
+		padding:0;
+		margin:0;
+		text-align:center;
+		font-size:11pt;
+		font-weight:bold;
+		color:#1e5f3b;
+		background: #fff;
+		}	
+
+h3.v,h3.r{
+
+		font-size:10pt;
+		}	
+
+h2.v_izq,h3.v_izq{
+	color:#900;
+	background: #fff;
+	text-align:left;
+	border:0;
+	font-weight:bolder;
+	font-size:10pt;
+	}
+
+h2.r_izq,h3.r_izq{
+	color:#036c37;
+	background: #fff;
+	text-align:left;
+	margin:20px 0 20px 75px;
+	border:0;
+	font-weight:bolder;
+	font-size:10pt;
+	}
+		
+	
+h3.t,h4.t{
+	color:#036c37;
+	background: #fff;
+	}
+		
+h3.te,h4.te{
+
+	color:#900;
+	background: #fff;
+	}	
+	p {
+	line-height:8pt;
+	/*letter-spacing:0.1em;*/
+	}
+		
+p.actividades {
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	}
+p.ag { 
+	background-color:#fff;
+	color:#000;
+	border:0;
+	}
+
+p.actividades_g { 
+	background-color:#fff;
+	color:#000;
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	}
+p.actividades_g_ir { 
+	background: url(../images/ul_r_5.png) no-repeat left #fff;
+	color:#000;
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	}
+p.actividades_g_iv { 
+	background: url(../images/ul_v_5.png) no-repeat left #fff;
+	color:#000;
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	}
+	
+p.av { 
+	border:0;
+	background-color:#fff;
+	color:#000;
+	}
+p.actividades_v { 
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	background-color:#fff;
+	color:#000;
+	}
+p.actividades_v_ir { 
+	color:#000;
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	background:url(../images/ul_r_5.png) no-repeat left #fff;	
+	}
+
+
+p.actividades_2_v_ir {
+	background-color:#fff;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	background:url(../images/ul_r_5.png) no-repeat left #fff;
+	}
+p.actividades_2_g_ir {
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	background:url(../images/ul_r_5.png) no-repeat left #fff;
+	}		
+
+p.actividades_2_g_iv {
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	background:url(../images/ul_v_5.png) no-repeat left #fff;
+	}		
+	
+p.ar { 
+	background-color:#fff;
+	color:#000;
+	border:0;
+	
+	}			
+p.actividades_r { 
+	background-color:#fff;
+	color:#000;
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	
+	}	
+.a {
+ 	background:url(../images/ul_v_5.png) no-repeat left;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	}
+.b {
+	background:url(../images/ul_r_5.png) no-repeat left;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	}
+
+p.actividades_r_ir { 
+	background:url(../images/ul_v_5.png) no-repeat left #fff;
+	color:#000;
+	position:relative; 
+	left:5%; 
+	width:85%; 
+	border:0;
+	
+	}
+p.actividades_2_r_ir {
+	background:url(../images/ul_v_5.png) no-repeat left #fff;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	}
+	
+p.a0, p.b0{
+	position:relative; 
+	left:6%; 
+	width:85%; 
+	border:0;
+	}
+			
+p.a0{
+	background:url(../images/ul_r_5.png) no-repeat left;
+	}
+	
+
+p.b0{
+	background:url(../images/ul_v_5.png) no-repeat left;
+	}
+	
+	
+p.actividades_2 {
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	}
+		
+
+p.actividades_2_g {
+	background-color:#fff;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0; 
+	}
+	
+p.actividades_2_v {
+	background-color:#fff;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	}
+	
+p.actividades_2_r {
+	background-color:#fff;
+	color:#000;
+	position:relative; 
+	top:10px; 
+	left:12.5%; 
+	width:75%; 
+	border:0;
+	}
+span.r{
+	color:#900; 
+	font-size:1em;
+	font-weight:bold;
+	}
+span.v{
+	color:#036c37; 
+	font-size:1em;
+	font-weight:bold;
+	}
+span.re{
+	color:#900; 
+	font-size:1.3em;
+	font-weight:bold;
+	margin-right:1em;
+	}
+span.ve{
+	color:#036c37; 
+	font-size:1.3em;
+	font-weight:bold;
+	margin-right:1em;
+	} 
+span.a_r{
+	background-color:#fdf7f7;
+	color:#000;} 
+	
+span.esmeralda{
+
+	color:#2e8b57;
+	background: #transparent;
+	font-size:1.05em;
+	font-weight:bold;
+	margin-bottom:5px;
+	}	
+span.plata{
+
+	color:#666;
+	background: #fff;
+	font-size:1em;
+	font-weight:bold;
+	}	
+span.numero_r{
+
+	font-size:1.2em; 
+	color:#900;
+	background: #transparent;
+	margin-right:1em;
+	font-weight:bold;
+	}
+	
+span.numero_v{
+
+	font-size:9pt;
+	color:#065;
+	background: #transparent;
+	margin-right:1em;
+	font-weight:bold;
+	}
+span.sitio{
+
+	margin-left:35px;
+	background-color:#ffc; 
+	padding:5px;
+	}
+/******STRONG*******/
+
+.g {
+	background-color:#eee;
+	color:#000; 
+	font-weight:bold;
+	font-size:9pt;
+	margin:0; 
+	padding:0; 
+	border:0;
+	}
+.ro {
+	background-color:#fee;
+	color:#000;  
+	font-weight:bold;
+	font-size:1em;
+	margin:0; 
+	padding:0; 
+	border:0;
+	}
+.s, .ss{
+	color:#000; 
+	font-weight:bold;
+	margin:0; 
+	padding:0; 
+	border:0;
+	font-variant:small-caps;
+	font-size:9pt;
+	}
+.s{
+	background-color:#f3faf6;
+	color:#000; 
+	}
+.ss{
+	background-color:#fdf7f7;	
+	color:#000; 
+	}
+	
+.sol {
+ 	color:#903;
+	background: #transparent;
+	font-size:1.05em;
+	font-weight:bold;
+	font-size:1em;
+	}

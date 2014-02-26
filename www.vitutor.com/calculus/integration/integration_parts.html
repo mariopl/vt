@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from www.vitutor.com/calculus/integration/integration_parts.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 12:17:01 GMT -->
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="keywords" content="Mathematics, maths, math word Problems, math problem solving, exercises, worksheets, activities, formulas, lessons, questions, homework, elementary, middle and high school, Arithmetic, Algebra, Calculus, Statistics, Geometry, Linear algebra, Analytic geometry." />
+<meta name="description" content="Integration by parts, deriving, integrating, calculation of integrals by parts, formulas, examples, exercises and problems with solutions."/>
+<meta name="copyright" content="copyright (c) by vitutor" />
+<meta name="robots" content="all" />
+<meta name="author" content="vitutor" />
+<meta http-equiv="expires" content="0" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="../../js/domtab.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../../css/k.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../../css/x.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="all" type="text/css" href="../../css/7.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" media="all" type="text/css" href="../../css/6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.org/css/i.css" />
+<style type="text/css">
+ #tabs4 a:hover span,#tabs4 a span#actual_ts_4 {
+      color:#fff;
+      }
+</style>
+<title>Integration by Parts</title>
+
+
+ 
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="container" >
+	
+		<div id="header">
+			<a href="../../maths.html" title="Mathematics" style="text-decoration:none;"><img src="../../../www.vitutor.us/images/logo_v.png" alt="Mathematics. Home"  id="to" width="143" height="30" /></a>
+
+		<div class="menu" style="left:23.5%; width:70%;">
+		<ul style=" font-size:0.9em;">
+				<li><a  href="../integrals/integration.html" title="Notes 1">Notes 1</a> </li>
+                <li><a  href="#" title="Notes 2" id="actual">Notes 2</a> </li>
+                <li><a  href="../integral/definite_Integral.html" title="Notes 3">Notes 3</a> </li>
+				<li><a  href="../integrals/integrals_worksheets.html" title="Worksheet">Worksheet</a></li>
+				<li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+				<li><a  href="../../maths.html" title="Mathematics">Home</a></li>
+			</ul>
+			<a href="../../index-2.html" title="Inicio. Español"><img src="../../../www.vitutor.us/images/es_125.png" id="int" alt="Inicio. Español" width="125" height="30" /></a>
+	</div>			
+			 <!--  id=menu   -->
+		</div>			<!--fin header-->
+		
+		<div id="wrapper">
+		<div id="content">
+				
+			<div id="tabs4" style="position:relative; top:14px; left:-27px; margin-bottom:18px;">
+					<!--[if lte IE 6]>
+					<div id="tabs4" style="margin-bottom:-5px;">
+					<![endif]-->
+				<ul>
+					<li><a href="#" title="Integration by Parts" id="actual_t_4"><span id="actual_ts_4">Integration by Parts</span></a></li>
+					<li><a href="integration_rational.html" title="Integration of Rational Functions"><span>Integration Rational</span></a></li>
+                    <li><a href="integration_substitution.html" title="Integration by Substitution"><span>Substitution</span></a></li>
+                    <li><a href="trigonometric_integrals.html" title="Trigonometric Integrals"><span>Trig Integrals</span></a></li>
+				</ul>
+ 				<!--[if lte IE 6]>
+					</div>
+				   <![endif]-->
+				</div>
+				
+				<div id="cont">
+<div class="out head_1">
+						<div class="in ltin tpin">
+							<h1 class="r">Integration by Parts</h1>
+				  </div>
+					</div>
+<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;"></div>
+</div>
+
+							<p class="actividades_g">The <strong>method of integration by parts</strong> allows the calculation of the <strong>integral of a product</strong> of two functions using the <strong>formula</strong>:</p>
+<p class="actividades_2_v_ir"><img src="../../../www.vitutor.us/calculus/integration/images/42.gif" alt="Integration by Parts" width="221" height="40" /></p>
+                <p class="actividades_g">Logarithmic functions, &quot;arcs&quot; and polynomials are chosen as <em><strong>u</strong></em>.</p>
+                <p class="actividades_r">The exponential and trigonometric functions of sine and cosine, are chosen as <em><strong>v'</strong></em>.</p><br />
+				<h3 class="r" style="clear:left; text-align:left; margin-left:5%;">Integration by Parts Examples</h3>
+                <p class="actividades_g"><img src="../../../www.vitutor.us/calculus/integration/images/230.gif" alt="integral" width="106" height="35" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/144.gif" alt="Derive" width="160" height="25" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.us/calculus/integration/images/231.gif" alt="Integrate" width="209" height="26" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/232.gif" alt="Integration by Parts" width="418" height="36" /></p><br />
+                <p class="actividades_r">If a polynomial of degree <strong>n</strong> is <strong>integrated by parts</strong>, begin with <strong>u</strong> and the process is repeated <strong>n</strong> times.</p>
+<p class="actividades_g_iv"><img src="../../../www.vitutor.us/calculus/integration/images/556.gif" alt="Integral" width="83" height="35" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/557.gif" alt="Integration by Parts Operations" width="250" height="30" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/558.gif" alt="Integration by Parts Operations" width="295" height="28" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.us/calculus/integration/images/559.gif" alt="Integration by Parts Operations" width="248" height="35" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/560.gif" alt="Integration by Parts Operations" width="243" height="30" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/561.gif" alt="Integration by Parts Operations" width="295" height="28" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/562.gif" alt="Integration by Parts Operations" width="340" height="35" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/563.gif" alt="Integration by Parts Operations" width="228" height="35" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/564.gif" alt="Integration by Parts Operations" width="230" height="30" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/565.gif" alt="Integration by Parts Operations" width="295" height="28" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/566.gif" alt="Integration by Parts Operations" width="300" height="35" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/567.gif" alt="Integration by Parts" width="506" height="31" /></p>
+                <br />
+                <p class="actividades_r">If there is an <strong>integral</strong> with only one &quot;<strong>log&quot;</strong> or <strong>&quot;arc&quot;</strong>, <strong>integrate by parts</strong> taking: <strong>v'= 1</strong>.</p>
+<p class="actividades_g_iv"><img src="../../../www.vitutor.us/calculus/integration/images/390.gif" alt="Integral" width="125" height="35" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/391.gif" alt="Derive" width="343" height="45" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/392.gif" alt="Integrate" width="350" height="28" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/393.gif" alt="Integration by Parts Operations" width="330" height="45" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/394.gif" alt="Integration by Parts" width="248" height="45" /></p>
+                <br />
+                <p class="actividades_g">When integrating by parts and the second term appearing in the integral  must be calculated, it is solved as an equation.</p>
+                <p class="actividades_g"><img src="../../../www.vitutor.us/calculus/integration/images/371.gif" alt="Integral" width="116" height="31" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/372.gif" alt="Derive" width="236" height="30" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/374.gif" alt="Integrate" width="323" height="45" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.us/calculus/integration/images/373.gif" alt="Integrate" width="396" height="45" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/375.gif" alt="Derive" width="236" height="30"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/376.gif" alt="Integrate" width="311" height="45"  /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.us/calculus/integration/images/377.gif" alt="Integration by Parts Operations"  width="533" height="51" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/378.gif" alt="Integration by Parts Operations"  width="503" height="45" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/379.gif" alt="Integration by Parts Operations" width="503" height="45"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.us/calculus/integration/images/380.gif" alt="Integration by Parts Operations"  width="436" height="51" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.us/calculus/integration/images/381.gif" alt="Integration by Parts" width="393" height="46"  /></p>
+							<br />
+						<div style="margin-left:1.5%;">
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div><br />
+
+</div>	 <!--id="cont"  -->
+			<div id="sub">
+					<ul>
+						<li class="ka" style="width:48px;">
+							<a href="../integrals/inverse_trigonometric.html" title="Integrals Inverse Trigonometric Result">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_i.gif" width="40" height="20" alt="Integrals Inverse Trigonometric Result" /></a>
+						</li>
+						
+						<li class="ke" style="width:48px;">
+							<a href="#to" title="Subir" style="text-decoration:underline;"><img src="../../../www.vitutor.us/images/flechas/f_v_a.gif" alt="Subir" width="20" height="40" /></a>
+						</li>
+						
+						<li class="ki" style="margin-top:-75px; width:48px">
+							<a href="integration_rational.html" title="Integration of Rational Functions">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_d.gif" width="40" height="20" alt="Integration of Rational Functions" /></a>
+						</li>
+					</ul>
+			</div>
+					
+	</div> 		<!--id="content"  -->
+		
+</div>				<!--id="wrapper"  -->
+<div id="vin_s" style="margin-top:40px;">
+               <form action="http://www.google.es/" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="22" />
+                  <input type="submit" name="sa" value="Buscar" />
+                </div>
+              </form>
+              
+              <script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+              
+              
+<div style="margin-left:-1px;">
+
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+                <ul class="loso">
+             <li><span class="sitio">Site</span></li><li><a href="../../maths.html" title="Math">Math</a> </li>
+            <li><a href="../../formulas.html" title="Formulas">Formulas</a></li>
+            <li><a href="../../problems.html" title="Word Problems">Word Problems</a></li>
+            <li><a href="../../worksheets.html" title="Worksheets">Worksheets</a> </li>
+            <li><a href="../../algeb.html" title="Algebra">Algebra</a></li>
+            <li><a href="../../geometry/trigonometry/trigonometry.html" title="Trigonometry">Trigonometry</a></li>
+            <li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+            <li><a href="../functions/functions_index.html" title="Functions">Functions</a></li>
+            <li><a href="../limits/limit_index.html" title="Limits">Limits</a></li>
+            <li><a href="../limits/continuity_discontinuity.html" title="Continuity and Discontinuity">Continuity</a></li>
+            <li><a href="../derivatives/derivatives.html" title="Derivatives">Derivatives</a></li>
+            <li><a href="../graphs/applications_derivative.html" title="Applications of the Derivative">Applications Derivative</a></li>
+            <li>&nbsp;</li>
+            <li><span class="sitio">Subject</span></li>	
+            <li><a href="../integrals/integration.html" title="Integration"><span>Integration</span></a></li>
+            <li><a href="../integrals/table_integrals.html" title="Table of Integrals"><span>Table of integrals</span></a></li>
+            <li><a href="../integrals/integral_power.html" title="Integral of a Power"><span>Integral of a power</span></a></li>
+            <li><a href="../integrals/exponential_logarithmic.html" title="Logarithmic and exponential Integration"><span>Logarithmic - Expon.</span></a></li>
+            <li><a href="../integrals/trigonometric_integrals.html" title="Trigonometric Integrals"><span>Trigonometric</span></a></li>
+            <li><a href="../integrals/inverse_trigonometric.html" title="Integrals Inverse Trigonometric Result"><span>Inverse trigonometric</span></a></li>	
+            <li><a href="#" title="Integration by Parts" id="acto"><span>Integration by parts</span></a></li>
+            <li><a href="integration_rational.html" title="Integration of Rational Functions"><span>Integration  rational </span></a></li>
+            <li><a href="integration_substitution.html" title="Integration by Substitution"><span>Int. substitution</span></a></li>
+            <li><a href="trigonometric_integrals.html" title="Trigonometric Integrals"><span>Trig integrals</span></a></li>	
+            <li><a href="../integral/definite_Integral.html" title="Definite Integral"><span>Definite Integral</span></a></li>
+					<li><a href="../integral/fundamental_theorem.html" title="Fundamental Theorem of Calculus I"><span>Fund. Theo  Calculus I</span></a></li>
+                    <li><a href="../integral/theorem_calculus.html" title="Fundamental Theorem of Calculus II"><span>Fund. Theo  Calculus II</span></a></li>
+                    <li><a href="../integral/average_value.html" title="Average Function Value"><span>Average funct. value</span></a></li>
+                    <li><a href="../integral/area_function.html" title="Area of a Function"><span>Area of a function</span></a></li>
+					<li><a href="../integral/two_functions.html" title="Area between Two Functions"><span>Area two functions</span></a></li>
+                    <li><a href="../integral/volume_function.html" title="Volume of a Function"><span>Volume of a function</span></a></li>
+                    <li><a href="../integrals/integrals_worksheets.html" title="Integration problems"><span>Problems</span></a></li>							
+	</ul>
+
+			</div>  	<!--id="vin_s"  --> 
+           <div id="footer">
+			<img src="../../images/pie_c_2.gif" width="161" height="20" alt="Copyright" class="copy"/>
+           <a href="../../ad.html" title="Política de privacidad" style="margin-left:22.5%; position:relative; bottom:4px;"><span style="background-color:#fbf8f5;">Privacy Policy </span></a>
+           <a href="mailto:" class="correo" title="Correo electrónico" style="background-color:#eee;">
+			<img src="../../images/pie_correo_4.gif" width="216" height="20" alt="Correo electrónico" class="imagen" /></a>
+</div>  <!--id="footer"  -->
+
+</div>             <!--  id="container"   -->
+	
+</body>
+
+<!-- Mirrored from www.vitutor.com/calculus/integration/integration_parts.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 12:17:11 GMT -->
+</html>

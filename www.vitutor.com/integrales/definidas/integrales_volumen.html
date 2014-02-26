@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/integrales/definidas/integrales_volumen.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:33:49 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Números reales, conceptos, definiciones, ejemplos prácticos, apuntes, 1º de Bachillerato, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, teleformación, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza." />
+<meta name="description" content="Volumen de una función, volumen de una función y el eje de abscisas o de ordenadas utilizando integrales definidas, ejercicios resueltos, Bachillerato."/>
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+     <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/ejCombinados.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+
+input.cResultPropuestoMultipleInputText{ margin-left:0.2em;}
+
+/*.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block;  
+	}
+.cContRes{
+	display:block; min-height:100px;
+	}*/
+
+input.cResultPropuestoInputText{ width:5em;
+	}
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+  <title>Volumen de una función - Vitutor</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+    <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>
+    </div><!--fin.idiom-->
+    
+
+<div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+  
+</header>
+<article>
+	<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+    <h1 class="tit-gris" id="to">Volumen de una función</h1>
+    <nav id="menu-tema">
+        <ul class="nav">
+        <li><a href="#" title="Teoría de integrales definidas">Teoría</a>
+            <ul>
+                <li><a href="integral_definida.html" title="Integral definida"><span>Integral definida</span></a></li>
+				<li><a href="regla_barrow.html" title="Regla de Barrow"><span>Regla de Barrow</span></a>				</li>
+				<li><a href="teorema_fundamental.html" title="Teorema fundamental del cálculo y de la media"><span>Teoremas</span></a></li>
+				<li><a href="areas_integrales.html" title="Área I"><span>Área I</span></a></li>
+                <li><a href="integrales_areas.html" title="Área II"><span>Área II</span></a></li>
+				<li><a href="#" title="Volumen de una función" class="actual"><span>Volumen</span></a></li>
+                <li><a href="integrales_definidas.html" title="Índice de integrales definidas"><span>Índice</span></a></li>
+        </ul>
+        </li>
+        <li><a href="#" title="Ejercicios de integrales definidas">Ejercicios</a>
+          <ul>
+			<li><a  href="ejercicios_definidas.html" title="Ejercicios de integral definida">Integral definida</a></li>
+            <li><a  href="ejercicios_areas.html" title="Ejercicios de areas">Áreas</a></li>
+            <li><a  href="ejercicios_volumenes.html" title="Ejercicios de volumenes">Volumenes</a></li>	
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+  <section>
+    <div class="sombra-tit">
+      <h2 class="r">&nbsp;</h2></div>
+   	  	<p class="a">El volumen del cuerpo de revolución engendrado al girar la curva f(x) alrededor del eje OX y limitado por x = a y x = b, viene dado por:</p>
+		<p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/318.gif" alt="volumen" width="133" height="38" /></p>
+        <div class="pop-ej">
+    <span class="border g">Ejemplos</span>
+    <div class="float2">
+    	<p class="guion-v"><span class="nr">1. </span>Hallar el volumen del tronco de cono engendrado por la rotación alrededor  OX del área limitada por y = 6 − x, y = 0, x = 0, x = 4.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/51.gif" alt="representación gráfica" width="190" height="200" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/52.gif" alt="solución" width="353" height="56" /></p>
+        <p class="guion-v"><span class="nr">2. </span> Calcular el volumen engendrado por una semionda de la sinusoide y = sen x, al girar alrededor del eje OX.</p> 
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/124.gif" alt="función seno" width="300" height="116" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/125.gif" alt="integral" width="265" height="43" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/126.gif" alt="solución" width="271" height="53" /></p>  
+        <p class="guion-v"><span class="nr">3. </span> Hallar el volumen del cuerpo revolución engendrado al girar alrededor del eje OX, la región determinada por la función f(x) = 1/2 + cos x, el eje de abscisas y las rectas x = 0 y x = π.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/264.gif" alt="volumen" width="373" height="51" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/265.gif" alt="solución" width="288" height="53" /></p>        
+        <p class="guion-v"><span class="nr">4. </span> Hallar el volumen engendrado por el círculo x<sup>2</sup> + y<sup>2</sup> − 4x = −3 al girar alrededor del eje OX.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/269.gif" alt="ecuación de la conferencia" width="166" height="26" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/270.gif" alt="ecuación de la circunferencia" width="113" height="31" /></p>
+        <p class="b">El centro de la circunferencia es C(0, 1) y el radio r = 1.</p>
+        <p class="b">Puntos de corte con el eje OX:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/272.gif" alt="puntos de corte" width="341" height="58" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/271.gif" alt="representación gráfica" width="281" height="209" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/273.gif" alt="volumen" width="366" height="41" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/274.gif" alt="solución" width="210" height="53" /></p>
+        <p class="guion-v"><span class="nr">5. </span> Calcular el volumen engendrado al girar alrededor del eje OX el recinto limitado por las gráficas de y = 2x − x<sup>2</sup>, y = −x + 2.</p>
+        <p class="b">Puntos de intersección entre la parábola y la recta:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/260.gif" alt="puntos de corte" width="403" height="55" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/261.gif" alt="representación gráfica" width="301" height="200" /></p>
+        <p class="b">La parábola está por encima de la recta en el intervalo de integración.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/262.gif" alt="integral definida" width="483" height="41" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/263.gif" alt="solución" width="263" height="53" /></p>
+        <p class="guion-v"><span class="nr">6.</span>  Calcular el volumen del cuerpo engendrado al girar alrededor del eje OX el recinto limitado por las gráficas de y = 6x − x<sup>2</sup>, y = x.</p>
+        <p class="b">Puntos de intersección:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/266.gif" alt="puntos de corte" width="401" height="55" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/267.gif" alt="representación gráfica" width="169" height="200" /></p>
+        <p class="b">La parábola queda por encima de la recta en el intervalo de integración.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/268.gif" alt="volumen" width="438" height="53" /></p>
+        <p class="guion-v"><span class="nr">7. </span> Calcular el volumen que engendra un triángulo de vértices A(3, 0), B(6, 3), C(8, 0) al girar 360° alrededor del eje OX.</p>
+<p class="b">Ecuación de la recta que pasa por AB:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/106.gif" alt="ecuación de la recta" width="248" height="43" /></p>
+        <p class="b">Ecuación de la recta que pasa por BC:</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/107.gif" alt="ecuación de la recta" width="285" height="43" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/115.gif" alt="representación gráfica" width="350" height="167" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/111.gif" alt="volumen" width="306" height="51" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/112.gif" alt="operaciones" width="363" height="48" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/113.gif" alt="solución" width="330" height="56" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/114.gif" alt="solución" width="563" height="48" /></p>
+        <p class="guion-v"><span class="nr">8. </span> Hallar el volumen de la figura engendrada al girar la elipse <img src="../../../www.vitutor.co.uk/integrales/definidas/images/301.gif" alt="ecuación de la elipse" width="81" height="46" class="m" /> alrededor del eje OX.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/239.gif" alt="elipse" width="350" height="185" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/240.gif" alt="ecuación del elipse" width="300" height="46" /></p>
+        <p class="b">Por ser la elipse una curva simétrica, el volumen  pedido es 2 en veces el volumen engendrado por el arco <img src="../../../www.vitutor.co.uk/integrales/definidas/images/302.gif" alt="arco de elipse" width="106" height="43" class="m" /> entre x = 0 y x = a.</p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/303.gif" alt="volumen" width="356" height="51" /></p>
+        <p class="b"><img src="../../../www.vitutor.co.uk/integrales/definidas/images/304.gif" alt="solución" width="345" height="53" /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+  </section>
+  
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+
+   
+ <div class="contFlechas">
+    
+    <div class="flecha flecha-izq">
+    <a href="integrales_areas.html" title="Página anterior">
+        <img  src="../../../www.vitutor.it/images/flecha-iz.png" alt="Página anterior" width="30" height="25" title="Anterior">
+        </a>
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+
+    	<div class="set"><a href="numeros_reales.html" title="Índice de números reales"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+   		</div><!--fin.flecha-->
+    
+    	<div class="flecha flecha-der">
+        <a href="integrales_definidas.html" title="Página siguiente">
+        <img  src="../../../www.vitutor.it/images/flecha-der.png" alt="Página siguiente" width="30" height="25" title="Siguiente">
+        </a></div>
+    	</div><!-- fin div-contFlechas-->
+
+</article>
+
+
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+    <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+          <li><a href="integral_definida.html" title="Integral definida"><span>Integral definida</span></a></li>
+          <li><a href="regla_barrow.html" title="Regla de Barrow"><span>Regla de Barrow</span></a></li>
+          <li><a href="teorema_fundamental.html" title="Teorema fundamental del cálculo y de la media"><span>Teoremas</span></a></li>
+          <li><a href="areas_integrales.html" title="Área I"><span>Área I</span></a></li>
+          <li><a href="integrales_areas.html" title="Área II"><span>Área II</span></a></li>
+          <li class="active"><a href="#" title="Volumen de una función"><span>Volumen</span></a></li>
+          <li><a href="integrales_definidas.html" title="Índice de integrales definidas"><span>Índice</span></a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+<div class="sep-lateral">Ejercicios</div>
+  	<nav class="menu-lateral">
+  	<ul>
+        <li><a  href="ejercicios_definidas.html" title="Ejercicios de integral definida">Integral definida</a></li>
+            <li><a  href="ejercicios_areas.html" title="Ejercicios de areas">Áreas</a></li>
+            <li><a  href="ejercicios_volumenes.html" title="Ejercicios de volumenes">Volumenes</a></li>	
+       
+    </ul>
+</nav><!-- fin menú-lateral-->
+    
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index-2.html" title="Inicio">Inicio</a></li>
+      <li><a href="../../calculo.html" title="Cálculo">Cálculo</a></li>
+      <li><a href="../indefinidas/integrales.html" title="Integral indefinida">Integral indefinida</a></li>
+      <li><a href="../metodos/calculo_integral.html" title="Cálculo integral">Cálculo integral</a></li>
+      <li><a href="#" title="ESO y Bachillerato">Bachillerato</a>
+            <ul>
+                <li><a href="../../bac_1.html" title="1º Bachillerato tecnológico">1º Bac tecnológico</a></li>
+                <li><a href="../../bac_2.html.html" title="2º Bachillerato tecnológico">2º Bac tecnológico</a></li>
+            </ul>			
+       </li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+            <li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            <li><a href="../../ejercicios/ejercicios_c%c3%83%c2%a1lculo.html" title="Ejercicios y problemas de Cálculo">Cálculo</a></li>
+            <li><a href="../../ejercicios/ejercicios_bachillerato1.html" title="Ejercicios y problemas 1º Bachillerato tecnológico">1º Bac</a></li>
+            <li><a href="../../ejercicios/ejercicios_bachillerato2.html" title="Ejercicios y problemas 2º Bachillerato tecnológico">2º Bac </a></li>
+            </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->   
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</body>
+
+<!-- Mirrored from www.vitutor.com/integrales/definidas/integrales_volumen.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:33:58 GMT -->
+</html>

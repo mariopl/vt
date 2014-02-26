@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from www.vitutor.com/calculus/limits/Bolzano's Theorem.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 12:10:03 GMT -->
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="keywords" content="Mathematics, maths, math word Problems, math problem solving, exercises, worksheets, activities, formulas, lessons, questions, homework, elementary, middle and high school, Arithmetic, Algebra, Calculus, Statistics, Geometry, Linear algebra, Analytic geometry." />
+<meta name="description" content="Bolzano's Theorem, continuous functions, closed intervals, definition, examples and exercises with solutions."/>
+<meta name="copyright" content="copyright (c) by vitutor" />
+<meta name="robots" content="all" />
+<meta name="author" content="vitutor" />
+<meta http-equiv="expires" content="0" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="../../js/domtab.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../../css/k.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../../css/x.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="all" type="text/css" href="../../css/7.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" media="all" type="text/css" href="../../css/6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.org/css/i.css" />
+<style type="text/css">
+ #tabs4 a:hover span,#tabs4 a span#actual_ts_4 {
+      color:#fff;
+      }
+</style>
+<title>Bolzano's Theorem</title>
+
+
+ 
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="container" >
+	
+		<div id="header">
+			<a href="../../maths.html" title="Mathematics" style="text-decoration:none;"><img src="../../../www.vitutor.us/images/logo_v.png" alt="Mathematics. Home"  id="to" width="143" height="30" /></a>
+
+		<div class="menu" style="left:20.5%; width:70%;">
+			<ul style="font-size:0.95em;">
+				<li><a   href="continuity.html" title="Notes 1">Notes 1</a> </li>
+                <li><a   href="#" title="Notes 2"  id="actual">Notes 2</a> </li>
+				<li><a   href="continuity_worksheet.html" title="Worksheet">Worksheet</a></li>
+				<li><a   href="continuity_problems.html" title="Word problems">Problems 1</a></li>
+				<li><a   href="intermediate_problems.html" title="Word problems">Problems 2</a></li>
+                <li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+				<li><a  href="../../maths.html" title="Math">Home</a></li>
+			</ul>
+			
+	</div>		<!--  id=menu   -->
+		</div>			<!--fin header-->
+		
+		<div id="wrapper">
+		<div id="content">
+				
+			<div id="tabs4" style="position:relative; top:14px; left:-27px; margin-bottom:18px;">
+					<!--[if lte IE 6]>
+					<div id="tabs4" style="margin-bottom:-5px;">
+					<![endif]-->
+				<ul>
+					<li><a href="continuous_interval.html" title="Continuity on a Closed Interval"><span>Continuity Interval</span></a></li>
+					<li><a href="extreme_theorem.html" title="Extreme Value Theorem"><span>Extreme Value</span></a></li>
+                    <li><a href="intermediate_theorem.html" title="Intermediate Value Theorem"><span>Intermediate Value</span></a></li>
+                    <li><a href="#" title="Bolzano's Theorem" id="actual_t_4"><span id="actual_ts_4">Bolzano's Theorem</span></a></li>
+				</ul>
+ 				<!--[if lte IE 6]>
+					</div>
+				   <![endif]-->
+				</div>
+				
+				<div id="cont">
+<div class="out head_1">
+						<div class="in ltin tpin">
+							<h1 class="r">Bolzano's Theorem</h1>
+</div>
+					</div>
+<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;"></div>
+</div>
+<p class="actividades_g">A paticular case of the the <strong>intermediate value theorem</strong> is the <strong>Bolzano's theorem</strong>:</p>
+                            <p class="actividades_g"><strong>Suppose that f(x)  is a continuous function on  a closed interval [a, b] and takes the values of the opposite  sign at the extremes, and there is at least one c <img src="../../images/simbolos/pertenece.gif" alt="pertenece" width="12" height="12" style="vertical-align:middle;" /> (a, b) such that f(c) = 0.</strong></p>
+<p class="actividades_2"><img src="images/0_300.gif" alt="Bolzano's Theorem" width="177" height="246" /></p>
+<p class="actividades_r" style="margin-top:30px;">The <strong>Bolzano's theorem </strong>does not indicate the value or values of <em><strong>c</strong></em>, it only confirms their existance.</p>
+<br />
+                             <h4 class="t">Example</h4>
+                          	 <p class="actividades_g">Verify that the equation  x<sup>3</sup> + x − 1 = 0 has at least one real solution in the interval [0,1].</p>
+                             <p class="actividades_r">We consider the function f(x) =  x<sup>3</sup> + x − 1, which is continuous on [0,1] because it is polynomial. We study the sign in the extremes of the interval:</p>
+                             <p class="actividades_r">First, consider the function f(x) =  x<sup>3</sup> + x − 1, which is continuous in [0,1] because it is polynomial. Then, study the sign in the extremes of the interval:</p>
+<p class="actividades_v">f(0) = −1  &lt; 0</p>
+                             <p class="actividades_r">f(1) = 1 &gt; 0</p>
+                             <p class="actividades_v">As the signs are different,  <strong>Bolzano's theorem</strong> can be applied which determines that there is a <em><strong>c</strong></em> <strong> <img src="../../images/simbolos/pertenece.gif" alt="pertenece" width="12" height="12" style="vertical-align:middle;" /> (0. 1)</strong> such that <strong>f(c) = 0</strong>. This process demonstrates that there is a solution in this interval.</p>
+<br />
+						<div style="margin-left:1.5%;">
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div><br />
+
+</div>	 <!--id="cont"  -->
+			<div id="sub">
+					<ul>
+						<li class="ka" style="width:48px;">
+							<a href="intermediate_theorem.html" title="Intermediate Value Theorem">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_i.gif" width="40" height="20" alt="Intermediate Value Theorem" /></a>
+						</li>
+						
+						<li class="ke" style="width:48px;">
+							<a href="#to" title="Subir" style="text-decoration:underline;"><img src="../../../www.vitutor.us/images/flechas/f_v_a.gif" alt="Subir" width="20" height="40" /></a>
+						</li>
+						
+						<li class="ki" style="margin-top:-75px; width:48px">
+							&nbsp;
+						</li>
+					</ul>
+			</div>
+					
+	</div> 		<!--id="content"  -->
+		
+</div>				<!--id="wrapper"  -->
+<div id="vin_s" style="margin-top:40px;">
+               <form action="http://www.google.es/" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="22" />
+                  <input type="submit" name="sa" value="Buscar" />
+                </div>
+              </form>
+              
+              <script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+              
+              
+<div style="margin-left:-1px;">
+
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+                <ul class="loso">
+             <li><span class="sitio">Site</span></li><li><a href="../../maths.html" title="Math">Math</a> </li>
+            <li><a href="../../formulas.html" title="Formulas">Formulas</a></li>
+            <li><a href="../../problems.html" title="Word Problems">Word Problems</a></li>
+            <li><a href="../../worksheets.html" title="Worksheets">Worksheets</a> </li>
+            <li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+            <li><a href="../functions/functions_index.html" title="Functions">Functions</a></li>
+            <li><a href="../derivatives/derivatives.html" title="Derivatives">Derivatives</a></li>
+            <li><a href="../graphs/applications_derivative.html" title="Applications of the Derivative">Applications Derivative</a></li>
+            <li><a href="../integrals/integrals.html" title="Integrals">Integrals</a></li>
+            <li><a href="limit_index.html" title="Limits">Limits</a></li>
+            <li>&nbsp;</li>
+            <li><span class="sitio">Subject</span></li>	
+            <li><a href="continuous_function.html" title="Continuous Function"><span>Continuous Function</span></a></li>
+                    <li><a href="discontinuity.html" title="Discontinuity"><span>Discontinuity</span></a></li>
+                    <li><a href="removable_discontinuity.html" title="Removable Discontinuity"><span>Removable Discont.</span></a></li>
+                    <li><a href="jump_discontinuity.html" title="Jump Discontinuity"><span>Jump Discontinuity</span></a></li>
+					<li><a href="essential_discontinuity.html" title="Essential Discontinuity"><span>Essential Discontinuity</span></a></li>
+                    <li><a   href="continuity_worksheet.html" title="Worksheet">Continuity worksheet</a></li>
+					<li><a href="continuity_problems.html" title="Word problems">Continuity problems</a></li>		
+                    <li>&nbsp;</li>
+            <li><a href="continuous_interval.html" title="Continuity on a Closed Interval"><span>Continuity Interval</span></a></li>
+					<li><a href="extreme_theorem.html" title="Extreme Value Theorem"><span>Extreme V. Theorem</span></a></li>
+                    <li><a href="intermediate_theorem.html" title="Intermediate Value Theorem"><span>Intermediate Theorem</span></a></li>
+                    <li><a href="#" title="Bolzano's Theorem" id="acto"><span>Bolzano's Theorem</span></a></li>	
+                    <li><a   href="intermediate_problems.html" title="Word problems">Word problems</a></li>			
+			</ul>
+
+			</div>  	<!--id="vin_s"  --> 
+           <div id="footer">
+			<img src="../../images/pie_c_2.gif" width="161" height="20" alt="Copyright" class="copy"/>
+           <a href="../../ad.html" title="Política de privacidad" style="margin-left:22.5%; position:relative; bottom:4px;"><span style="background-color:#fbf8f5;">Privacy Policy </span></a>
+           <a href="mailto:" class="correo" title="Correo electrónico" style="background-color:#eee;">
+			<img src="../../images/pie_correo_4.gif" width="216" height="20" alt="Correo electrónico" class="imagen" /></a>
+</div>  <!--id="footer"  -->
+
+</div>             <!--  id="container"   -->
+	
+</body>
+
+<!-- Mirrored from www.vitutor.com/calculus/limits/Bolzano's Theorem.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 12:10:04 GMT -->
+</html>

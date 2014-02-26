@@ -1,0 +1,39 @@
+.cSliderContainer{
+	margin-left:20px;
+	margin-right:20px;
+	display:none;
+	overflow:hidden; /*Esta propiedad permite que los floats que estén dentro del contenedor no salgan del mismo*/
+}
+.cSliderBoton {
+	width:12em;
+	margin-top:5px;
+	margin-left:20px;
+	margin-right:20x;
+	border:0;
+	border-radius:5px;	
+	color:#fff;
+	font-weight:bold;
+	box-shadow:2px 2px #ccc;
+	background:#666;
+	cursor:pointer;
+}
+.cSliderTitle{
+	/*cursor:pointer;*/
+}
+.cImgSlider{
+	float:left;
+	margin-right:5px;
+	max-width:100%;
+}
+.cDivImgSlider{
+	float:left;
+	width:240px;
+	max-width:100%;
+	overflow:hidden;
+}
+.cDivParrafoSlider{
+	overflow:hidden;	
+}
+.cDesplazadora{
+	margin-top:10px; /*Este es el valor que se debe modificar para desplazar la imagen */
+}

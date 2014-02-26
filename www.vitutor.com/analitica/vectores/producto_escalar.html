@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/analitica/vectores/producto_escalar.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:14:24 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Matrices, conceptos, definiciones, ejemplos prácticos, apuntes, 2º de Bachillerato, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, teleformación, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza." />
+<meta name="description" content="Producto escalar, ángulo de dos vectores, módulo de un vector, propiedades del producto escalar, cosenos directores, vectores ortogonales, ejercicios resueltos, ejemplos. 2º de Bachillerato."/>
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+     <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/ejCombinados.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+
+input.cResultPropuestoMultipleInputText{ margin-left:0.2em;}
+
+/*.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block;  
+	}
+.cContRes{
+	display:block; min-height:100px;
+	}*/
+
+input.cResultPropuestoInputText{ width:5em;
+	}
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery-ui.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+
+ 
+ <title>Producto escalar II - Vitutor</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+    <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>
+    </div><!--fin.idiom-->
+    
+
+<div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+
+  
+
+
+</header>
+
+<article>
+
+	<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+    <h1 class="tit-gris" id="to">Producto escalar </h1>
+    <nav id="menu-tema">
+        <ul class="nav">
+        <li><a href="#" title="Teoría de Vectores en el espacio">Teoría</a>
+            <ul>
+                 <li><a href="vectores_espacio.html" title="Vectores en el espacio"><span>Vectores</span></a></li>
+                 <li><a href="operaciones_vectores.html" title="Operaciones de vectores en el espacio"><span>Operaciones</span></a>	</li>
+                 <li><a href="depandencia_independencia.html" title="Dependencia e independencia lineal"><span>Dependencia, indep.</span></a></li>
+                 <li><a href="#" title="Producto escalar II" class="actual"><span>Producto escalar</span></a></li>
+                 <li><a href="producto_vectorial.html" title="Producto vectorial"><span>Producto vectorial</span></a></li>
+                 <li><a href="producto_mixto.html" title="Producto mixto"><span>Producto mixto</span></a></li>
+                 <li><a href="vector_espacio.html" title="Índice"><span>Índice</span></a></li>
+        </ul>
+        </li>
+        <li><a href="#" title="Ejercicios de Vectores en el espacio">Ejercicios</a>
+          <ul>
+				<li><a href="problemas_vectores.html" title="Ejercicios de vectores">Vectores</a></li>
+                 <li><a href="ejercicios_producto.html" title="Ejercicios del producto escalar y vectorial">P. escalar, vectorial</a></li>
+                 <li><a href="vectorial_mixto.html" title="Ejercicios del producto vectorial y mixto">P. vectorial, mixto</a></li>            
+            </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    
+    <section>
+    <div class="sombra-tit">
+    <h2 class="r">Producto escalar</h2></div>
+ <p class="a">El<strong> producto escalar</strong> de <strong>dos vectores</strong> es un <strong>número real</strong> que resulta al <strong>multiplicar el producto de sus módulos por el coseno del ángulo que forman</strong>.</p>
+              <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/43.gif" alt="producto" width="156" height="33" /></p>
+                <h3 class="vi" ><strong>Expresión analítica del producto escalar</strong></h3>
+              <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/30.gif" alt="Expresión analítica del producto escalar" width="218" height="30" /></p>
+      <div class="pop-ej">
+    <span class="border g">Ejemplo:</span>
+    <div class="float2">
+    	<p class="a">Hallar el <strong>producto escalar</strong> de dos vectores cuyas coordenadas en una base ortonormal son: (1, 1/2, 3) y (4, −4, 1).</p>
+              <p class="b">(1, 1/2, 3) · (4, −4, 1) = 1 · 4 + (1/2) · (−4) + 3 · 1 = 4 −2 + 3 = <span style="color:#900;">5 </span></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+    
+    <h3 class="vi"><strong>Expresión analítica del módulo de un vector</strong></h3>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/37.gif" alt="módulo don vector" width="416" height="38" /></p>
+                
+                
+                <div class="pop-ej">
+    <span class="border g">Ejemplo:</span>
+    <div class="float2">
+    	<p class="a">Hallar el valor del<strong> módulo de un vector</strong> de coordenadas <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> = (−3, 2, 5) en una base ortonormal.</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/38.gif" alt="módulo" width="326" height="40" /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+    
+    <h3 id="av" class="vi"><strong>Expresión analítica del ángulo de dos vectores</strong></h3>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/31.gif" alt="ángulo de dos vectores" width="315" height="56" /></p>
+                
+                <div class="pop-ej">
+    <span class="border g">Ejemplo:</span>
+    <div class="float2">
+    	<p class="a">Determinar el <strong>ángulo</strong> que forman los <strong>vectores</strong> <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> = (1, 2, −3) y <img src="../../images/vectores/v.gif" width="14" height="20" alt="v" class="m" /> = (−2, 4, 1).</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/39.gif" alt="producto escalar" width="378" height="51"  /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/39_1.gif" alt="producto escalar" width="225" height="51"  /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+    
+    
+    <h3 class="vi">Vectores ortogonales</h3>
+                <p class="a">Dos <strong>vectores</strong> son <strong>ortogonales</strong> si su <strong>producto escalar es 0</strong>.</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/32.gif" alt="ortogonalidad de dos vectores" width="261" height="30" /></p>
+                
+                <div class="pop-ej">
+    <span class="border g">Ejemplo:</span>
+    <div class="float2">
+    	<p class="a">Calcular los valores x e y para que el vector (x, y, 1) sea ortogonal a los vectores (3, 2, 0) y (2, 1, −1).</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/209.gif" alt="vectores ortogonales" width="336" height="28" /> </p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/210.gif" alt="vectores ortogonales" width="353" height="28" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/220.gif" alt="solución" width="178" height="23" /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+    
+    
+    <h3 class="ri" id="pp">Propiedades del producto escalar</h3>
+              <h3 class="vi"><span class="vi">1. </span>Conmutativa</h3>
+                <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/50.gif" alt="propiedad" width="94" height="24" /></p>
+                <h3 class="vi"><span class="vi">2</span>. Asociativa</h3>
+                <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/51.gif" alt="propiedad" width="170" height="34" /></p>
+                <h3 class="vi"><span class="vi">3. </span>Distributiva</h3>
+                <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/52.gif" alt="propiedad" width="201" height="34" /></p>
+                <h3 class="vi"><span class="vi">4. </span>El producto escalar de un vector no nulo por sí mismo siempre es positivo.</h3>
+                <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/53.gif" alt="propiedad" width="141" height="24" /></p>
+                
+                
+                
+                <h2 class="ri"><strong>Interpretación geométrica del producto escalar</strong></h2>
+              <p class="a"><strong>El producto de dos vectores no nulos es igual al módulo de uno de ellos por la proyección del otro sobre él.</strong></p>
+                
+                  <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/48.gif" alt="vector" width="196" height="150" /></p>
+                  <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/49_1.gif" alt="PROYECCIÓN" /></p>
+                  <p class="b"><img src="../../../www.vitutor.org/geo/vec/images/49_2.gif" alt="PROYECCIÓN"  /></p>
+                
+                <p class="a">OA' es la proyección del vector <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> sobre v, que lo denotamos como: <img src="../../../www.vitutor.org/analitica/vectores/images/33.gif" alt="proyección" width="61" height="33" class="m" />.</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/34.gif" alt="proyección" width="113" height="61" /></p>
+                
+                <div class="pop-ej">
+    <span class="border g">Ejercicio:</span>
+    <div class="float2">
+    	<p class="a">Dados los vectores <img src="../../../www.vitutor.org/analitica/vectores/images/295.gif" alt="vector" width="103" height="31" class="m" /> y  <img src="../../../www.vitutor.org/analitica/vectores/images/296.gif" alt="vector" width="103" height="31" class="m" /> hallar:</p>
+                <p class="a"><span class="num-ej">1</span> Los módulos de <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> y <img src="../../images/vectores/v.gif" width="14" height="20" alt="v" class="m" />·</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/197.gif" alt="módulo" width="218" height="40" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/198.gif" alt="módulo" width="218" height="40" /></p>
+                <p class="a"><span class="num-ej">2</span> El producto escalar de <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> y <img src="../../images/vectores/v.gif" width="14" height="20" alt="v" class="m" />·</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/300.gif" alt="producto escalar" width="260" height="31" /></p>
+                <p class="a"><span class="num-ej">3</span> El  ángulo que forman.</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/199.gif" alt="producto escalar" width="215" height="51" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/200.gif" alt="proyección" width="230" height="45" /></p>
+                <p class="a"><span class="num-ej">4</span> La proyección del vector <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> sobre <img src="../../images/vectores/v.gif" width="14" height="20" alt="v" class="m" />.</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/211.gif" alt="proyección" width="116" height="48" /></p>
+                <p class="a"><span class="num-ej">5</span> La proyección del vector <img src="../../images/vectores/v.gif" width="14" height="20" alt="v" class="m" /> sobre <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" />. </p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/212.gif" alt="proyección" width="116" height="48" /></p>
+                <p class="a"><span class="num-ej">6</span> El valor de m para que los vectores <img src="../../../www.vitutor.org/analitica/vectores/images/295.gif" alt="vector" width="103" height="31" class="m" /> y <img src="../../../www.vitutor.org/analitica/vectores/images/297.gif" alt="vector" width="70" height="28" class="m" /> sean ortogonales.</p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/213.gif" alt="m" width="248" height="45" /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+</section>    
+    <section>
+    <div class="sombra-tit">
+      <h2 class="r">Cosenos directores</h2></div>
+     <p class="a">En una base ortonormal, se llaman <strong>cosenos directores</strong> del vector <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> = (x, y, z), a los cosenos de los ángulos que forma el vector <img src="../../images/vectores/u.gif" alt="vector u" width="16" height="26" class="m" /> con los vectores de la base.</p>
+              <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/40.gif" alt="coseno director" width="176" height="55" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/41.gif" alt="coseno director" width="175" height="55" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/42.gif" alt="coseno director" width="173" height="55" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/43.gif" alt="Cosenos directores" width="213" height="28" /></p>
+    
+    
+     <div class="pop-ej">
+    <span class="border g">Ejemplo:</span>
+    <div class="float2">
+    	<p class="a">Determinar los <strong>cosenos directores</strong> del vector (1, 2, −3).</p>
+              <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/44.gif" alt="coseno director" width="246" height="61" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/45.gif" alt="coseno director" width="245" height="61" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/46.gif" alt="coseno director" width="245" height="61" /></p>
+                <p class="b"><img src="../../../www.vitutor.org/analitica/vectores/images/122.gif" alt="Cosenos directores" width="370" height="56" /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+    </section>
+  
+                
+  
+ 
+ 
+ 
+                
+
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+
+
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+
+   
+ <div class="contFlechas">
+    
+    <div class="flecha flecha-izq">
+    <a href="depandencia_independencia.html" title="Página anterior">
+        <img  src="../../../www.vitutor.it/images/flecha-iz.png" alt="Página anterior" width="30" height="25" title="Anterior">
+        </a>
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+
+    	<div class="set"><a href="#" title="Índice de números reales"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+   		</div><!--fin.flecha-->
+    
+    	<div class="flecha flecha-der">
+        <a href="producto_vectorial.html" title="Página siguiente">
+        <img  src="../../../www.vitutor.it/images/flecha-der.png" alt="Página siguiente" width="30" height="25" title="Siguiente">
+        </a></div>
+    	</div><!-- fin div-contFlechas-->
+
+
+</article>
+
+
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+ 
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+    <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+       <li><a href="vectores_espacio.html" title="Vectores en el espacio"><span>Vectores</span></a></li>
+       <li><a href="operaciones_vectores.html" title="Operaciones de vectores en el espacio"><span>Operaciones</span></a>	</li>
+       <li><a href="depandencia_independencia.html" title="Dependencia e independencia lineal"><span>Dependencia, indep.</span></a></li>
+       <li class="active"><a href="#" title="Producto escalar II"><span>Producto escalar</span></a></li>
+       <li><a href="producto_vectorial.html" title="Producto vectorial"><span>Producto vectorial</span></a></li>
+       <li><a href="producto_mixto.html" title="Producto mixto"><span>Producto mixto</span></a></li>
+       <li><a href="vector_espacio.html" title="Índice"><span>Índice</span></a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+<div class="sep-lateral">Ejercicios</div>
+  	<nav class="menu-lateral">
+  	<ul>
+       <li><a href="problemas_vectores.html" title="Ejercicios de vectores">Vectores</a></li>
+       <li><a href="ejercicios_producto.html" title="Ejercicios del producto escalar y vectorial">P. escalar, vectorial</a></li>
+       <li><a href="vectorial_mixto.html" title="Ejercicios del producto vectorial y mixto">P. vectorial, mixto</a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+    
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index-2.html" title="Inicio">Inicio</a></li>
+      <li><a href="../../geoanalitica.html" title="Geometría analítica">Geometría analítica</a></li>
+      
+      <li><a href="#" title="Geometría analítica en el espacio">Geo. analítica espacio</a>
+            <ul>
+                <li><a href="vector_espacio.html" title="Vectores en el espacio">1. Vectores en el espacio</a></li>
+                <li><a href="../recta/planos_rectas.html" title="Puntos, rectas y planos">2. Puntos, rectas y planos</a></li>
+                <li><a href="../recta/posiciones.html" title="Posiciones relativas">3. Posiciones relativas</a></li>
+                <li><a href="../distancias/angulos_distancias.html" title="Problemas métricos">4. Problemas métricos</a></li>
+            </ul>			
+       </li>
+      <li><a href="#" title="ESO y Bachillerato">Bachillerato</a>
+            <ul>
+                <li><a href="../../bac_2.html" title="2º Bachillerato tecnológico">2º Bac tecnológico</a></li>
+            </ul>			
+       </li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+            <li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            <li><a href="../../ejercicios/ejercicios_geoanalitica.html" title="Ejercicios y problemas de Geometría analítica">Geometría analítica</a></li>
+            <li><a href="../../ejercicios/ejercicios_bachillerato2.html" title="Ejercicios y problemas 2º Bachillerato tecnológico">2º Bac</a></li>
+            </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->   
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</body>
+
+<!-- Mirrored from www.vitutor.com/analitica/vectores/producto_escalar.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:14:35 GMT -->
+</html>
+

@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/estadistica/bi/covarianza.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:40:01 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Matrices, conceptos, definiciones, ejemplos prácticos, apuntes, 2º de Bachillerato, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, teleformación, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza." />
+<meta name="description" content="Covarianza, fórmula, cálculo, definición, ejercicios resueltos,  ejemplos, Bachillerato."/>
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+     <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/ejCombinados.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+
+input.cResultPropuestoMultipleInputText{ margin-left:0.2em;}
+
+/*.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block;  
+	}
+.cContRes{
+	display:block; min-height:100px;
+	}*/
+
+input.cResultPropuestoInputText{ width:5em;
+	}
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery-ui.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+  <title>Covarianza - Vitutor</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+    <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>
+    </div><!--fin.idiom-->
+    
+
+<div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+  
+</header>
+<article>
+	<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+    <h1 class="tit-gris" id="to">Covarianza</h1>
+    <nav id="menu-tema">
+        <ul class="nav">
+       
+        <li><a href="#" title="Teoría de distribuciones bidimensionales">Teoría</a>
+            <ul>
+                <li>
+				 	<a href="distribuciones_bidimensionales.html" title="Distribuciones bidimensionales"><span>D. Bidimensionales</span></a>				 
+				 </li>
+				<li>
+					<a href="#" title="Covarianza" class="actual"><span>Covarianza</span></a>				
+				</li>
+				<li>
+					<a href="correlacion.html" title="Correlación"><span>Correlación</span></a>
+				</li>
+				<li>
+					<a href="coeficiente_correlacion.html" title="Coeficiente de correlación lineal"><span>Coef. correlación</span></a>
+				</li>
+                <li>
+					<a href="recta_regresion.html" title="Recta de regresión"><span>Recta regresión</span></a>
+				</li>
+                <li>
+					<a href="correlaci%c3%83%c2%b3n_regresion.html" title="Índice de regresión"><span>Índice</span></a>
+				</li>
+					
+        </ul>
+        </li>
+        <li><a href="#" title="Ejercicios de Distribuciones bidimensionales">Ejercicios</a>
+          <ul>
+				<li><a  href="ejercicios_regresion.html" title="Ejercicios 1">Ejercicios I</a></li>
+                <li><a  href="ejercicios_correlacion.html" title="Ejercicios 2">Ejercicios II</a></li>
+             </ul>
+
+        </li>
+      </ul>
+    </nav>
+    
+    
+    <section>
+    <div class="sombra-tit">
+    <h2 class="v">Covarianza</h2></div>
+      <p class="a">La <strong>covarianza</strong> de una variable bidimensional es la media aritmética de los productos de las desviaciones de cada una de las variables respecto a sus medias respectivas.</p>
+                        <p class="a">La <strong>covarianza</strong> se representa por<strong> s<sub>xy</sub></strong> o <strong>σ<sub>xy</sub></strong>.</p>
+                        
+                        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/bi/images/2.gif" alt="fórmula de la covarianza" width="176" height="48" /></p>
+                        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/bi/images/3.gif" alt="fórmula de la covarianza" width="129" height="42" /></p>
+                        <p class="a">La <strong>covarianza</strong> indica el sentido de la correlación entre las variables</p>
+                      <p class="b">Si <strong>σ<sub>xy</sub> > 0</strong> la correlación es directa.</p>
+                            <p class="b">Si <strong>σ<sub>xy</sub> &lt; 0</strong> la correlación es inversa.<br />
+                      </p>
+                      <p class="a">La <strong>covarianza</strong> presenta como inconveniente, el hecho de que su valor depende de la escala elegida para los ejes.</p>
+                      <p class="a">Es decir, la <strong>covarianza</strong> variará si expresamos la altura en metros o en centímetros. También variará si el dinero lo expresamos en euros o en dólares.</p>
+                
+                <div class="pop-ej">
+    <span class="border g">Ejemplos:</span>
+    <div class="float2">
+    	<p class="guion-v">Las notas de 12 alumnos de una clase  en Matemáticas y Física son las siguientes:</p>
+                        <table class="ve">
+                          <tr>
+                            <td class="ver">Matemáticas</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td class="ver">Física</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>10</td>
+                          </tr>
+                        </table>
+                        <p class="a">Hallar la <strong>covarianza</strong> de la distribución.</p>
+                        <table class="ro">
+                              <tr>
+                                <th class="roj">x<sub>i</sub></th>
+                                <th class="roj">y<sub>i</sub></th>
+                                <th class="roj">x<sub>i</sub> · y<sub>i</sub></th>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>9</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>8</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>16</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>20</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>24</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>36</td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>4</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>6</td>
+                                <td>42</td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>7</td>
+                                <td>56</td>
+                              </tr>
+                              <tr>
+                                <td>10</td>
+                                <td>9</td>
+                                <td>90</td>
+                              </tr>
+                              <tr>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>100</td>
+                              </tr>
+                              <tr>
+                                <td style="color:#900;">72</td>
+                                <td style="color:#900;">60</td>
+                                <td style="color:#900;">431</td>
+                              </tr>
+                      </table>
+                      <p class="a">Después de tabular los datos hallamos las <a href="../descriptiva/a_10.html" title="Media aritmética">medias aritméticas</a>:</p>
+                      <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/bi/images/5.gif" alt="medias" width="272" height="38" /></p>
+                            <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/bi/images/6.gif" alt="covarianza" width="169" height="38" /></p>
+                        <br />
+						<p class="guion-v">Los valores de dos variables X e Y se distribuyen según la tabla siguiente:</p>
+                        <table class="ve">
+                          <tr>
+                            <th class="ver">Y/X</th>
+                            <th class="ver">0</th>
+                            <th class="ver">2</th>
+                            <th class="ver">4</th>
+                          </tr>
+                          <tr>
+                            <th class="ver">1</th>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <th class="ver">2</th>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <th class="ver">3</th>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>0</td>
+                          </tr>
+                        </table>
+                      <p class="a">Hallar la <strong>covarianza</strong> de la distribución.</p>
+                        <p class="a">En primer lugar convertimos la tabla de doble entrada en tabla simple y calculamos las medias aritméticas.</p>
+                        <table class="ro">
+                          <tr>
+                            <th class="roj">x<sub>i</sub></th>
+                            <th class="roj">y<sub>i</sub></th>
+                            <th class="roj">f<sub>i</sub></th>
+                            <th class="roj">x<sub>i</sub> · f<sub>i</sub></th>
+                            <th class="roj">y<sub>i</sub> · f<sub>i</sub></th>
+                            <th class="roj">x<sub>i</sub> · y<sub>i </sub>· f<sub>i</sub></th>
+                          </tr>
+                          <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>12</td>
+                            <td>3</td>
+                            <td>12</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td style="color:#900;">&nbsp;</td>
+                            <td style="color:#900;">&nbsp;</td>
+                            <td style="color:#900;">20</td>
+                            <td style="color:#900;">40</td>
+                            <td style="color:#900;">41</td>
+                            <td style="color:#900;">76</td>
+                          </tr>
+                        </table>
+                        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/bi/images/60.gif" alt="medias" width="392" height="38" /></p>
+                        <p class="b"><img src="../../../www.vitutor.co.uk/estadistica/bi/images/63_1.gif" alt="covarianza" width="185" height="38" /></p>
+    </div><!--fin.float2-->
+    </div><!--fin.popej-->
+                
+                
+  </section>
+  
+  
+   
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+
+   
+ <div class="contFlechas">
+    
+    <div class="flecha flecha-izq">
+    <a href="distribuciones_bidimensionales.html" title="Página anterior">
+        <img  src="../../../www.vitutor.it/images/flecha-iz.png" alt="Página anterior" width="30" height="25" title="Anterior">
+        </a>
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+
+    	<div class="set"><a href="#" title="Índice de números reales"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+   		</div><!--fin.flecha-->
+    
+    	<div class="flecha flecha-der">
+        <a href="correlacion.html" title="Página siguiente">
+        <img  src="../../../www.vitutor.it/images/flecha-der.png" alt="Página siguiente" width="30" height="25" title="Siguiente">
+        </a></div>
+    	</div><!-- fin div-contFlechas-->
+
+
+</article>
+
+
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+ 
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+    <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+              <li>
+				 	<a href="distribuciones_bidimensionales.html" title="Distribuciones bidimensionales"><span>D. Bidimensionales</span></a>				 
+				 </li>
+				<li class="active">
+					<a href="#" title="Covarianza"><span>Covarianza</span></a>				
+				</li>
+				<li>
+					<a href="correlacion.html" title="Correlación"><span>Correlación</span></a>
+				</li>
+				<li>
+					<a href="coeficiente_correlacion.html" title="Coeficiente de correlación lineal"><span>Coef. correlación</span></a>
+				</li>
+                <li>
+					<a href="recta_regresion.html" title="Recta de regresión"><span>Recta regresión</span></a>
+				</li>
+                <li>
+					<a href="correlaci%c3%83%c2%b3n_regresion.html" title="Índice de regresión"><span>Índice</span></a>
+				</li>
+                <li><a  href="ejercicios_regresion.html" title="Ejercicios 1">Ejercicios I</a></li>
+                <li><a  href="ejercicios_correlacion.html" title="Ejercicios 2">Ejercicios II</a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index-2.html" title="Inicio">Inicio</a></li>
+      <li><a href="../../estadistica.html" title="Estadística">Estadística</a></li>
+      <li><a href="#" title="Bachillerato">Bachillerato</a>
+            <ul>
+                <li><a href="../../bac_1.html" title="1º Bachillerato tecnológico">1º Bac tecnológico</a></li>
+                <li><a href="../../bac_1cs.html" title="1º Bachillerato CS">1º Bac CS</a></li>
+                
+            </ul>			
+       </li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+            <li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            <li><a href="../../ejercicios/ejercicios_estadistica.html" title="Ejercicios y problemas de Estadística">Estadística</a></li>
+            <li><a href="../../ejercicios/ejercicios_bachillerato1.html" title="Ejercicios y problemas 1º Bachillerato tecnológico">1º Bac</a></li>
+            <li><a href="../../ejercicios/ejercicios_bachillerato1cs.html" title="Ejercicios y problemas 1º Bachillerato CS">1º Bac CS</a></li>
+            
+            
+            </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->   
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</body>
+
+<!-- Mirrored from www.vitutor.com/estadistica/bi/covarianza.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:40:02 GMT -->
+</html>

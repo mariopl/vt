@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/algebra/determinantes/res.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:08:09 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Números reales, conceptos, definiciones, ejemplos prácticos, apuntes, 1º de Bachillerato, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, teleformación, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza." />
+<meta name="description" content="Determinantes, definición, determinante de orden uno, dos, tres y superior a tres, regla de Sarrus, menor complementario, adjunto, propiedades, matriz inversa, rango de una matriz, 2º de Bachillerato."/>
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+     <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/ejCombinados.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+
+input.cResultPropuestoMultipleInputText{ margin-left:0.2em;}
+
+/*.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block;  
+	}
+.cContRes{
+	display:block; min-height:100px;
+	}*/
+
+input.cResultPropuestoInputText{ width:5em;
+	}
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+ 
+ 
+
+<title>Determinantes - Vitutor</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+    <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>
+    </div><!--fin.idiom-->
+    
+
+<div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+  
+</header>
+<article>
+	<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+    <h1 class="tit-gris" id="to">Determinantes</h1>
+    <nav id="menu-tema">
+        <ul class="nav">
+        <li><a href="#" title="Teoría de Determinantes">Teoría</a>
+            <ul>
+                <li><a href="determinantes.html"><span>Determinantes</span></a></li>
+                <li><a href="sarrus.html" title="Regla de Sarrus"><span>Sarrus</span></a></li>
+                <li><a href="adjunto.html" title="Tipos de matrices"><span>Adjunto</span></a></li>
+                <li><a href="calculo.html" title="Operaciones con matrices"><span>Cálculo</span></a></li>
+                <li><a href="propiedades.html" title="Propiedades de los determinantes"><span>Propiedades</span></a></li>
+                <li><a href="inversa.html" title="Matriz inversa"><span>Inversa</span></a></li>
+                <li><a href="rango.html" title="Rango de una matriz"><span>Rango</span></a></li>
+                <li><a href="#" title="Resumen" class="actual"><span>Resumen</span></a></li>
+                <li><a href="los_determinantes.html" title="Índice"><span>Índice</span></a></li>
+        </ul>
+        </li>
+        <li><a href="#" title="Ejercicios de Determinantes">Ejercicios</a>
+          <ul>
+				<li><a href="determinantes_Actividades.html" title="Ejercicios 1">Ejercicios I</a></li>
+				<li><a href="determinantes_Evaluacion.html" title="Ejercicios 2">Ejercicios II</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    <section>
+    <div class="sombra-tit">
+      <h2 class="r">&nbsp;</h2></div>
+ <h4 class="e">Definición de determinante</h4>
+<p>A cada matriz cuadrada A  se le asigna un escalar particular denominado determinante de A , denotado por |A| o por det (A).
+</p>
+<h3 class="ri" id="uno">Determinante de orden uno</h3>
+<p style="font-size:1.1em; margin-left:7.5%; font-weight:bold;">|a<sub> 11</sub>|&nbsp;=&nbsp;a <sub>11</sub> </p>	
+<h3 class="ri" id="dos">Determinante de orden dos</h3>	
+<p  style="margin-left:7.5%;">
+<img src="../../../www.vitutor.org/algebra/determinantes/images/18.gif" alt="determinante de orden dos" width="79" height="43" style="vertical-align:middle;" /> = a <sub>11</sub> a <sub>22</sub> − a <sub>12</sub> a <sub>21</sub> 
+</p>
+<h3 class="ri" id="tres">Determinante de orden tres</h3>
+<p  style="margin-left:7.5%;">
+<img src="../../../www.vitutor.org/algebra/determinantes/images/21.gif" width="127" height="65" alt="determinante de orden 3"  class="mid" />=</p>
+
+<p style="margin-left:7.5%; margin-top:15px;">a<sub>11</sub>
+a<sub>22</sub> 
+a<sub>33</sub> + 
+
+a<sub>12</sub>
+a<sub>23 </sub>
+a<sub>31</sub>  +
+a<sub>13</sub>
+a<sub>21 </sub>
+a<sub>32</sub> − </p>
+
+<p style="margin-left:7.5%;">− a <sub>13</sub>
+a<sub>22</sub>
+a<sub>31</sub> −
+a<sub>12</sub>
+a<sub>21</sub>
+a<sub> 33 </sub> −
+a<sub>11</sub>
+a<sub>23</sub>
+a<sub>32.</sub></p><br />
+
+<h2 class="ri" id="sarrus"><a href="sarrus.html" title="Regla de Sarrus" style="text-decoration:underline;">Regla de Sarrus</a></h2>
+
+<p>
+Los términos con signo + están formados por los elementos de la diagonal principal y los de las diagonales paralelas con su correspondiente vértice opuesto.										</p>
+<p class="b"><img src="../../../www.vitutor.org/algebra/determinantes/images/0_1.gif" alt="positivo" width="144" height="74" /></p>
+
+<p >
+Los términos con signo − están formados por los elementos de la diagonal secundaria y los de las diagonales paralelas con su correspondiente vértice opuesto. 
+</p>
+<p class="b"><img src="../../../www.vitutor.org/algebra/determinantes/images/0_2.gif" alt="negativo" width="144" height="74" /></p><br />
+
+<h3 class="vi">
+<a href="adjunto.html" title="Menor complementario" style="text-decoration:underline;">Menor complementario</a> 
+</h3>
+<p >Se llama menor complementario de un elemento a<sub>ij</sub> al valor del determinante de orden n−1 que se obtiene al suprimir en la matriz la fila i y la columna j.					</p>
+<h3 class="vi"><a href="adjunto.html#ad" title="Adjunto" style="text-decoration:underline;">Adjunto</a></h3>
+<p id="adj">Se llama adjunto del elemento a<sub>ij</sub> al menor complementario anteponiendo:					</p>
+
+<ul class="vr" style="margin-left:10%;" >
+<li> El signo es +&nbsp;&nbsp;&nbsp; si&nbsp;  i+j &nbsp;es par.
+</li> 
+
+<li> El signo es −&nbsp;&nbsp;&nbsp; si&nbsp;  i+j &nbsp;es impar.
+</li>
+
+</ul>
+<p>
+El valor de un determinante es igual a la suma de productos de los elementos de una línea por sus adjuntos correspondientes:					 </p><br />
+
+<h1 class="r" id="calculo"><a href="calculo.html" title="Determinante de orden superior a tres" style="text-decoration:underline;">Determinante de orden superior a tres</a></h1>
+<p>
+Consiste en conseguir que una de las líneas del determinante esté formada por  elementos  nulos, menos uno: el elemento base o pivote, que valdrá 1 ón −1 . 
+</p>
+
+<p >Seguiremos los siguientes pasos: </p>
+
+
+
+<p><span class="a">&nbsp;1&nbsp;</span>Si algún elemento del determinante vale la unidad,  se elige una de las dos líneas: la fila o la columna, que contienen a dicho elemento (se debe escoger aquella que contenga el mayor número posible de elementos nulos).							 </p>
+
+<p><span class="a">&nbsp;2&nbsp;</span>En caso negativo:</p>
+
+
+<p style="margin-left:5%;"><span class="sb">&nbsp;1&nbsp;</span>  Nos fijamos en una línea que contenga el mayor número posible de elementos nulos y operaremos para que uno de los elementos de esa línea sea un 1 ón −1 (operando con alguna línea paralela ).							 </p>
+
+<p style="margin-left:5%;"><span class="sb">&nbsp;2&nbsp;</span> Dividiendo la línea por uno de sus elementos, por lo cual deberíamos  multiplicar el determinante por  dicho elemento para que su valor no varie. Es decir sacamos factor común en una línea de uno de sus elementos.</p>
+
+
+<p><span class="a">&nbsp;3&nbsp;</span>Tomando como referencia el elemento base, operaremos de modo que todos los elementos de la fila o columna, donde se encuentre, sean ceros.							  </p>	
+
+<p><span class="a">&nbsp;4&nbsp;</span>Tomamos el adjunto del elemento base, con lo que obtenemos un determinante de orden inferior en una unidad al original.</p><br />
+
+<h1 class="r" id="propiedades" style="text-decoration:underline;">
+<a href="propiedades.html" title="Propiedades de los determinantes">Propiedades de los determinantes</a>
+</h1>
+<p> 
+<span class="a">&nbsp;1&nbsp;</span>|A<sup>t</sup>|= |A| 
+</p>
+
+<p ><span class="a">&nbsp;2&nbsp;</span> |A|=0
+&nbsp;&nbsp;&nbsp;Si:</p>
+
+
+<p class="a">Posee dos líneas iguales</p>
+
+<p class="a">
+Todos los elementos de una línea son nulos.
+</p>
+
+<p class="a">
+Los elementos de una línea son combinación lineal de las otras.
+</p>
+
+<p>
+<span class="a">&nbsp;3&nbsp;</span>
+Un determinante triangular es igual al producto de los elementos de la diagonal principal..			
+</p>
+
+<p>
+<span class="a">&nbsp;4&nbsp;</span>
+Si en un determinante se cambian entre sí dos líneas paralelas su determinante cambia de signo.
+</p>
+
+<p>
+<span class="a">&nbsp;5&nbsp;</span>
+Si a los elementos de una línea se le suman los elementos de otra paralela multiplicados previamente por un n&ordm; real el valor del determinante no varía. 
+</p>
+
+<p>
+<span class="a">&nbsp;6&nbsp;</span>
+Si se multiplica un determinante por un número real, queda multiplicado por dicho número cualquier línea, pero sólo una. 
+</p>
+
+<p>
+<span class="a">&nbsp;7&nbsp;</span> 
+Si todos los elementos de una fila o columna están formados por dos sumandos, dicho determinante se descompone en la suma de dos determinantes. 
+</p>
+
+<p>
+<span class="a">8.</span>
+|A&middot;B| =|A|&middot;|B| </p> <br />
+
+<h3 class="vi"><a href="inversa.html" title="Matriz inversa" style="text-decoration:underline;">Matriz inversa</a></h3>
+<p><img src="../../../www.vitutor.org/algebra/determinantes/images/48.gif" width="118" height="46" alt="Matriz inversa" style="margin-left:7.5%;" /></p>
+<h3 class="vi"><a href="rango.html" title="Rango de una matriz" style="text-decoration:underline;">Rango de una matriz</a></h3>
+<p>
+El rango es el orden de la mayor submatriz cuadrada no nula.  
+</p>
+  
+  </section>
+  
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+
+   
+ <div class="contFlechas">
+    
+    <div class="flecha flecha-izq">
+    <a href="rango.html" title="Página anterior">
+        <img  src="../../../www.vitutor.it/images/flecha-iz.png" alt="Página anterior" width="30" height="25" title="Anterior">
+        </a>
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+
+    	<div class="set"><a href="numeros_reales.html" title="Índice de números reales"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+   		</div><!--fin.flecha-->
+    
+    	<div class="flecha flecha-der">
+        <a href="los_determinantes.html" title="Página siguiente"><img  src="../../../www.vitutor.it/images/flecha-der.png" alt="Página siguiente" width="30" height="25" title="Siguiente"></a></div>
+    	</div><!-- fin div-contFlechas-->
+
+</article>
+
+
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+ 
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+    <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+        <li><a href="determinantes.html"><span>Determinantes</span></a></li>
+        <li><a href="sarrus.html" title="Regla de Sarrus"><span>Sarrus</span></a></li>
+        <li><a href="adjunto.html" title="Tipos de matrices"><span>Adjunto</span></a></li>
+        <li><a href="calculo.html" title="Operaciones con matrices"><span>Cálculo</span></a></li>
+        <li><a href="propiedades.html" title="Propiedades de los determinantes"><span>Propiedades</span></a></li>
+        <li><a href="inversa.html" title="Matriz inversa"><span>Inversa</span></a></li>
+        <li><a href="rango.html" title="Rango de una matriz"><span>Rango</span></a></li>
+        <li class="active"><a href="#" title="Resumen"><span>Resumen</span></a></li>
+        <li><a href="los_determinantes.html" title="Índice"><span>Índice</span></a></li>
+        <li><a href="determinantes_Actividades.html" title="Ejercicios 1">Ejercicios I</a></li>
+		<li><a href="determinantes_Evaluacion.html" title="Ejercicios 2">Ejercicios II</a></li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+    
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index-2.html" title="Inicio">Inicio</a></li>
+      <li><a href="#" title="Álgebra">Álgebra lineal</a>
+      	<ul>
+          <li><a href="../sistemas%20I/sitemas_gauss.html" title="Sistemas Gauss">Sistemas Gauss</a></li>
+          <li><a href="../matrices/las_matrices.html" title="Matrices">Matrices</a></li>
+          <li><a href="los_determinantes.html" title="Determinantes ">Determinantes </a></li>
+          <li><a href="../sistemas%20I/regla_cramer.html" title="Regla de Cramer ">Regla de Cramer </a></li>
+          <li><a href="../pl/programacion_lineal.html" title="Programación lineal">Programación lineal</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="Bachillerato">Bachillerato</a>
+            <ul>
+                <li><a href="../../bac_2.html.html" title="2º Bachillerato tecnológico">2º Bac tecnológico</a></li>
+                <li><a href="../../bac_2cs.html" title="2º Bachillerato CS">2º Bac CS</a></li>
+            </ul>			
+      </li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+				<li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            	<li><a href="../../ejercicios/ejercicios_alineal.html" title="Ejercicios de Álgebra lineal">Álgebra lineal</a></li>
+            	<li><a href="../../ejercicios/ejercicios_bachillerato2.html" title="Ejercicios y problemas 2º Bachillerato tecnológico">2º Bac </a></li>
+            	<li><a href="../../ejercicios/ejercicios_bachillerato2cs.html" title="Ejercicios y problemas 2ºCS">2º Bac CS</a></li>
+             </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->   
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</body>
+
+<!-- Mirrored from www.vitutor.com/algebra/determinantes/res.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:08:09 GMT -->
+</html>

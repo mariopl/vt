@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from www.vitutor.com/geometry/vec/vectors_plane.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 11:53:02 GMT -->
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="keywords" content="Mathematics, maths, math word Problems, math problem solving, exercises, worksheets, activities, formulas, lessons, questions, homework, elementary, middle and high school, Arithmetic, Algebra, Calculus, Statistics, Geometry, Linear algebra, Analytic geometry." />
+<meta name="description" content="Vectors in the plane, direction, magnitude, position vector, components of a vector, formulas, examples, exercises and problems with solutions."/>
+<meta name="copyright" content="copyright (c) by vitutor" />
+<meta name="robots" content="all" />
+<meta name="author" content="vitutor" />
+<meta http-equiv="expires" content="0" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="icon" href="../../../www.vitutor.us/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.us/favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="../../../www.vitutor.us/js/domtab.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.us/css/k.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.us/css/x.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.co.uk/css/7.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.co.uk/css/6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.org/css/i.css" /><style type="text/css">
+ #tabs4 a:hover span,#tabs4 a span#actual_ts_4 {
+      color:#fff;
+      }
+</style>
+<title>Vectors in the Plane</title>
+
+
+ 
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="container" >
+	
+		<div id="header">
+			<a href="../../maths.html" title="Mathematics" style="text-decoration:none;"><img src="../../../www.vitutor.us/images/logo_v.png" alt="Mathematics. Home"  id="to" width="143" height="30" /></a>
+
+		<div class="menu" style="left:28.5%; width:70%;">
+			<ul style="font-size:0.95em;">
+				<ul style="font-size:0.95em;">
+				<li><a href="#" title="Notes 1" id="actual">Notes 1</a></li>
+                <li><a href="scalar_product.html" title="Notes 2">Notes 2</a></li>
+                <li><a href="vector_problems.html" title="Problems">Problems</a></li>
+                <li><a href="../../analytic_geometry.html" title="Analytic Geometry">Analytic G.</a></li>
+                <li><a href="../../maths.html" title="Mathematics">Home</a></li>
+			</ul>
+			</ul>
+			<a href="../../index-2.html" title="Math (Spanish)"><img src="../../../www.vitutor.us/images/es_125.png" id="int" alt="Math (Spanish)" width="125" height="30" /></a>
+	</div>			
+			 <!--  id=menu   -->
+		</div>			<!--fin header-->
+		
+		<div id="wrapper">
+		<div id="content">
+				
+			<div id="tabs4" style="position:relative; top:14px; left:-27px; margin-bottom:18px;">
+					<!--[if lte IE 6]>
+					<div id="tabs4" style="margin-bottom:-5px;">
+					<![endif]-->
+				<ul>
+					<li><a href="#" title="Vectors in the Plane" id="actual_t_4"><span id="actual_ts_4">Vectors</span></a></li>
+					<li><a href="unit_vector.html" title="Unit Vector"><span>Unit</span></a></li>
+                    <li><a href="adding_vectors.html" title="Adding Vectors"><span>Adding</span></a></li>
+                    <li><a href="scalar_multiplication.html" title="Scalar Multiplication"><span>Multiplication</span></a></li>
+                    <li><a href="dependence_independence.html" title="Linear Dependence and Independence"><span>Dependence</span></a></li>
+					<li><a href="standard_basis.html" title="Standard Basis"><span>Basis</span></a></li>
+                    <li><a href="cartesian_polar.html" title="Cartesian and Polar Coordinates"><span>Cartesian Polar</span></a></li>
+				</ul>
+ 				<!--[if lte IE 6]>
+					</div>
+				   <![endif]-->
+				</div>
+				
+				<div id="cont">
+<div class="out head_1">
+						<div class="in ltin tpin">
+							<h1 class="r">Vectors in the Plane</h1>
+				  </div>
+					</div>
+<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;"></div>
+</div>
+
+                  <div class="principal">
+							
+						<div class="left" style="margin-left:5%;"><br />
+							<img src="../../../www.vitutor.us/geometry/vec/images/22.gif" alt="Vector" width="170" height="150" /></div>
+								<br />
+
+							 
+							  <p class="av" style="margin-left:25%;">A vector is a  line segment  running from point A (tail) to point B (head).</p>
+							  
+							  <p class="ag" style="margin-left:25%;">Each vector has  a magnitude (also referred to as length) and a direction.</p>
+			  </div>
+              <h3 class="v" style="text-align:left; margin-left:5%;">Direction of a Vector</h3>
+              <p class="actividades_r">This is the direction of the line which contains the vector or any line which is parallel to it.</p>
+<h3 class="v" style="clear:left; text-align:left; margin-left:5%;" id="mg">Magnitude of a Vector</h3>
+			             <div class="principal">
+						  <div class="left" style="margin-left:5%;"><br /><br /><br /><br />
+						   <img src="../../../www.vitutor.us/geometry/vec/images/23.gif" alt="Vector" width="165" height="150" /></div>
+						   <h4 class="t" style="clear:;">&nbsp;</h4>
+						  <p style="margin-left:35%;" class="av">The magnitude of the vector <img src="../../../www.vitutor.us/geometry/vec/images/1.gif" alt="Vector" width="26" height="20" class="i" /> is the length of the line segment <img src="../../../www.vitutor.us/geometry/vec/images/1_00.gif" alt="Vector" width="26" height="20" class="i" />. It is denoted by <img src="../../../www.vitutor.us/geometry/vec/images/2.gif" alt="Vector Magnitude" width="32" height="28" style="vertical-align:middle;" />.</p>
+						  <p style="margin-left:35%;" class="ar"><span class="actividades_r"></span>The magnitude of a vector is always a positive number or zero.</p>
+						  
+						  <p style="margin-left:35%;" class="ar"><img src="../../../www.vitutor.us/geometry/vec/images/12_1.gif" alt="Magnitude of a Vector" height="29" width="96" /></p>
+						  <p style="margin-left:35%;" class="av"><img src="../../../www.vitutor.us/geometry/vec/images/12_2.gif" alt="Magnitude of a Vector Formula" width="117" height="34" /></p>
+						  <p style="margin-left:35%;" class="ag">The magnitude of a vector can be calculated if the coordinates of the endpoints are known:</p>
+						  <p style="margin-left:35%;" class="ar"><img src="../../../www.vitutor.us/geometry/vec/images/184.gif" alt="Magnitude of a Vector" width="240" height="24" /></p>
+						  <p style="margin-left:35%;" class="av"><img src="../../../www.vitutor.us/geometry/vec/images/183.gif" alt="Magnitude of a Vector Formula" width="240" height="37" /></p>
+               </div>
+              <h4 class="t">Examples</h4>
+              <p class="actividades_g">Calculate the magnitude of the following vectors:</p>
+<p class="actividades_2_r"><img src="../../../www.vitutor.us/geometry/vec/images/0_11.gif" alt="Vector Calculations" width="388" height="33" /></p>
+                            <p class="actividades_2_v"> <img src="../../../www.vitutor.us/geometry/vec/images/0_10.gif" alt="Vector Solution" width="509" height="33" /></p><br />
+
+      <p class="actividades_g">Calculate the value of k knowing the magnitude of the vector  <img src="../../../www.vitutor.us/geometry/vec/images/14.gif" alt="vector" width="14" height="24" class="i" />= (k, 3) is 5.</p>
+				       
+				        <p class="actividades_2_v"><img src="../../../www.vitutor.us/geometry/vec/images/109.gif" alt="Vector Solution" width="346" height="26" /></p>
+                        <br />
+						<h3 class="r" style="clear:left; text-align:left; margin-left:5%;">Position  Vector</h3>
+						<div class="principal">
+						  <div class="left" style="margin-left:2%; padding:30px;"><img src="../../../www.vitutor.us/geometry/vec/images/25.gif" alt="Position Vector" width="250" height="133" /></div><br />
+
+						  <p class="av" style="margin-left:50%;">The vector <img src="../../../www.vitutor.us/geometry/vec/images/8.gif" alt="Vector" width="26" height="20" style="vertical-align:text-bottom;" /> that joins the coordinates origin, <strong>O</strong>, with a point, <strong>P</strong>, is the position vector  of the point P.</p>
+				  </div>
+						<h3 class="r" style="clear:left; text-align:left; margin-left:5%;" id="cv">Components or Coordinates of a Vector</h3>
+						<div class="principal">
+						  <div class="left" style="margin-left:2%; padding:30px;"><img src="../../../www.vitutor.us/geometry/vec/images/26.gif" alt="Componets and Coordinates of a Vector" width="250" height="196" /></div>
+						  <p style="margin-left:50%;" class="ag">If the coordinates of A and B are:</p>
+						  <p style="margin-left:50%;" class="av"><img src="../../../www.vitutor.us/geometry/vec/images/4.gif" alt="Coordinates" width="74" height="24" /><img src="../../../www.vitutor.us/geometry/vec/images/5.gif" alt="Coordinates" width="74" height="24" style="margin-left:10%;" /></p>
+						
+				  <p style="margin-left:50%;" class="av"><img src="../../../www.vitutor.us/geometry/vec/images/6.gif" alt="Magnitude of a Vector Formula" width="185" height="29" /></p></div>
+				  <h4 class="t">Examples</h4>
+				  <p class="actividades_r" style="clear:both;">Find the components of the vector <img src="../../../www.vitutor.us/geometry/vec/images/10_0.gif" width="26" height="20" alt="Vector AB" class="i" />:</p>
+<p class="actividades_2_v"><img src="../../../www.vitutor.us/geometry/vec/images/7.gif" alt="Vector Calculations" width="285" height="77" /></p>
+						<br />
+						<p class="actividades_r">The  vector <img src="../../../www.vitutor.us/geometry/vec/images/1.gif" alt="vector" width="26" height="20" style="vertical-align:text-bottom;" /> has the <span class="actividades_r" style="clear:both;">components</span> (5, −2). Find the coordinates of A if  the terminal point is known as B(12,  −3).</p>
+<p class="actividades_2_v"><img src="../../../www.vitutor.us/geometry/vec/images/9.gif" alt="Vector Calculations"  width="381" height="126" /></p>
+							<br />
+						<p class="actividades_r">Calculate the coordinates of Point D so that the quadrilateral  of Points:  A(−1, −2), B(4, −1), C(5, 2) and D form a parallelogram.</p>
+<p class="actividades"><img src="../../../www.vitutor.us/geometry/vec/images/107.gif" alt="Parallelogram" width="181" height="150" /><img src="../../../www.vitutor.us/geometry/vec/images/105.gif" alt="Vector Calculations" width="324" height="177" style="margin-left:10%;" /></p><br />
+
+						<div style="margin-left:1.5%;">
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div><br />
+
+</div>	 <!--id="cont"  -->
+			<div id="sub">
+					<ul>
+						<li class="ka" style="width:48px;">
+							<a href="vector.html" title="Vectors">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_i.gif" width="40" height="20" alt="Vectors" /></a>
+						</li>
+						
+						<li class="ke" style="width:48px;">
+							<a href="#to" title="Top" style="text-decoration:underline;"><img src="../../../www.vitutor.us/images/flechas/f_v_a.gif" alt="Top" width="20" height="40" /></a>
+						</li>
+						
+						<li class="ki" style="margin-top:-75px; width:48px">
+							<a href="unit_vector.html" title="Unit Vector">
+							<img src="../../../www.vitutor.us/images/flechas/f_v_d.gif" width="40" height="20" alt="Unit Vector" /></a>
+						</li>
+					</ul>
+			</div>
+					
+	</div> 		<!--id="content"  -->
+		
+</div>				<!--id="wrapper"  -->
+<div id="vin_s" style="margin-top:40px;">
+               <form action="http://www.google.es/" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="22" />
+                  <input type="submit" name="sa" value="Buscar" />
+                </div>
+              </form>
+              
+              <script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+              
+              
+
+                <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+                <ul class="loso">
+             <li><span class="sitio">Site</span></li><li><a href="../../maths.html" title="Math">Math</a> </li>
+            <li><a href="../../formulas.html" title="Formulas">Formulas</a></li>
+            <li><a href="../../problems.html" title="Word Problems">Word Problems</a></li>
+            <li><a href="../../worksheets.html" title="Worksheets">Worksheets</a> </li>
+            <li><a href="../../algeb.html" title="Algebra">Algebra</a></li>
+            <li><a href="../../calculus.html" title="Calculus">Calculus</a></li>
+            <li><a href="../../geometry.html" title="Geometry">Geometry</a></li>
+            <li><a href="../trigonometry/trigonometry.html" title="Trigonometry">Trigonometry</a></li>
+            <li><a href="../../analytic_geometry.html" title="Analytic Geometry">Analytic Geometry</a></li>
+            <li><a href="../line/coordinate_geometry.html" title="Line Equations">Line Equations</a></li>
+            <li><a href="../conics/conic_sections.html" title="Conic Sections">Conic Sections</a></li>
+            <li><a href="../vectors/vectors_space.html" title="Vectors 3-D">Vectors 3-D</a></li>
+            <li><a href="../space/the_plane.html" title="Plane Equations">Plane Equations</a></li>
+            <li>&nbsp;</li>
+            <li><span class="sitio">Subject</span></li>	
+            <li><a href="#" title="Vectors in the Plane" id="acto"><span>Vectors in the Plane</span></a></li>
+					<li><a href="unit_vector.html" title="Unit Vector"><span>Unit Vector</span></a></li>
+                    <li><a href="adding_vectors.html" title="Adding Vectors"><span>Adding Vectors</span></a></li>
+                    <li><a href="scalar_multiplication.html" title="Scalar Multiplication"><span>Scalar Multiplication</span></a></li>
+                    <li><a href="dependence_independence.html" title="Linear Dependence and Independence"><span>Linear Dependence</span></a></li>
+					<li><a href="standard_basis.html" title="Standard Basis"><span>Standard Basis</span></a></li>
+                    <li><a href="cartesian_polar.html" title="Cartesian and Polar Coordinates"><span>Cartesian and Polar</span></a></li>
+                    <li><a href="scalar_product.html" title="Scalar Product of Vectors"><span>Scalar Product</span></a></li>
+                    <li><a href="vector_projection.html" title="Vector Projection"><span>Vector Projection</span></a></li>
+					<li><a href="angle_vectors.html" title="Angle Between Two Vectors"><span>Angle Two Vectors</span></a></li>
+                    <li><a href="orthogonal_orthonormal.html" title="Orthogonal and Orthonormal Vectors"><span>Orthogonal</span></a></li>
+                    <li><a href="vector_problems.html" title="Vector problems"><span>Vector problems</span></a></li>				
+			</ul>
+
+			</div>  	<!--id="vin_s"  --> 
+           <div id="footer">
+			<img src="../../../www.vitutor.us/images/pie_c_2.gif" width="161" height="20" alt="Copyright" class="copy"/>
+           <a href="../../ad.html" title="Política de privacidad" style="margin-left:22.5%; position:relative; bottom:4px;"><span style="background-color:#fbf8f5;">Privacy Policy </span></a>
+           <a href="mailto:" class="correo" title="E-mail" style="background-color:#eee;">
+			<img src="../../../www.vitutor.us/images/pie_correo_4.gif" width="216" height="20" alt="E-mail" class="imagen" /></a>
+</div>  <!--id="footer"  -->
+
+</div>             <!--  id="container"   -->
+	
+</body>
+
+<!-- Mirrored from www.vitutor.com/geometry/vec/vectors_plane.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 11:53:09 GMT -->
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+
+<!-- Mirrored from www.vitutor.com/algebra/sistemas I/s_e.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:41:47 GMT -->
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="keywords" content="Matemáticas, ESO, Bachillerato, fórmulas, conceptos, definiciones, ejemplos prácticos, apuntes, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, teleformación, e-Learning, academia, academia virtual, centro de estudios, educación, educación a distancia, enseñanza." />
+<meta name="description" content="Ejercicios resueltos de sistemas de ecuaciones por determinantes, resolver por la regla de Cramer, resolver el sistema homogéneo, discutir y resolver el sistema cuando sea compatible, discusión de sistemas con un parámetro, discusión de sistemas con dos parámetros. Enseñanza secundaria, ESO y Bachillerato."/>
+<meta name="copyright" content="copyright (c) by vitutor" />
+<meta name="robots" content="all" />
+<meta name="author" content="vitutor" />
+<meta http-equiv="expires" content="0" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="icon" href="../../../www.vitutor.org/favicon.html" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.org/favicon.html" type="image/x-icon"/>
+<script type="text/javascript" src="../../../www.vitutor.org/js/domtab.js"></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.org/css/k.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../../../www.vitutor.org/css/x.css" />
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<!--Aviso cookies-->
+<script type="text/javascript" src="http://www.vitutor.it/js/aviso_cookies_min.html"></script>
+<!--Fin aviso cookies-->
+
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.org/css/7.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.org/css/6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.org/css/i.css" /><style type="text/css">
+ #tabs4 a:hover span,#tabs4 a span#actual_ts_4 {
+      color:#fff;
+	  }
+ul.domtabs a:link,
+ul.domtabs a:visited,
+ul.domtabs a:active,
+ul.domtabs a:hover{
+		width:21px;
+		margin:0 5px 0 5px;
+		padding:0;
+		background:#3B4041;
+		color:#fff;
+		display:block;
+		font-weight:bold;
+		text-decoration:none;
+		}
+ul.domtabs a:hover{
+			color:#fff;
+			background:#900;
+			}	 			
+</style>
+
+<!--[if lte IE 6]>
+<style> 
+div.domtab{ margin-bottom:12px; position:relative; top:-38px;}
+ul.domtabs{position:relative; top:10px;  margin-bottom:10px; }
+ul.domtabs a:link,
+ul.domtabs a:visited,
+ul.domtabs a:active,
+ul.domtabs a:hover{
+			width:12px;
+			font-size:0.9em;
+			margin:10px 8px 0 0;
+			padding:0 3px;
+			}	
+ul li	{font-size:0.9em;}
+ul li ul li	{font-size:0.9em;}
+ul li ul li ul li {font-size:0.9em;}					
+</style>
+<![endif]-->
+
+<title>Ejercicios resueltos de sistemas de ecuaciones (Cramer)</title>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+<!--cabecera DFP sin adSense-->
+<!--
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type='text/javascript'>
+var crtg_content = "";
+
+googletag.cmd.push(function() {
+	googletag.defineSlot('/42971575/vitutorcom_gen_inf_sky_728x90', [728, 90], 'div-gpt-ad-sky-inf').addService(googletag.pubads());
+	googletag.defineSlot('/42971575/vitutorcom_gen_lateral_sky_der_160x600', [160, 600], 'div-gpt-ad-lat-der').addService(googletag.pubads());
+	googletag.defineSlot('/42971575/vitutorcom_gen_sup_rect_der_336x280', [336, 280], 'div-gpt-ad-rect-der').addService(googletag.pubads());
+	googletag.defineSlot('/42971575/vitutorcom_gen_sup_rect_izq_336x280', [336, 280], 'div-gpt-ad-rect-izq').addService(googletag.pubads());
+
+	
+	googletag.pubads().enableSingleRequest();	googletag.enableServices();
+});
+</script>
+<!--Hasta aquí la cabecera DFP sin adSense-->
+<!--cabecera DFP con adSense-->
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type='text/javascript'>
+var crtg_content = "";
+
+googletag.cmd.push(function() {
+	googletag.defineSlot('/42971575/vitutorcom_gen_lateral_sky_der_160x600', [160, 600], 'div-gpt-ad-lat-der').addService(googletag.pubads());
+
+	
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+});
+</script>
+<!--Hasta aquí la cabecera DFP con adSense--></head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="container" >
+	
+		<div id="header">
+		
+			<a href="../../index.html" title="Matemáticas" style="text-decoration:none;"><img src="../../../www.vitutor.org/images/logo_v.png" alt="Matemáticas. Inicio"  id="to" width="143" height="30" /></a>
+			
+ 			<div class="menu">
+
+              <ul style=" font-size:0.95em;">
+			  		
+				<li><a  href="cramer.html" title="Apuntes">Apuntes</a> </li>
+				<li><a  href="sistemas_2_Actividades.html" title="Ejercicios 1">Ejercicios 1</a></li>
+				<li><a  href="sistemas_2_Evaluacion.html" title="Ejercicios 2">Ejercicios 2</a></li>
+                 <li><a  href="../../index.html" title="Matemáticas">Inicio</a></li>
+              </ul><a href="../../index.html" title="Inicio"><img src="../../../www.vitutor.org/images/int.png" id="int" alt="Inicio. Español" width="32" height="30"  /></a>
+    	  </div>	<!--  id=menu   -->
+				
+
+  		</div> 			<!--fin header--><div id="wrapper">
+
+
+	   <div id="content">
+            <br />
+				 <div class="domtab">
+              <ul class="domtabs" style="position:relative; left:-10px; font-size:1em; ">
+                <li><a href="#cero" style="width:100px;">Ejercicios</a></li>
+                <li><a href="#uno">1</a></li>
+                <li><a href="#dos">2</a></li>
+                <li><a href="#tres">3</a></li>
+                <li><a href="#cuatro">4</a></li>
+                <li><a href="#cinco">5</a></li>
+                <li><a href="#seis">6</a></li>
+                <li><a href="#siete">7</a></li>
+                <li><a href="#ocho">8</a></li>
+                <li><a href="#nueve">9</a></li>
+                <li><a href="#diez">10</a></li>
+                <li><a href="#once">11</a></li>
+                <li><a href="#doce">12</a></li>
+                <li><a href="#trece">13</a></li>
+                <li><a href="#uno4">14</a></li>
+                <li><a href="#uno5">15</a></li>
+                <li><a href="#uno6">16</a></li>
+                <li><a href="#uno7">17</a></li>
+              </ul>
+              <div>
+                <h2 class="r" id="cero">Ejercicios  de sistemas de ecuaciones lineales II</h2>
+                <p class="actividades_v"><span class="numero_r" style="font-size:1.3em; background:#eee;">1</span>Resolver por la regla de Cramer:</p>
+						
+				<p class="actividades_2_r">
+				<span class="numero_v">1 </span><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/59.gif" alt="sistema" width="115" height="65" style="vertical-align:middle;" />                </p>
+						
+                <p class="actividades_2_g">
+                                 <span class="numero_v">2 </span><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/61.gif" alt="sistema" width="106" height="65" style="vertical-align:middle;" />  </p>
+                <p class="actividades_2_g"><span class="numero_r">3 </span><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/49.gif" alt="sistema" width="118" height="65" style="vertical-align:middle;"  /></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">2</span>Estudiar y resolver, si es posible, el sistema:</p>
+                            <p class="actividades_2_r">
+                                <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/56.gif" alt="sistema" width="126" height="83" />								
+                </p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">3</span>Estudiar y resolver, si es posible, el sistema:</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/63.gif" alt="sistema" width="127" height="83" /></span></p>
+                
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">4</span>Estudiar y resolver, si es posible, el sistema:</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/67.gif" width="156" height="83" alt="sistema" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">5</span>Estudiar y resolver, si es posible, el sistema:</p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/65.gif" alt="sistema" width="168" height="83" /></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">6</span>Resolver el sistema homogéneo:</p>
+                <p class="actividades_2_r"><span class="actividades"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/51.gif" alt="sistema homogéneo" width="118" height="65" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1 Estilo1" style="font-size:1.3em; background:#eee;">7</span>Resolver el sistema homogéneo:</p>
+                <p class="actividades_2_r"><span class="actividades" style="margin-top:30px;"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/71.gif" alt="sistema" width="117" height="65" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">8</span>Resolver el sistema homogéneo:</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/73.gif" alt="sistema" width="122" height="65" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">9</span>Resolver el sistema homogéneo:</p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/69.gif" width="118" height="65" alt="sistema" /></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">10</span>Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><span class="actividades_2"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/54.gif" alt="sistema" width="123" height="65" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">11</span>Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/75.gif" alt="sistema" width="118" height="65" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">12</span>Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/81.gif" alt="sistemas" width="298" height="67" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">13</span>Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/85.gif" alt="sistema" width="266" height="83" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">14</span>Estudiar el siguiente sistema según los distintos valores de a y b.</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/90.gif" alt="sistema" width="342" height="67" /></span></p>
+                <p class="actividades_v"><span class="numero_r Estilo1 Estilo1" style="font-size:1.3em; background:#eee;">15</span>Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/78.gif" alt="sistema" width="377" height="67" /></p>
+                <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">16</span>Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/83.gif" alt="sistema" width="126" height="65" /></p>
+                            <p class="actividades_v"><span class="numero_r Estilo1" style="font-size:1.3em; background:#eee;">17</span>Estudiar el siguiente sistema según los distintos valores de a y b. </p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/88.gif" alt="sistema" width="117" height="65" /></p>
+               <br />
+			  </div>
+              
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="uno">1</h2>
+                <p class="actividades_g">Resolver por la regla de Cramer:</p>
+				<p class="actividades_v">
+					<span class="numero_r">1 </span><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/59.gif" alt="sistema" width="115" height="65" style="vertical-align:middle;" />                
+                </p>
+                <p class="actividades_2_g">
+					<img src="../../../www.vitutor.org/algebra/sistemas%20I/images/60_1.gif" alt="solución" width="220" height="65" />
+				</p>
+                <p class="actividades_2_r">
+					<img src="../../../www.vitutor.org/algebra/sistemas%20I/images/60_2.gif" alt="solución" width="220" height="81" />
+				</p>
+                <p class="actividades_2_g">
+					<img src="../../../www.vitutor.org/algebra/sistemas%20I/images/60_3.gif" alt="solución" width="194" height="81" />
+				</p>
+                <p class="actividades_2_r">
+					<img src="../../../www.vitutor.org/algebra/sistemas%20I/images/60_4.gif" alt="solución" width="194" height="81" />
+				</p>
+						
+  				<p class="actividades_v" style="margin-top:30px;">
+                     <span class="numero_r">2 </span><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/61.gif" alt="sistema" width="106" height="65" style="vertical-align:middle;" />  </p>
+                 <p class="actividades_2_r">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/62_1.gif" alt="solución" width="220" height="65" />
+                </p>
+                 <p class="actividades_2_g">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/62_2.gif" alt="solución" width="436" height="80" />
+                </p>
+                 <p class="actividades_2_r">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/62_3.gif" alt="solución" width="200" height="80" />
+                </p>
+                <p class="actividades_v" style="margin-top:30px;"><span class="numero_r">3 </span><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/49.gif" alt="sistema" width="118" height="65" style="vertical-align:middle;"  /></p>
+                <p class="actividades_2_r">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_1.gif" alt="solución" width="351" height="65" />
+                </p>
+                <p class="actividades_2_g">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_2.gif" alt="solución" width="360" height="65" />
+                </p>
+                <p class="actividades_2_r">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/50_3.gif" alt="solución" width="277" height="35" />
+                </p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="dos">2</h2>
+                <p class="actividades_v" style="margin-top:30px;">Estudiar y resolver, si es posible, el sistema:</p>
+				<p class="actividades_2_g">
+			    	<img src="../../../www.vitutor.org/algebra/sistemas%20I/images/56.gif" alt="sistema" width="126" height="83" />								
+                </p>
+				<p class="actividades_r" style="margin-top:30px;">
+				<span class="numero_v">1.</span> Tomamos la matriz de los coeficientes y le hallamos el rango.						  
+               	</p>
+								
+                <p class="actividades_2_g">
+                    <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/108.gif" alt="rango" width="193" height="98" />
+               	</p> 
+                <p class="actividades_2_r">
+                            <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/110.gif" alt="rango" width="546" height="74" />
+               	</p>
+               	<p class="actividades_2_v"><span class="sol">r(A) = 3</span></p>
+               	<p class="actividades_r" style="margin-top:30px;"><span class="numero_v">2. </span> Hallamos el rango de la matriz ampliada</p>
+               	<p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/109.gif" alt="matriz" width="257" height="98" /></p>
+                 <p class="actividades_2_r">  <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/111.gif" alt="determinante"  width="238" height="117" /></p>
+                 <p class="actividades_2_v"><span class="sol">r(A') = 3</span></p>
+                 <p class="actividades_r" style="margin-top:30px;"><span class="numero_v">3. </span> Aplicamos el <strong>teorema de Rouché. </strong></p>
+                 <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/112.gif" alt="teorema de Rouché" width="334" height="26"  /></p>
+                 <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/113.gif" alt="teorema de Rouché" width="250" height="18" /></p>
+                 <p class="actividades_r" style="margin-top:30px;"><span class="numero_v">4.</span> Se resuelve el sistema, si éste no es incompatible, por la regla de Cramer o por el método de Gauss</p>
+                 <p class="actividades_g">Tomamos el sistema que corresponde a la submatriz de orden 3, que tiene rango 3, y lo resolvemos.</p>
+                 <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/57_1.gif" alt="regla de Cramer" width="126" height="65" /></p>
+                 <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/57_2.gif" alt="regla de Cramer" width="474" height="80" /></p>
+                 <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/57_3.gif" alt="regla de Cramer" width="203" height="80" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="tres">3</h2>
+                <p class="actividades_v">Estudiar y resolver, si es posible, el sistema:</p>
+				<p class="actividades_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/63.gif" alt="sistema" width="127" height="83" /></span></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_1.gif" alt="Discusión" width="434" height="83" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_2.gif" alt="Discusión" width="480" height="65" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_3.gif" alt="Discusión" width="202" height="83" /></p>
+                <p class="actividades_2_v"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_4.gif" alt="Discusión" width="334" height="23" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_5.gif" alt="Discusión" width="264" height="18" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_6.gif" alt="Discusión" width="127" height="65" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_7.gif" alt="Discusión" width="513" height="81" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/64_8.gif" alt="Discusión" width="235" height="83" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="cuatro">4</h2>
+                 <p class="actividades_v">Estudiar y resolver, si es posible, el sistema:</p>
+                <p class="actividades_2_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/67.gif" width="156" height="83" alt="sistema" /></span></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_1.gif" alt="Discusión" width="256" height="83" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_2.gif" alt="Discusión" width="291" height="83" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_3.gif" alt="Discusión" width="364" height="65" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_4.gif" alt="Discusión" /></p>
+                <p class="actividades_2_v"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_3.gif" alt="Discusión" width="334" height="26" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_4.gif" alt="Discusión" width="316" height="22" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_6.gif" alt="Discusión" width="292" height="83" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_7.gif" alt="Discusión" width="328" height="100" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_8.gif" alt="Discusión" width="281" height="100" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_9.gif" alt="Discusión" width="301" height="100" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/68_10.gif" alt="Discusión" width="300" height="100" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="cinco">5</h2>
+               	<p class="actividades_v">Estudiar y resolver, si es posible, el sistema:</p>
+  				<p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/65.gif" alt="sistema" width="168" height="83" /></p>
+  				<p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_1.gif" alt="Discusión" width="506" height="83" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_2.gif" alt="Discusión" width="364" height="65" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_3.gif" alt="Discusión" width="237" height="83" /></p>
+  				<p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_1.gif" alt="Discusión" width="506" height="83" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_5.gif" alt="Discusión" width="336" height="26" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_6.gif" alt="Discusión" width="300" height="22" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_5.gif" alt="Discusión" width="292" height="100" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_6.gif" alt="Discusión" width="292" height="100" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/66_7.gif" alt="Discusión" width="268" height="100"/></p>
+                
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="seis">6</h2>
+                <p class="actividades_v">Resolver el sistema homogéneo:</p>
+  				<p class="actividades_g"><span class="actividades"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/51.gif" alt="sistema homogéneo" width="118" height="65" /></span></p>
+  				<p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/53_1.gif" alt="sistema homogéneo" width="287" height="65" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/53_2.gif" alt="sistema homogéneo" width="459" height="18" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/53_3.gif" alt="sistema homogéneo" width="220" height="41" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/53_4.gif" alt="sistema homogéneo" width="292" height="41" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/53_5.gif" alt="sistema homogéneo" width="254" height="35" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="siete">7</h2>
+                <p class="actividades_v">Resolver el sistema homogéneo:</p>
+                <p class="actividades_g"><span class="actividades" style="margin-top:30px;"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/71.gif" alt="sistema" width="117" height="65" /></span></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/72_1.gif" alt="sistema homogéneo" width="184" height="65" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/72_2.gif" alt="sistema homogéneo" width="358" height="18" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/72_3.gif" alt="sistema homogéneo" width="224" height="19" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="ocho">8</h2>
+                <p class="actividades_v">Resolver el sistema homogéneo:</p>
+  				<p class="actividades_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/73.gif" alt="sistema" width="122" height="65" /></span></p>
+                 <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/74_1.gif" alt="sistema homogéneo" width="184" height="65" /></p>
+                 <p class="actividades_2_v"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_7.gif" alt="sistema homogéneo" width="389" height="22" /></p>
+                 <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_8.gif" alt="sistema homogéneo" width="304" height="22" /></p>
+                <br />
+              </div>
+               <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="nueve">9</h2>
+                <p class="actividades_v">Resolver el sistema homogéneo:</p>
+  				<p class="actividades_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/69.gif" width="118" height="65" alt="sistema" /></p>
+  				<p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/70_1.gif" alt="sistema homogéneo" width="292" height="65" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/70_2.gif" alt="sistema homogéneo" width="460" height="18" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/70_3.gif" alt="sistema homogéneo" width="184" height="41" /></p>
+                <p class="actividades_2_g"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/70_4.gif" alt="sistema homogéneo" width="323" height="41" /></p>
+                <p class="actividades_2_r"> <img src="../../../www.vitutor.org/algebra/sistemas%20I/images/70_5.gif" alt="sistema homogéneo" width="255" height="35" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="diez">10</h2>
+                <p class="actividades_v">Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_2_r"><span class="actividades_2"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/54.gif" alt="sistema" width="123" height="65" /></span></p>
+                <p class="actividades_v" style="margin-top:30px;"><span class="numero_r">1. </span> <strong>Hallamos el rango de la matriz de los coefecientes.</strong></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_1.gif" alt="matriz" width="184" height="74" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_2.gif" alt="matriz" width="402" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_9.gif" alt="matriz" width="218" height="26" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_10.gif" alt="matriz" width="218" height="26" /></p>
+                
+                <p class="actividades_v" style="margin-top:30px;"><span class="numero_r">2. </span> <strong>Hallamos el rango de la matriz ampliada.</strong></p> 
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_1_1.gif" alt="matriz" width="237" height="74" /></p>
+                 <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_1_3.gif" alt="rango" width="366" height="74" /></p>
+                <p class="actividades_v" style="margin-top:30px;"><span class="numero_r">3. </span> Aplicamos el teorema de Rouché</p>
+                 <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_3.gif" alt="Rouché" width="540" height="26" /></p>
+                 <p class="actividades_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_4.gif" alt="Rouché"  width="637" height="26" /></p>
+                <p class="actividades_v" style="margin-top:30px;"><span class="numero_r">4. </span> <strong>Resolvemos el sistema compatible determinado por la regla de Cramer </strong>(tambíén se puede resolver mediante el método de Gauss).</p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_5.gif" alt="sistema" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_6.gif" alt="sistema" width="213" height="67" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/55_7.gif" alt="solución" width="486" height="42" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="once">11</h2>
+                 <p class="actividades_v">Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/75.gif" alt="sistema" width="118" height="65" /></span></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_1.gif" alt="sistema" width="345" height="65" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_2.gif" alt="sistema" width="364" height="65"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_3.gif" alt="sistema" width="387" height="65"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_10.gif" alt="sistema" width="218" height="26"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_11.gif" alt="sistema" width="389" height="26"  /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_5.gif" alt="sistema" width="369" height="41"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_13.gif" alt="sistema" width="312" height="26"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_14.gif" alt="sistema" width="300" height="22" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_7.gif" alt="sistema" width="374" height="65"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_8.gif" alt="sistema" width="155" height="65"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/77_9.gif" alt="sistema" width="292" height="36"  /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="doce">12</h2>
+                <p class="actividades_v">Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/81.gif" alt="sistemas" width="298" height="67" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_1.gif" alt="sistema" width="437" height="65" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_2.gif" alt="sistema" width="205" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_3.gif" alt="sistema" width="59" height="16"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_4.gif" alt="sistema" width="342" height="65"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_15.gif" alt="sistema" width="238" height="26"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_16.gif" alt="sistema" width="316" height="22"  /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_6.gif" alt="sistema" width="362" height="18"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_17.gif" alt="sistema" width="312" height="26"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_14.gif" alt="sistema" width="300" height="22"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_8.gif" alt="sistema" width="449" height="65"  /></p>
+
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_9.gif" alt="sistema" width="200" height="65"  /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/82_10.gif" alt="sistema" width="343" height="38"  /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="trece">13</h2>
+               	<p class="actividades_v">Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_r"><span class="act_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/85.gif" alt="sistema" width="266" height="83" /></span></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_1.gif" alt="sistema" width="429" height="83" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_2.gif" alt="sistema" width="287" height="83" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_3.gif" alt="sistema" width="59" height="16" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_4.gif" alt="sistema" width="465" height="83" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_5.gif" alt="sistema" width="273" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_6.gif" alt="sistema" width="389" height="23" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_18.gif" alt="sistema" width="313" height="26" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_14.gif" alt="sistema" width="300" height="22" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_8.gif" alt="sistema" width="340" height="87" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_9.gif" alt="sistema" width="261" height="83" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/86_10.gif" alt="sistema" width="369" height="36" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="uno4">14</h2>
+                <p class="actividades_v">Estudiar el siguiente sistema según los distintos valores de a y b.</p>
+                <p class="actividades_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/90.gif" alt="sistema" width="342" height="67" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_1.gif" alt="sistema" width="496" height="65" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_2.gif" alt="sistema" width="440" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_19.gif" alt="sistema" width="312" height="50" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_14.gif" alt="sistema" width="300" height="22" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_4.gif" alt="sistema" width="59" height="16" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_5.gif" alt="sistema" width="384" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_6.gif" alt="sistema" width="216" height="41" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_21.gif" alt="sistema" width="317" height="50" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_20.gif" alt="sistema" width="197" height="22"  /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_22.gif" alt="sistema" width="341" height="50" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_16.gif" alt="sistema" width="316" height="22" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_9.gif" alt="sistema" width="67" height="16" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_10.gif" alt="sistema" width="414" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/92_11.gif" alt="sistema" width="434" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_22.gif" alt="sistema" width="341" height="50" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_20.gif" alt="sistema" width="197" height="22" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="uno5">15</h2>
+                <p class="actividades_v">Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/78.gif" alt="sistema" width="377" height="67" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/79_1.gif" alt="sistema" width="531" height="65" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/79_2.gif" alt="sistema" width="440" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/79a_1.gif" alt="sistema" width="59" height="16" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/79a_2.gif" alt="sistema" width="386" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/79a_3.gif" alt="sistema" width="390" height="23" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/79a_4.gif" alt="sistema" width="67" height="16" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80a_1.gif" alt="sistema" width="345" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80a_2.gif" alt="sistema" width="364" height="65" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80a_3.gif" alt="sistema" width="387" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_1.gif" alt="sistema" width="59" height="16" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_2.gif" alt="sistema" width="386" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_3.gif" alt="sistema" width="390" height="23" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_4.gif" alt="sistema" width="67" height="16" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_5.gif" alt="sistema" width="416" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_6.gif" alt="sistema" width="146" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_24.gif" alt="sistema" width="238" height="26" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_16.gif" alt="sistema" width="316" height="22" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_8.gif" alt="sistema" width="378" height="41" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80b_9.gif" alt="sistema" width="427" height="58" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_1.gif" alt="sistema" width="312" height="26" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_2.gif" alt="sistema" width="300" height="22" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_3.gif" alt="sistema" width="426" height="85" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_4.gif" alt="sistema" width="378" height="85" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_5.gif" alt="sistema" width="442" height="85" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_6.gif" alt="sistema" width="452" height="56" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/80c_7.gif" alt="sistema" width="260" height="53" /></p>
+                
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="uno6">16</h2>
+                <p class="actividades_v">Discutir  y resolver el sistema  cuando sea compatible.</p>
+                <p class="actividades_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/83.gif" alt="sistema homogéneo" width="126" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/84_1.gif" alt="sistema" width="250" height="65" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_25.gif" alt="sistema" width="485" height="22" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_26.gif" alt="sistema" width="400" height="22" /></p>
+				<p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_27.gif" alt="sistema" width="238" height="20" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_28.gif" alt="sistema" width="316" height="22" /></p>
+				<p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_29.gif" alt="sistema" width="245" height="50" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_30.gif" alt="sistema" width="552" height="50" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_31.gif" alt="sistema" width="429" height="42" /></p>
+                <br />
+              </div>
+              <div>
+                <h2 class="r">Ejercicios resueltos de sistemas de ecuaciones lineales II</h2>
+                <h2 class="v" style="font-size:1.5em;" id="uno7">17</h2>
+                <p class="actividades_v">Estudiar el siguiente sistema según los distintos valores de a y b. </p>
+                <p class="actividades_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/88.gif" alt="sistema" width="117" height="65" /></p>
+                <p class="actividades_2_g"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/89_1.gif" alt="sistema" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/89_2.gif" alt="sistema" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_32.gif" alt="sistema" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_14.gif" alt="sistema" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/89_4.gif" alt="sistema" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/89_5.gif" alt="sistema" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_33.gif" alt="sistema" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_20.gif" alt="sistema" /></p>
+                <p class="actividades_2_v"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_34.gif" alt="sistema" /></p>
+                <p class="actividades_2_r"><img src="../../../www.vitutor.org/algebra/sistemas%20I/images/1_16.gif" alt="sistema" /></p>
+                <br />
+              </div> </div>	 		<!--id="domtab"  -->
+				<br />
+				<div style="margin-left:5%;">
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div>   
+				
+				<div id="sub">
+            <ul>
+                <li class="ke_a"><a href="#to" title="Subir" ><img src="../../../www.vitutor.org/images/flechas/f_v_a.gif" alt="Subir" width="20" height="40" /></a></li>
+            </ul>
+		</div>
+          
+      </div>  		<!--id="content"  -->
+
+    </div> 				<!--id="wrapper"  -->
+		 
+ <div id="vin_s" style="margin-top:40px;">
+               <form action="http://www.google.es/" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="22" />
+                  <input type="submit" name="sa" value="Buscar" />
+                </div>
+              </form>
+              
+              <div style="margin-left:-1px;">
+<!-- vitutorcom_gen_lateral_sky_der_160x600 -->
+<div id='div-gpt-ad-lat-der' style='width:160px; height:600px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-lat-der'); });
+</script>
+</div></div>
+                <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+                <ul class="loso">
+                <li><span class="sitio">Sitio</span></li>
+                     <li><a href="../../index.html" title="Matemáticas">Inicio</a></li>
+                     <li><a href="../../temario.html" title="Temario de Matemáticas">Temario Matemáticas</a></li>
+                     <li><a href="../../ramas_matematicas.html" title="Ramas de las Matemáticas">Ramas Matemáticas</a></li>
+                     <li><a href="../../ejercicio.html" title="Ejercicios de Matemáticas">Ejercicios Matemáticas</a></li>
+                       <li><a href="../../algebralineal.html" title="Álgebra Lineal">Álgebra Lineal</a></li>
+                     <li><a href="../../bac.html" title="Bachillerato">Bachillerato</a></li> 
+                     <li><a href="../../bac_2cs.html" title="Bachillerato">2º de Bac. C.S.</a></li>  <li>&nbsp;</li>
+                    <li><span class="sitio">Tema</span></li>
+                   	<li>
+				 	<a href="cramer.html" title="Cramer"><span>Regla de Cramer</span></a>			    
+                    </li>
+                      
+                    <li>
+                        <a href="rouche.html" title="Teorema Rouché"><span>Teorema Rouché</span></a>				
+                    </li>
+                   
+                    <li>
+                        <a href="homogeneos_2.html" title="Homogéneos_2"><span>Sist. Homogéneos</span></a>
+                    </li>
+                      
+                    <li>
+                        <a href="discusion_2.html"  title="Discusión de sistemas con parámetros"><span>Discusión sistemas</span></a>
+                    </li>
+                    <li><a href="res_2.html" title="Resumen"><span>Resumen</span></a></li>
+                     <li><a  href="sistemas_2_Actividades.html" title="Ejercicios 1">Ejercicios 1</a></li>
+                  <li><a  href="sistemas_2_Evaluacion.html" title="Ejercicios 2">Ejercicios 2</a></li>
+                  <li><a  href="c_e.html" title="Sistemas de ecuaciones resueltos por la regla de Cramer">Ejercicios Cramer</a></li>
+                   <li><a  href="d_e.html" title="Ejercicios de discusión de sistemas por Rouché">Ejercicios  discusión</a></li>
+                  <li><a  href="h_e.html" title="Ejercicios resueltos de sistemas homogéneos">Ejer. homogéneos</a></li>
+                     <li>&nbsp;</li>
+                     
+            	</ul>
+                
+		  	</div>   	<!--id="vin_s"  -->        
+		<div id="footer">
+    
+        <img src="../../../www.vitutor.org/images/pie_c_2.gif" width="161" height="20" alt="Copyright" class="copy"/>					
+        <a href="mailto:" class="correo" title="Correo electrónico">
+        <img src="../../../www.vitutor.org/images/pie_correo_4.gif" width="216" height="20" alt="Correo electrónico" class="imagen" /></a>	  </div>  		
+    <!--id="footer"  -->
+    
+    </div>             <!--  id="container"   -->
+    
+</body>
+
+<!-- Mirrored from www.vitutor.com/algebra/sistemas I/s_e.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:41:48 GMT -->
+</html>

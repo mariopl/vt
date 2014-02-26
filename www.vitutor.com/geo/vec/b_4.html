@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from www.vitutor.com/geo/vec/b_4.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:09:39 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Números reales, examen, examen resuelto, examenes resueltos, ejercicios resueltos, problemas resueltos, 4º de ESO, vídeos, videotutoriales, tutoriales, cursos, cursos gratuitos, cursos de verano, cursos online, cursos a distancia, cursos de formación, formación a distancia, formacion on-line, e-Learning, academia, academia virtual, centro de estudios, matemáticas, educación, educación a distancia, enseñanza."  />
+<meta name="description" content="Vectores: Base, base ortogonal, base ortonormal. Conceptos, definiciones, teoría, apuntes, ejemplos prácticos, ejercicios resueltos. 1º de Bachillerato"/>
+<meta name="robots" content="all" />
+<link rel="icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../www.vitutor.it/favicon.ico" type="image/x-icon"/>
+    
+     <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/style-html.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/ejCombinados.css"/>
+      <link rel="stylesheet" type="text/css" media="all" href="../../../www.vitutor.it/css/queries.css"/>
+     
+    <link rel="stylesheet" type="text/css" media="print" href="../../../www.vitutor.it/css/print.css"/>
+    <!--[if IE]>  
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->  
+    <!--[if  IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="http://www.vitutor.it/css/ie.css" />
+    <![endif]-->
+
+<style type="text/css" >
+
+input.cResultPropuestoMultipleInputText{ margin-left:0.2em;}
+
+/*.contenidoSoluciones{
+	display:block;	
+	}
+.content.soluciones{  
+	display:block;  
+	}
+.cContRes{
+	display:block; min-height:100px;
+	}*/
+
+input.cResultPropuestoInputText{ width:5em;
+	}
+</style>
+
+<script type="text/javascript" src="../../../www.vitutor.it/js/jquery.js"></script>
+<script type="text/javascript" src="../../../www.vitutor.it/js/a.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42031603-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../../../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-952534-1";
+urchinTracker();
+</script>
+
+
+ 
+ 
+
+<title>Base ortogonal y ortonormal - Vitutor</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+<div id="logo">
+<a href="../../index-2.html" title="Inicio. Index">
+<img src="../../../www.vitutor.it/images/logo.png" width="141" height="35" alt="Vitutor">
+</a>
+</div><!-- fin div-logo-->
+
+    
+  <div id="cont-head">  
+    <div class="idiom">
+      <a href="#" class="inicio" >Inicio</a>
+      
+    <a href="../../maths.html">
+    <img src="../../../www.vitutor.it/images/eng.png" width="27" height="17" alt="English" title="English"></a>
+    </div><!--fin.idiom-->
+    
+
+<div class="search">
+  <form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9406468284585792:4766507545" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="22" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+	</div><!--fin.search--> </div><!--fin.cont-head-->
+
+  
+</header>
+<article>
+	<div style="margin-left:2%; margin-top:20px; margin-bottom:10px;">
+  <div style="display:inline-block;float:left;"> <script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_sup -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4325855543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div style="clear:both; margin-left:-3%;">
+</div>
+</div>
+
+
+    <h1 class="tit-gris" id="to">Base</h1>
+    <nav id="menu-tema">
+    <ul class="nav">
+    <li><a href="#" title="Teoría de ">Teoría</a>
+        <ul>
+            <li><a  class="flecha-submenu" href="b_1.html" title="Vectores">Vectores</a>
+                <ul>
+                    <li><a href="b_1_e.html" title="Ejercicios interactivos de Vector posición. Coordenadas de un Vector">Ejer. interactivos I</a></li>
+                    <li><a href="b_1_e_1.html" title="Ejercicios interactivos de Módulo. Distancia">Ejer. interactivos II</a></li>
+                    <li><a href="b_1_e_2.html" title="Ejercicios interactivos de Vector unitario">Ejer. interactivos III</a></li>
+                </ul>
+            </li>	
+            <li><a class="flecha-submenu" href="b_2.html" title="Operaciones con Vectores">Operaciones</a>
+                <ul>
+                    <li><a href="b_2_e.html" title="Ejercicios interactivos de Operaciones con Vectores">Ejercicios interactivos</a></li>
+                </ul>
+            </li>  
+            <li><a  href="b_3.html" title="Combinación lineal">Combinación lineal</a></li>	
+            <li><a  href="b_8.html" title="Vectores linealmente dependientes e independientes">V. dependientes</a> </li>
+            <li><a  href="b_4.html" title="Base" class="actual">Base</a></li>
+            <li><a href="b_5.html" title="Sistema de referencia">Sis. referencia</a></li>	
+            <li><a  class="flecha-submenu" href="b_6.html" title="Aplicaciones">Aplicaciones</a>
+                <ul>
+                    <li><a href="b_6_e.html" title="Ejercicios interactivos de Punto medio">Ejer. interactivos I</a></li>
+                    <li><a href="b_6_e_1.html" title="Ejercicios interactivos de Puntos alineados">Ejer. interactivos II</a></li>
+                    <li><a href="b_6_e_2.html" title="Ejercicios interactivos de Punto simétrico">Ejer. interactivos III</a></li>
+                </ul>
+            </li>
+            <li><a href="b_7.html" title="Producto escalar">Producto escalar</a></li>	
+            <li><a href="bres.html" title="Resumen">Resumen</a></li>
+			<li><a href="vector.html" title="Índice">Índice</a></li> 
+        </ul>
+    </li>
+    <li><a href="#" title="Ejercicios de ">Ejercicios</a>
+      <ul>
+            <li><a href="bActivdades.html" title="Actividades">Ejercicios I</a></li>
+			<li><a href="b_a.html" title="Evaluación">Ejercicios II</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	
+    <section>
+    <div class="sombra-tit">
+    <h2 class="r">Base</h2></div>
+    <div class="pop-ej">
+    <img src="../../../www.vitutor.co.uk/geo/vec/images/35.gif" alt="producto" width="396" height="200"/>
+     <div class="float2">
+    		<p>Dos vectores <img src="../../../www.vitutor.co.uk/geo/vec/images/17.gif" alt="vector" width="14" height="24" class="m" /> y <img src="../../../www.vitutor.co.uk/geo/vec/images/14.gif" alt="vector" width="14" height="24" class="m" /> con distinta dirección forman una base, porque cualquier vector del plano se puede poner como combinación lineal de ellos.</p>
+    		<p class="b"><img src="../../../www.vitutor.co.uk/geo/vec/images/36.gif" alt="vector" width="106" height="26" /></p>
+    		<p>Las coordenadas del vector respecto a la base son:</p>
+			<p class="b"><img src="../../../www.vitutor.co.uk/geo/vec/images/37.gif" alt="vector" width="78" height="29" /></p>
+     </div><!---fin.float2-->
+     </div><!--fin.popej--> 
+     
+     <div class="pop-ej">
+     <span class="border g">Ejemplo:</span>
+    		<p class="a"><img src="../../../www.vitutor.co.uk/geo/vec/images/39.gif" alt="vector" width="273" height="29" /></p>
+			<p class="a"><img src="../../../www.vitutor.co.uk/geo/vec/images/38.gif" alt="vectores" width="310" height="46" /></p>
+			<p class="a">Los dos vectores que forman una base no pueden ser paralelos.</p>
+     </div><!--fin.popej--> 
+      
+         
+     <div class="pop-ej">
+     <p><span class="border g">Ejemplos:</span> Qué pares de los siguientes vectores forman una base:</p>
+    <p><img src="../../../www.vitutor.co.uk/geo/vec/images/136_1.gif" alt="base" width="385" height="29" /></p>
+ 	<p><img src="../../../www.vitutor.co.uk/geo/vec/images/136_2.gif" alt="base" width="341" height="42" /></p>
+	<p><img src="../../../www.vitutor.co.uk/geo/vec/images/136_3.gif" alt="base" width="318" height="42" /></p>
+	<p><img src="../../../www.vitutor.co.uk/geo/vec/images/136_4.gif" alt="base" width="349" height="42" /></p>
+     </div><!--fin.popej--> 
+      
+      
+  	</section>
+    
+    <section>
+    <div class="sombra-tit"><h2 class="r">Clasificación de bases</h2></div><!--fin.sombratit-->
+   		 <h3 class="r"><span class="num-ej">1</span> Base ortogonal</h3>
+            <div class="pop-ej">
+            <img src="../../../www.vitutor.co.uk/geo/vec/images/41.gif" alt="base" width="250" height="251" />
+            <div class="float2">
+            <p>Los dos vectores de la base son perpendiculares entre sí.</p>
+            </div><!--fin.float2-->
+            </div><!--fin.opej-->
+            
+             <h3 class="r"><span class="num-ej">2</span> Base ortonormal</h3>
+            <div class="pop-ej">
+           <img src="../../../www.vitutor.co.uk/geo/vec/images/42.gif" alt="dibujo" width="209" height="200"/>
+            <div class="float2">
+            <p>Los dos vectores de la base son perpendiculares entre sí, y además tienen módulo 1.</p>
+            <p><strong>Los dos vectores de la base son perpendiculares entre sí, y  además tienen módulo 1.</strong></p>
+            <p><img src="../../../www.vitutor.co.uk/geo/vec/images/0_12.gif" alt="base" width="44" height="33" /></p>
+            <p><img src="../../../www.vitutor.co.uk/geo/vec/images/0_13.gif" alt="base" width="218" height="29" /></p>
+            <p><img src="../../../www.vitutor.co.uk/geo/vec/images/0_14.gif" alt="base" width="224" height="34" /></p>
+            <p>Esta base formada por los vectores <img src="../../../www.vitutor.co.uk/geo/vec/images/0_31.gif" alt="i" width="12" height="22" class="m" /> y <img src="../../../www.vitutor.co.uk/geo/vec/images/0_30.gif" alt="j" width="13" height="26" class="m" /> se denomina<strong> base canónica</strong>. </p>
+             <p>Es la base que se utiliza habitualmente, de modo que si no se advierte nada se supone que se está trabajando en esa base.</p>
+            </div><!--fin.float2-->
+            </div><!--fin.opej-->
+            
+       <div class="pop-ej">
+      <span class="border g">Ejemplos:</span> 
+      <p><span class="num-ej">1</span> Qué pares de los siguientes <strong>vectores</strong> forman una <strong>base</strong>:</p>
+      <div class="pop-ej">
+      	<p class="b"><img src="../../../www.vitutor.co.uk/geo/vec/images/136_1.gif" alt="base" width="385" height="29" /></p>
+	  	<p class="b"><img src="../../../www.vitutor.co.uk/geo/vec/images/136_2.gif" alt="base" width="341" height="42" /></p>
+		<p class="b"><img src="../../../www.vitutor.co.uk/geo/vec/images/136_3.gif" alt="base" width="318" height="42" /></p>
+		<p class="b"><img src="../../../www.vitutor.co.uk/geo/vec/images/136_4.gif" alt="base" width="349" height="42" /></p>
+        </div><!--fin.popej-->
+        
+		<p><span class="num-ej">2</span> Sean los vectores libres <img src="../../../www.vitutor.co.uk/geo/vec/images/17.gif" width="14" height="24" alt="u" class="m" /> = (2, 1),  <img src="../../../www.vitutor.co.uk/geo/vec/images/14.gif" width="14" height="20" alt="v" class="m" /> = (1, 4) y  <img src="../../../www.vitutor.co.uk/geo/vec/images/0_61.gif" alt="w" width="18" height="20" class="m" /> = (5, 6). Determinar:</p>
+        <div class="pop-ej">
+        	<p><span class="num-subej">1</span> Si forman una base <img src="../../../www.vitutor.co.uk/geo/vec/images/17.gif" width="14" height="24" alt="u" class="m" /> y <img src="../../../www.vitutor.co.uk/geo/vec/images/0_61.gif" alt="w" width="18" height="20" class="m" />.</p>
+                <div class="pop-ej">
+                <img src="../../../www.vitutor.co.uk/geo/vec/images/0_73.gif" alt="independientes" width="370" height="42" />
+                </div><!--fin.popej-->
+                
+            <p><span class="num-subej">2</span> Expresar <img src="../../../www.vitutor.co.uk/geo/vec/images/0_61.gif" alt="w" width="18" height="20" class="m" /> como combinación lineal de los de la base  </p>
+            	<div class="pop-ej">
+            	<p><img src="../../../www.vitutor.co.uk/geo/vec/images/0_74.gif" alt="operaciones" width="190" height="22" /></p>
+            	<p><img src="../../../www.vitutor.co.uk/geo/vec/images/0_75.gif" alt="operaciones" width="286" height="68" /></p>
+            	<p><img src="../../../www.vitutor.co.uk/geo/vec/images/0_76.gif" alt="operaciones" width="92" height="24" /></p>
+            	</div><!--fin.popej-->
+
+            <p><span class="num-subej">3</span> Calcular las coordenadas de C respecto a la base.</p>
+            	<div class="pop-ej">
+            	<p>Las coordenadas de <img src="../../../www.vitutor.co.uk/geo/vec/images/0_61.gif" alt="w" width="18" height="20" class="m" /> respecto a la base son: (2, 1)</p>
+            	<p class="a">Un vector <img src="../../../www.vitutor.co.uk/geo/vec/images/0_61.gif" alt="w" width="18" height="20" class="m" /> tiene de coordenadas (3, 5) en la base canónica. ¿Qué coordenadas tendrá referido a la base <img src="../../../www.vitutor.co.uk/geo/vec/images/17.gif" width="14" height="24" alt="u" class="m" /> = (1, 2), <img src="../../../www.vitutor.co.uk/geo/vec/images/14.gif" width="14" height="20" alt="v" class="m" /> = (2, 1)?</p>
+            <p class="b">(3, 5) = a (1, 2) + b (2, 1)</p>
+            <p class="b">3 = a + 2b	<span style="margin-left:10%;">a = 3 - 2b </span> <span style="margin-left:16%;">a = 7/3 </span></p>
+            <p class="b">5 = 2a + b <span style="margin-left:10%;">5 = 2 (3 - 2b) + b </span> <span style="margin-left:10%;">b = 1/3 </span></p>
+            <p class="b">Las coordenadas de <img src="../../../www.vitutor.co.uk/geo/vec/images/0_61.gif" alt="w" width="18" height="20" class="m" /> e<span class="b">n la base B son <span class="sol">(7/3, 1/3)</span>.</span></p>
+       			</div><!--fin.popej-->
+       </div><!--fin.popej-->
+            
+    </section>
+  
+<div class="loso">
+<div>
+								 <!-- com_v_inf -->		
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_v_inf */
+google_ad_slot = "8337252748";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9406468284585792";
+/* com_sky_inf */
+google_ad_slot = "7139721145";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                           </div></div>
+
+   
+ <div class="contFlechas">
+    
+    <div class="flecha flecha-izq">
+    <a href="b_8.html" title="Página anterior">
+        <img  src="../../../www.vitutor.it/images/flecha-iz.png" alt="Página anterior" width="30" height="25" title="Anterior">
+        </a>
+    </div><!--fin.flecha-->
+    
+    <div class="flecha">
+    	<div class="subir">
+    	<a href="#to" title="Subir"><img src="../../../www.vitutor.it/images/flecha-subir.png" alt="Principio de la página" width="30" height="25"></a>
+   		</div><!--fin.subir-->
+   		
+        <div id="contSet">
+    	<a href="../../index-2.html" title="Inicio" class="set"><img src="../../../www.vitutor.it/images/home.png" alt="Inicio" width="28" height="23"></a>
+
+    	<div class="set"><a href="numeros_reales.html" title="Índice de números reales"><img src="../../../www.vitutor.it/images/indice.png" alt="Índice del tema" width="28" height="23"></a></div><!--fin.set-->
+    	<div class="set"><img src="../../../www.vitutor.it/images/print.png" alt="Imprimir página" width="28" height="23" title="Imprimir"></div><!--fin.set-->
+    	</div><!--fin.contSet-->
+   		</div><!--fin.flecha-->
+    
+    	<div class="flecha flecha-der">
+        <a href="b_5.html" title="Página siguiente">
+        <img  src="../../../www.vitutor.it/images/flecha-der.png" alt="Página siguiente" width="30" height="25" title="Siguiente">
+        </a></div>
+    	</div><!-- fin div-contFlechas-->
+
+</article>
+	<div class="lateral">
+    <div style="margin-left:-1px;">
+ 
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- com_sky_vertical -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-9406468284585792"
+     data-ad-slot="4423476746"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <div class="twit">
+	<div class="twit-tit" style="color: #fff;font-weight: bold;line-height: 15px;text-align: left;padding: 5px 8px;background: #D95E67;max-width: 100%;border: solid 1px #D95E67;border-radius: 5px;margin-top: 15px; margin-bottom: 20px">Compartir:</div>
+     <span class="twit-flecha"></span>
+     <div class="redes">
+		<!--twitter-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none" data-via="VITUTORcom">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!--fin twitter-->
+		<!--facebook-->
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+		<!--fin facebook-->
+		<!-- google plus -->
+		 <g:plusone></g:plusone>
+
+    	<script type="text/javascript">
+     		window.___gcfg = {
+        	lang: 'es'
+      	};
+
+      	(function() {
+        	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        	po.src = '../../../apis.google.com/js/plusone.js';
+        	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      	})();
+    	</script>
+    	<!-- fin google plus-->
+     </div><!--fin.redes-->
+</div><!--fin.twitt-->  
+<br />
+ 
+   <div class="sep-lateral">Tema</div>
+  	<nav class="menu-lateral">
+  	<ul>
+        <li><a href="b_1.html" title="Vectores">Vectores</a></li>		 
+        <li><a href="b_2.html" title="Operaciones con Vectores">Operaciones</a></li>
+        <li><a href="b_3.html" title="Combinación lineal">Combinación lineal</a></li>
+        <li><a href="b_8.html" title="Vectores linealmente dependientes e independientes">L. dependientes</a></li>
+        <li class="active"><a href="b_4.html" title="Base">Base</a></li>
+        <li><a href="b_5.html" title="Sistema de referencia">Sistema referencia</a></li>	 
+        <li><a href="b_6.html" title="Aplicaciones">Aplicaciones</a></li>
+        <li><a href="b_7.html" title="Producto escalar">Producto escalar</a></li>
+        <li><a href="bres.html" title="Resumen">Resumen</a></li>
+        <li><a href="vector.html" title="Índice">Índice</a></li>
+                   
+    </ul>
+</nav><!-- fin menú-lateral-->
+   <div class="sep-lateral">Ejercicios</div>
+  	<div class="sep-lateral2" >Ejercicios interactivos</div>
+	<nav class="menu-lateral">
+        <ul>
+            <li><a href="b_1_e.html" title="Ejercicios interactivos de Vector posición. Coordenadas de un Vector">Coordenadas vector</a></li>
+            <li><a href="b_1_e_1.html" title="Ejercicios interactivos de Módulo. Distancia">Módulo distancia</a></li>
+            <li><a href="b_1_e_2.html" title="Ejercicios interactivos de Vector unitario">Vector unitario</a></li>
+            <li><a href="b_2_e.html" title="Ejercicios interactivos de Operaciones con Vectores">Operaciones vectores</a></li>
+            <li><a href="b_6_e.html" title="Ejercicios interactivos de Punto medio">Punto medio</a></li>
+                    <li><a href="b_6_e_1.html" title="Ejercicios interactivos de Puntos alineados">Puntos alineados</a></li>
+                    <li><a href="b_6_e_2.html" title="Ejercicios interactivos de Punto simétrico">Punto simétrico</a></li>
+        </ul>
+        </nav>  
+     <div class="sep-lateral2">Otros ejercicios</div>
+        <nav class="menu-lateral">
+        <ul>
+            <li><a href="bActivdades.html" title="Actividades">Ejercicios 1</a></li>
+			<li><a href="b_a.html" title="Evaluación">Ejercicios 2</a></li>
+        </ul>
+    </nav><!-- fin menú-lateral-->
+    
+	<div class="sep-lateral">Sitio</div>
+  	<nav class="menu-lateral">
+  	<ul>
+      <li><a href="../../index.html" title="Inicio">Inicio</a></li>
+      <li><a href="../../gramatica_inglesa.html" title="Gramática inglesa">Gramática inglesa</a></li>
+      <li><a href="../../maths.html" title="Maths">Maths</a></li>
+      <li><a href="#" title="Geometría analítica">Geometría analítica</a>
+      	<ul>
+          <li><a href="vectores.html" title="Vectores I">Vectores I</a></li>	
+          <li><a href="vector.html" title="Vectores II">Vectores II</a></li> 
+          <li><a href="traslaciones.html" title="Traslaciones, giros y simetría">Traslaciones simetría</a></li>
+          <li><a href="../rec/recta_eso.html" title="Ecuación de la recta I">Ecuación recta I</a></li>
+          <li><a href="../rec/dvideos.html" title="Ecuación de la recta II">Ecuación recta II</a></li>
+          <li><a href="../coni/conicas.html" title="Ecuación de la circunferencia">Ecuación de la circunferencia </a></li>
+          <li><a href="../coni/elipse.html" title="Ecuación de la elipse">Ecuación de la elipse</a></li>
+          <li><a href="../coni/hiperbola.html" title="Ecuación de la hipérbola">Ecuación de la hipérbola</a></li>
+          <li><a href="../coni/parabola.html" title="Ecuación de la parábola">Ecuación de la parábola</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="ESO">ESO y Bachillerato</a>
+            <ul>
+                <li><a href="../../4_eso_b.html" title="4ºde ESO opción B">4º B</a></li>
+                <li><a href="../../bac_1.html" title="1º Bachillerato tecnológico">1º B. tecnológico</a></li>
+            </ul>			
+      </li>
+       <li><a href="#" title="">Ejercicios</a>
+       		<ul>
+            <li><a href="../../ejercicio.html" title="Ejercicios y problemas de Matemáticas">Matemáticas</a></li>
+            <li><a href="../../ejercicios/ejercicios_geoanalitica.html" title="Ejercicios y problemas de Geometría analítica">Geometría analítica</a></li>
+            <li><a href="../../ejercicios/ejercicios_eso.html" title="Ejercicios y problemas de ESO">ESO</a></li>
+            <li><a href="../../ejercicios/ejercicios_eso.html" title="Ejercicios y problemas de Bachillerato">Bachillerato</a></li>
+            </ul>
+       </li>
+    </ul>
+</nav><!-- fin menú-lateral-->
+
+</div><!--fin.lateral-->  
+<footer style="clear:both;">
+	<div class="foot">
+	<div class="foot1">@Vitutor 2012<br/>
+    Todos los derechos reservados 
+    </div><!-- fin div-foot1-->
+    </div><!-- fin foot-->
+    
+      <div class="foot"> 
+    <a class="foot2 publicidad" href="../../publicidad.html" title="Información sobre la publicidad en Vitutor">Publicidad</a>
+    </div><!-- fin foot-->
+    
+  <div class="foot"> 
+             <span class="foot2" id="miC"><img src="../../../www.vitutor.it/images/vitutor.png" alt="Vitutor"  width="166" height="20" ></span>
+    
+    <a class="foot2" href="aviso.html" title="Política de privacidad">Política de privacidad</a>
+    </div><!-- fin foot-->
+</footer><!-- fin footer-->
+</div></body>
+
+<!-- Mirrored from www.vitutor.com/geo/vec/b_4.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 26 Feb 2014 13:09:44 GMT -->
+</html>

@@ -1,0 +1,733 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------------- MAQUETA----------------------------------*/
+				
+div#header {
+		height:38px;
+		margin:0;
+		padding:0;
+   		background: #fbf8f5;
+		color:#000; 
+		border-bottom:#000 3px solid ;
+		}
+								
+div#header .menu{
+	position:absolute;
+	top:17px;
+	left:21.5%;
+	height:20px;
+	margin:0;
+	width:75%;
+		}
+#to{
+	border:0;
+	margin-left:2%;
+	margin-top:6px;
+	}
+#int{
+	border:0;
+	margin-top:-10px;
+	margin-right:3%;
+	float:right;
+	}
+div#bajo {
+		margin-left:30%;
+		font-size:1.2em;
+		}	
+div#wrapper{
+
+		float:left;
+		width:100%;
+		margin-left:-180px;
+		margin-right:0;
+	    margin-top:0px;
+		padding-top:0px;
+		}
+		
+div#content{
+
+		margin-left:180px;
+		margin-right:0;
+		height:auto;
+		padding:0; 
+		font-size:1.1em;
+		}
+		
+#cont {
+	 width:auto;
+	 padding:0; 
+	 margin:0 1px 5px 0; 
+	 border:#fff solid 3px;
+	 }
+	 
+div#sky_hi{
+
+	margin-left:6%;
+	}	
+div.sky_hi{
+
+	margin-left:4%;
+	margin-top:5px;
+	}
+div#vin_s{
+
+	text-align:left; 
+	float:right; 
+	width:165px;
+	margin-top:10px;
+	}
+	
+div.vin_s{
+
+	text-align:left; 
+	float:right; 
+	width:170px;
+	margin-top:10px;
+	}
+		
+div.vs{
+
+	margin-left:4%;
+	margin-top:10px;
+	}
+
+div#footer{
+
+		clear:both;
+		width:100%;
+		background:#fbf8f5;
+		color:#000;
+		border-top:#000 3px solid ; 
+		border-bottom:#000 3px solid ;
+		height:24px;
+		margin:0;
+		padding:0;
+		}
+
+div#footer .copy{
+
+		margin-top:1px; 
+		position:relative; 
+		left:7.5%;
+		}	
+div#footer .correo{
+
+		border:none;
+		margin-top:1px; 
+		position:relative; 
+		left:12.5%;
+		}
+div#footer .imagen{
+
+		border:none;
+		}
+													
+/*----------------- fIN MAQUETA----------------------------------*/
+
+/********acorden*********************/
+
+#basic-accordian{
+	border:5px solid #ccc;
+	padding:5px;
+	width:85%;
+	position:relative;
+	left:10%;
+	margin-left:-17px;
+	z-index:2;
+}
+
+.accordion_headings{
+	padding:5px;
+	background:url(../images/ac_1.png) no-repeat left #e8ede1;
+	color:#900;
+	font-size:1.1em;
+	border:1px solid #ccc;
+	cursor:pointer;
+	font-weight:bold;
+}
+span. accordion_headings{
+	margin-left:5%;
+	}
+.accordion_headings:hover {
+	background:#fbf8f5;
+	color:#1e5f3b;
+}
+
+.accordion_child{
+	padding:15px;
+	background:#eee;
+}
+
+.header_highlight{
+	background: url(../images/ac_1.png) no-repeat left #ddd;
+	color: #1e5f3b;
+}
+/*******************lista**************/
+.navcontainer
+{
+background: #eee;
+width: 80%;
+margin: 0 auto;
+padding: 1em 0;
+text-align: center;
+}
+ul.navlist
+{
+text-align: left;
+list-style: none;
+padding: 0;
+margin: 0 auto;
+width: 90%;
+}
+
+ul.navlist li
+{
+display: block;
+margin: 0;
+padding: 0;
+}
+
+ul.navlist li a
+{
+display: block;
+width: 100%;
+padding: 0.5em 0 0.5em 2em;
+border-width: 1px;
+border-color: #ffe #aaab9c #ccc #fff;
+border-style: solid;
+color: #048359;
+text-decoration: none;
+background: #f4f3f3;
+font-weight:bold;
+}
+
+.navcontainer>ul.navlist li a { width: auto; }
+
+ul.navlist li.active a
+{
+background: #eee;
+color: #800;
+}
+
+ul.navlist li a:hover, ul.navlist li.active a:hover
+{
+color: #800;
+background: transparent;
+border-color: #aaab9c #fff #fff #ccc;
+}
+
+
+/*********************fin  acorden*******************************/
+
+
+/*----------------- domtab----------------------------------*/
+
+div.domtab{
+	
+			padding:0;
+			width:100%;
+			position:relative; 
+			top:-2px;
+			}
+		
+ul.domtabs{
+			float:left;
+			list-style:none;
+			position:relative;
+			left:-35px;			
+			}
+
+ul.domtabs li{
+		
+			float:left;
+			margin:0;
+			padding:0;
+			font-size:0.95em;
+			font-weight:bold;
+			height:8px;
+			
+			}
+			
+.domtabs  a{
+
+		text-align:center;
+		}
+		
+ul.domtabs a:link,
+ul.domtabs a:visited,
+ul.domtabs a:hover,
+ul.domtabs a:active {
+			width:20px;
+			display:block;
+			color:#fff;
+			font-weight:bold;
+			text-decoration:none;
+			margin:0 9px 0 0;
+			padding:0 3px;
+			background:#3B4041;
+			}
+
+html>body ul.domtabs a:link,
+html>body ul.domtabs a:visited,
+html>body ul.domtabs a:hover,
+html>body ul.domtabs a:active{
+
+			height:auto;
+			min-height:2em;
+			}
+	
+ul.domtabs li.active a:link,
+ul.domtabs li.active a:visited,
+ul.domtabs li.active a:active,
+ul.domtabs li.active a:hover{
+
+			background:#900;
+			color:#fff;
+			margin-bottom:0;
+			padding-bottom:0;
+			}
+			
+			
+ul.domtabs a:hover{
+			color:#fff;
+			background:#900;
+			}			
+div.domtab div{
+			clear:both;
+			width:auto;
+			height:auto;
+			background:#fff;
+			color:#000;
+			padding:1em 3em;
+			display:none;
+			border:#ccc solid 2px;
+			position:relative;
+			left:5px;
+			}
+					
+#domtabprintview{
+
+			float:right;
+			padding-right:1em;
+			
+			}
+			
+#domtabprintview a:link,
+#domtabprintview a:visited,
+#domtabprintview a:active,
+#domtabprintview a:hover{
+		
+			background:#fff;
+			color:#ccc;
+			}
+
+/*---------------fin  domtab----------------------------------*/
+
+
+/* ---------------------MEN PRINCIPAL -------------------------*/
+.menu {
+		
+		z-index:100;
+		}
+.menu ul li a, .menu ul li a:visited {
+
+		display:block; 
+		text-decoration:none; 
+		width:85px; 
+		height:18px; 
+		color:#fff;
+		font-weight:bold; 
+		background:#3B4041;
+		line-height:1.60em; 
+		border:1px solid #fff;
+		overflow:hidden;
+		padding-top:1px;
+		}
+			
+.menu a{
+		text-align:center;
+		}
+				
+.menu ul {
+
+		padding:0;
+	    margin:0;
+		list-style-type: none; 
+		font-size:1em;
+		}
+			
+.menu ul li {
+		float:left;
+		margin-right:1px; 
+		position:relative;
+		font-size:1em;
+		}
+
+.menu ul li ul {
+		display: none;
+		font-size:0.95em;
+		}
+
+/* specific to non IE browsers */
+.menu ul li:hover a {
+		color:#fff; 
+		background:#900;
+		
+		}
+
+.menu ul li:hover ul {
+		display:block; 
+		position:absolute; 
+		top:19px; 
+		left:0; 
+		width:86px;
+		}
+		
+.menu ul li:hover ul li a.hide {
+
+		background:#999; 
+		color:#900;
+		}
+.menu ul li:hover ul li:hover a.hide {
+
+		background:#79B17D;
+		color:#900;
+		}
+
+.menu ul li:hover ul li ul {
+
+		display: none;
+		}
+.menu ul li:hover ul li a {
+
+		display:block;
+		background:#ccc;
+		color:#600;
+		}
+
+.menu ul li:hover ul li a:hover {
+
+		background:#ACE1AF;
+		color:#600;
+		}
+		
+.menu ul li:hover ul li:hover ul {
+
+		display:block;
+		position:absolute; 
+		left:86px; 
+		top:0;}
+
+.menu ul li:hover ul li:hover ul.left {
+
+	left:-86px;
+	}
+	
+.menu ul li ul li a#act{
+
+		background-color:#900;
+ 		color:#fff;
+	}
+.menu ul li a#actual,
+.menu ul li ul li a#act,
+.menu ul li ul li ul li a#act_1{
+
+		background-color:#900;
+ 		color:#fff;
+	}
+
+/* ---------------------FIN MEN PRINCIPAL -------------------------*/
+
+/*---------------------MEN PESTAAS--------------- */
+	
+
+    #tabs4 {
+	position:absolute;
+    font: bold 0.95em  Verdana , sans-serif;
+	margin:0;
+	padding:0;
+	height:20px;
+	}
+	
+    #tabs4 ul {
+	  margin:0 4px;
+	  padding:6px 5px 0 42px;
+	  list-style:none;
+      }
+    #tabs4 li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+		
+    #tabs4 a {
+      float:left;
+      background:url(../images/tab_iz.gif) no-repeat left top;
+      padding:0 4px;
+      text-decoration:none;
+	  margin-right:2px;
+      }
+	#tabs4 a#actual_t_4 {
+	  float:left;
+	  background:url(../images/tab_l.gif) no-repeat left top;
+	  padding:0 4px;
+	  text-decoration:none;
+	  margin-right:2px;
+	  }
+    #tabs4 a span {
+      float:left;
+      display:block;
+      background: url(../images/tab_der.gif) no-repeat right top;
+      padding:3px 10px 2px 3px;
+	  margin-right:2px;
+	  color:#FFFFFF;
+      }
+	#tabs4 a span#actual_ts_4 {
+      float:left;
+      display:block;
+      background:url(../images/tab_r.gif) no-repeat right top;
+      padding:3px 10px 2px 3px;
+	  margin-right:2px;
+      }	
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabs4 a span {float:none;}
+    /* End IE5-Mac hack */
+     
+    #tabs4 a:hover {
+      background-position:0% -42px;
+      }
+    #tabs4 a:hover span {
+      background-position:100% -42px;
+      }  
+
+	 /*---------------------FIN MEN PESTAAS--------------- */
+#sub {
+	padding:0;
+	margin-top:15px;
+	margin-bottom:15px;
+	}	
+	
+#sub ul{
+	list-style:none;}	
+
+#sub li {
+      display:inline;
+      margin:0;    
+  	  }
+		
+#sub li.ka{ margin-left:5%; padding:8px 5px 5px 1px;}
+#sub li.ke{ margin-left:36.5%;}
+#sub li.ke_d{ margin-left:36.5%;}
+#sub li.ke_a{ margin-left:55.5%;}
+#sub li.ke_d{ margin-left:36.5%;}
+#sub li.ki{ margin-left:36.5%;}
+#sub li.ki_d{ margin-left:36.5%;}
+
+		
+#sub li a:link { 
+      text-decoration:none;
+	  background-color:#fff;
+	  color:#000;
+	  
+      }
+#sub li a img{ 
+      border:0;
+      }	  
+			   
+#sub a:hover {
+		background-color:#ccc;
+		color:#fff;
+      }
+
+		
+#sub li a:link { 
+      text-decoration:none;
+	  background-color:#fff;
+	  color:#000;
+	  
+      }
+#sub li a img{ 
+      border:0;
+      }	  
+			   
+#sub a:hover {
+		background-color:#ccc;
+		color:#fff;
+      }	 
+
+    
+
+
+ /*******************DIV SOMBREADOS***********************/
+	
+
+.out {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000;
+	  border:1px solid #ddd; 
+	  position:relative;
+	  margin:1em 0;
+ 	  }	
+	  	
+.in2 {
+
+	  display:block; 
+	  background:#777;
+	  color:#000;
+	  border:1px solid #999; 
+	  position:relative;
+	  padding:1px;
+	  margin:1px;
+	  }
+	  
+.in {
+
+	  text-align:justify; 
+	  background:#fff;
+	  color:#000; 
+	  border:1px solid #555; 
+	  position:relative; 
+	  padding:5px;
+	  font-weight:normal;
+	  }
+
+
+.ltin {
+
+	  left:-5px;
+	  }
+	
+.tpin {
+
+	  top:-5px;
+	  }
+	  
+.rtin {
+
+	  left:5px;
+	  }
+	  
+.head_1{
+		
+		position:relative; 
+		top:15px; 
+		left:19%; 
+		width:60%;
+		margin-bottom:30px;
+		}
+		
+.head_2{
+		
+		position:relative; 
+		top:15px; 
+		left:25%; 
+		width:60%;
+		margin-bottom:30px;
+		}
+		
+.head_3{
+		
+		position:relative; 
+		top:15px; 
+		left:12.5%; 
+		width:75%;
+		margin-bottom:30px;
+		}	
+.head_4{
+		
+		position:relative; 
+		top:15px; 
+		left:5%; 
+		width:90%;
+		margin-bottom:30px;
+		}	
+						
+.cuerpo {
+		
+		margin:30px 15px 20px 20px;
+		}
+.out_150 {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000; 
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:25%;
+	  position:relative; 
+	  left:20%;
+ 	  }	
+	  
+.out_200 {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000; 
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:30%;
+	  position:relative; 
+	  left:20%;
+ 	  }	
+	  
+.out_250 {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000; 
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:45%;
+	  position:relative; 
+	  left:20%;
+ 	  }	
+	  
+.out_350 {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000; 
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:50%;
+	  position:relative; 
+	  left:20%;
+ 	  }		  	
+.out_400 {
+
+	  display:block; 
+	  background:#bbb; 
+	  color:#000;
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:55%;
+	  position:relative; 
+	  left:15%;
+ 	  }
+	  
+.out_500 {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000; 
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:65%;
+	  position:relative; 
+	  left:12.5%;
+ 	  }	
+	  
+.out_600 {
+
+	  display:block; 
+	  background:#bbb;
+	  color:#000; 
+	  border:1px solid #ddd; 
+	  margin:1em 0;
+	  width:85%;
+	  position:relative; 
+	  left:5%;
+ 	  }		
+ /*******************DIV SOMBREADOS***********************/
